@@ -1,0 +1,352 @@
+{
+    "civs": [
+        {
+            "name": "American",
+            "leaders": [
+                {
+                    "name": "Teddy Roosevelt",
+                    "expansion": "vanilla" 
+                }
+            ],
+            "expansion": "vanilla"
+        },
+        {
+            "name": "Arabian",
+            "leaders": [
+                {
+                    "name": "Saladin",
+                    "expansion": "vanilla" 
+                }
+            ],
+            "expansion": "vanilla"
+        },
+        {
+            "name": "Australian",
+            "leaders": [
+                {
+                    "name": "John Curtin",
+                    "expansion": "vanilla" 
+                }
+            ],
+            "expansion": "DLC"
+        },
+        {
+            "name": "Aztec",
+            "leaders": [
+                {
+                    "name": "Monteczuma",
+                    "expansion": "vanilla" 
+                }
+            ],
+            "expansion": "DLC"
+        },
+        {
+            "name": "Brazilian",
+            "leaders": [
+                {
+                    "name": "Pedro II",
+                    "expansion": "vanilla" 
+                }
+            ],
+            "expansion": "vanilla"
+        },
+        {
+            "name": "Chinese",
+            "leaders": [
+                {
+                    "name": "Qin Shi Huang",
+                    "expansion": "vanilla" 
+                }
+            ],
+            "expansion": "vanilla"
+        },
+        {
+            "name": "Cree",
+            "leaders": [
+                {
+                    "name": "Poundmaker",
+                    "expansion": "vanilla" 
+                }
+            ],
+            "expansion": "R&F"
+        },
+        {
+            "name": "Dutch",
+            "leaders": [
+                {
+                    "name": "Wilhelmina",
+                    "expansion": "R&F" 
+                }
+            ],
+            "expansion": "R&F"
+        },
+        {
+            "name": "Egyptian",
+            "leaders": [
+                {
+                    "name": "Cleopatra",
+                    "expansion": "vanilla" 
+                }
+            ],
+            "expansion": "vanilla"
+        },
+        {
+            "name": "English",
+            "leaders": [
+                {
+                    "name": "Victoria",
+                    "expansion": "vanilla" 
+                }
+            ],
+            "expansion": "vanilla"
+        },
+        {
+            "name": "French",
+            "leaders": [
+                {
+                    "name": "Catherine de Medici",
+                    "expansion": "vanilla" 
+                }
+            ],
+            "expansion": "vanilla"
+        },
+        {
+            "name": "Georgian",
+            "leaders": [
+                {
+                    "name": "Tamar",
+                    "expansion": "R&F" 
+                }
+            ],
+            "expansion": "R&F"
+        },
+        {
+            "name": "German",
+            "leaders": [
+                {
+                    "name": "Frederik Barbarossa",
+                    "expansion": "vanilla" 
+                }
+            ],
+            "expansion": "vanilla"
+        },
+        {
+            "name": "Greek",
+            "leaders": [
+                {
+                    "name": "Pericles",
+                    "expansion": "vanilla" 
+                },
+                {
+                    "name": "Gorgo",
+                    "expansion": "vanilla" 
+                }
+            ],
+            "expansion": "vanilla"
+        },
+        {
+            "name": "Indian",
+            "leaders": [
+                {
+                    "name": "Gandhi",
+                    "expansion": "vanilla" 
+                },
+                {
+                    "name": "Chandragupta",
+                    "expansion": "R&F" 
+                }
+            ],
+            "expansion": "vanilla"
+        },
+        {
+            "name": "Indonesian",
+            "leaders": [
+                {
+                    "name": "Gitarja",
+                    "expansion": "DLC" 
+                }
+            ],
+            "expansion": "DLC"
+        },
+        {
+            "name": "Japanese",
+            "leaders": [
+                {
+                    "name": "Hojo Tokimune",
+                    "expansion": "vanilla" 
+                }
+            ],
+            "expansion": "vanilla"
+        },
+        {
+            "name": "Khmer",
+            "leaders": [
+                {
+                    "name": "Jayavarman VII",
+                    "expansion": "DLC" 
+                }
+            ],
+            "expansion": "DLC"
+        },
+        {
+            "name": "Kongolese",
+            "leaders": [
+                {
+                    "name": "Mvemba a Nzinga",
+                    "expansion": "vanilla" 
+                }
+            ],
+            "expansion": "vanilla"
+        },
+        {
+            "name": "Korean",
+            "leaders": [
+                {
+                    "name": "Seondeok",
+                    "expansion": "R&F" 
+                }
+            ],
+            "expansion": "R&F"
+        },
+        {
+            "name": "Macedonian",
+            "leaders": [
+                {
+                    "name": "Alexander",
+                    "expansion": "DLC" 
+                }
+            ],
+            "expansion": "DLC"
+        },
+        {
+            "name": "Mapuche",
+            "leaders": [
+                {
+                    "name": "Lautaro",
+                    "expansion": "R&F" 
+                }
+            ],
+            "expansion": "R&F"
+        },
+        {
+            "name": "Mongolian",
+            "leaders": [
+                {
+                    "name": "Genghis Khan",
+                    "expansion": "" 
+                }
+            ],
+            "expansion": "R&F"
+        },
+        {
+            "name": "Norwegian",
+            "leaders": [
+                {
+                    "name": "Harald Hardrada",
+                    "expansion": "vanilla" 
+                }
+            ],
+            "expansion": "vanilla"
+        },
+        {
+            "name": "Nubian",
+            "leaders": [
+                {
+                    "name": "Amanitore",
+                    "expansion": "DLC" 
+                }
+            ],
+            "expansion": "DLC"
+        },
+        {
+            "name": "Persian",
+            "leaders": [
+                {
+                    "name": "Cyrus",
+                    "expansion": "DLC" 
+                }
+            ],
+            "expansion": "DLC"
+        },
+        {
+            "name": "Polish",
+            "leaders": [
+                {
+                    "name": "Jadwiga",
+                    "expansion": "DLC" 
+                }
+            ],
+            "expansion": "DLC"
+        },
+        {
+            "name": "Roman",
+            "leaders": [
+                {
+                    "name": "Trajan",
+                    "expansion": "vanilla" 
+                }
+            ],
+            "expansion": "vanilla"
+        },
+        {
+            "name": "Russian",
+            "leaders": [
+                {
+                    "name": "Peter",
+                    "expansion": "vanilla" 
+                }
+            ],
+            "expansion": "vanilla"
+        },
+        {
+            "name": "Scottish",
+            "leaders": [
+                {
+                    "name": "Robert the Bruce",
+                    "expansion": "R&F" 
+                }
+            ],
+            "expansion": "R&F"
+        },
+        {
+            "name": "Scythian",
+            "leaders": [
+                {
+                    "name": "Tomyris",
+                    "expansion": "vanilla" 
+                }
+            ],
+            "expansion": "vanilla"
+        },
+        {
+            "name": "Spanish",
+            "leaders": [
+                {
+                    "name": "Philip II",
+                    "expansion": "vanilla" 
+                }
+            ],
+            "expansion": "vanilla"
+        },
+        {
+            "name": "Sumerian",
+            "leaders": [
+                {
+                    "name": "Gilgamesh",
+                    "expansion": "vanilla" 
+                }
+            ],
+            "expansion": "vanilla"
+        },
+        {
+            "name": "Zulu",
+            "leaders": [
+                {
+                    "name": "Shaka",
+                    "expansion": "R&F" 
+                }
+            ],
+            "expansion": "R&F"
+        }
+    ]
+}
