@@ -2,16 +2,44 @@
 <html>
 <head>
     <title>PHP Test</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
 </head>
 
-<body>
-    <div id="app">
-        <h2>
-            {{ message }}
-        </h2>
+<body class="bg-dark">
+    <div id="app" class="container text-white">
+        <h2>Civilization 6 Randomizer</h2>
+        <form action="/" method="post">
+            <div class="row">
+                <div class="col-4">
+                    <label for="numPlayers">Please enter the number of players: </label>
+                </div>
+                <div class="col">
+                    <input id="numPlayers" name="numPlayers" type="number" max="12" min="1">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <label for="numRandoms">Please enter the number of randoms: </label>
+                </div>
+                <div class="col">
+                    <input id="numRandoms" name="numRandoms" type="number">
+                </div>
+            </div>
+<!--             <label for="numPlayers">Please enter the number of players: </label>
+            <input id="numPlayers" name="numPlayers" type="number"><br>
+            <label for="numRandoms">Please enter the number of randoms per player: </label>
+            <input id="numRandoms" name="numRandoms" type="number"> -->
+            <button type="button" id="numPlayersBtn">OK</button>
+        </form>
+
+        <div id="players" class="row"></div>
+        
+        <div class="row" id="randomsGrid"></div>
+        
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script src="js/vueScript.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
