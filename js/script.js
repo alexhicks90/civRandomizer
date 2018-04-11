@@ -1,6 +1,7 @@
 $(document).ready(function() {
+
 	$('#settingsGrid').hide();
-	// get JSON data
+	
 	$.getJSON("civData.json", function (data) {
 
         numPlayers = 3;
@@ -31,14 +32,12 @@ $(document).ready(function() {
                     break;
             }
         }
-        console.log(vanillaCivs);
-        console.log(rafCivs);
-        console.log(dlcCivs);
+
 
         $('#numPlayersBtn').click(function() {
 
             $('#settingsGrid').show();
-            
+
             if (typeof $('#numPlayers').val() !== 'undefined' && $('#numPlayers').val() > 0 && $('#numPlayers').val() < 13) {
 
                 numPlayers = $('#numPlayers').val();
@@ -71,10 +70,9 @@ $(document).ready(function() {
                         '<label class="pl-1" for="' + civs[i].name + '">' + civs[i].name + '</label>' +
                     '</div>'
                 );
-            }
-
-            
+            }          
         });
+
 
         $('body').on('click', '#randomize', function() {
 
@@ -95,25 +93,19 @@ $(document).ready(function() {
                 for (var i = 0; i < numPlayers; i++){
                     randoms = [];
                     for(var j = 0; j < numRandoms; j++) {
-                        //console.log("Civ " + j);
-                        do {
 
-                            var roll = Math.floor(Math.random() * civCount);               
-                            //console.log("Roll: " + roll);      
+                        do {
+                            var roll = Math.floor(Math.random() * civCount);       
 
                         } while (rolls.includes(roll));
 
                         rolls.push(roll);
-                        //console.log("Rolls: " + rolls);
                         var civName = civsUsed[roll].name;
                         randoms.push(civName);
                     }
 
                     allRandoms[i] = randoms;
                 }
-
-                console.log("All Randoms: ");
-                console.log(allRandoms);
 
                 //Reset randomsgrid
                 $('#randomsGrid').html('');
@@ -127,31 +119,26 @@ $(document).ready(function() {
                     );
 
                     if($('#p' + i + '').val() != '') {
-                        console.log($('#p' + i + '').val())
                         $('#p' + i + 'name').html(
                             $('#p' + i + '').val()
                         ); 
                     } else {
-                        console.log("undefined");
                         $('#p' + i + 'name').html("Player " + parseInt(i+1));
                     }
 
                     for(var random in allRandoms[i]) {
-                        //console.log(allRandoms[i][random]);
                         $('#p' + i + 'randoms').append(
                             '<li>'+
                                 allRandoms[i][random] +
                             '</li>'
                         );
-                    }
-                    
+                    }   
                 }
-            } else {
 
+            } else {
                 alert("Number of civs requested exceeded the number of civs selected. Please change the values and try again");
             }
-        });
-        
+        });    
     });
 });
 
@@ -159,20 +146,32 @@ $(document).ready(function() {
 versionSelect = function(version) {
     switch(version) {
         case 'vanilla':
-            for (var civ in vanillaCivs) {              
-                $('#' + vanillaCivs[civ].name).prop("checked", ! $('#' + vanillaCivs[civ].name).prop("checked"));    
+            for (var civ in vanillaCivs) {      
+                if ($('#vanilla').prop("checked")) {
+                    $('#' + vanillaCivs[civ].name).prop("checked", true); 
+                } else {
+                    $('#' + vanillaCivs[civ].name).prop("checked", false); 
+                }          
             }
             break;
 
         case 'raf':
             for (var civ in rafCivs) {
-                $('#' + rafCivs[civ].name).prop("checked", ! $('#' + rafCivs[civ].name).prop("checked")); 
+                if ($('#raf').prop("checked")) {
+                    $('#' + rafCivs[civ].name).prop("checked", true); 
+                } else {
+                    $('#' + rafCivs[civ].name).prop("checked", false); 
+                }          
             }
             break;
 
         case 'dlc':
             for (var civ in dlcCivs) {
-                $('#' + dlcCivs[civ].name).prop("checked", ! $('#' + dlcCivs[civ].name).prop("checked")); 
+                if ($('#dlc').prop("checked")) {
+                    $('#' + dlcCivs[civ].name).prop("checked", true); 
+                } else {
+                    $('#' + dlcCivs[civ].name).prop("checked", false); 
+                }           
             }
             break;
     }
