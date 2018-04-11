@@ -28,7 +28,7 @@
                     "expansion": "vanilla" 
                 }
             ],
-            "expansion": "DLC"
+            "expansion": "dlc"
         },
         {
             "name": "Aztec",
@@ -38,7 +38,7 @@
                     "expansion": "vanilla" 
                 }
             ],
-            "expansion": "DLC"
+            "expansion": "dlc"
         },
         {
             "name": "Brazilian",
@@ -68,17 +68,17 @@
                     "expansion": "vanilla" 
                 }
             ],
-            "expansion": "R&F"
+            "expansion": "raf"
         },
         {
             "name": "Dutch",
             "leaders": [
                 {
                     "name": "Wilhelmina",
-                    "expansion": "R&F" 
+                    "expansion": "raf" 
                 }
             ],
-            "expansion": "R&F"
+            "expansion": "raf"
         },
         {
             "name": "Egyptian",
@@ -115,10 +115,10 @@
             "leaders": [
                 {
                     "name": "Tamar",
-                    "expansion": "R&F" 
+                    "expansion": "raf" 
                 }
             ],
-            "expansion": "R&F"
+            "expansion": "raf"
         },
         {
             "name": "German",
@@ -153,7 +153,7 @@
                 },
                 {
                     "name": "Chandragupta",
-                    "expansion": "R&F" 
+                    "expansion": "raf" 
                 }
             ],
             "expansion": "vanilla"
@@ -163,10 +163,10 @@
             "leaders": [
                 {
                     "name": "Gitarja",
-                    "expansion": "DLC" 
+                    "expansion": "dlc" 
                 }
             ],
-            "expansion": "DLC"
+            "expansion": "dlc"
         },
         {
             "name": "Japanese",
@@ -183,10 +183,10 @@
             "leaders": [
                 {
                     "name": "Jayavarman VII",
-                    "expansion": "DLC" 
+                    "expansion": "dlc" 
                 }
             ],
-            "expansion": "DLC"
+            "expansion": "dlc"
         },
         {
             "name": "Kongolese",
@@ -203,30 +203,30 @@
             "leaders": [
                 {
                     "name": "Seondeok",
-                    "expansion": "R&F" 
+                    "expansion": "raf" 
                 }
             ],
-            "expansion": "R&F"
+            "expansion": "raf"
         },
         {
             "name": "Macedonian",
             "leaders": [
                 {
                     "name": "Alexander",
-                    "expansion": "DLC" 
+                    "expansion": "dlc" 
                 }
             ],
-            "expansion": "DLC"
+            "expansion": "dlc"
         },
         {
             "name": "Mapuche",
             "leaders": [
                 {
                     "name": "Lautaro",
-                    "expansion": "R&F" 
+                    "expansion": "raf" 
                 }
             ],
-            "expansion": "R&F"
+            "expansion": "raf"
         },
         {
             "name": "Mongolian",
@@ -236,7 +236,7 @@
                     "expansion": "" 
                 }
             ],
-            "expansion": "R&F"
+            "expansion": "raf"
         },
         {
             "name": "Norwegian",
@@ -253,30 +253,30 @@
             "leaders": [
                 {
                     "name": "Amanitore",
-                    "expansion": "DLC" 
+                    "expansion": "dlc" 
                 }
             ],
-            "expansion": "DLC"
+            "expansion": "dlc"
         },
         {
             "name": "Persian",
             "leaders": [
                 {
                     "name": "Cyrus",
-                    "expansion": "DLC" 
+                    "expansion": "dlc" 
                 }
             ],
-            "expansion": "DLC"
+            "expansion": "dlc"
         },
         {
             "name": "Polish",
             "leaders": [
                 {
                     "name": "Jadwiga",
-                    "expansion": "DLC" 
+                    "expansion": "dlc" 
                 }
             ],
-            "expansion": "DLC"
+            "expansion": "dlc"
         },
         {
             "name": "Roman",
@@ -303,10 +303,10 @@
             "leaders": [
                 {
                     "name": "Robert the Bruce",
-                    "expansion": "R&F" 
+                    "expansion": "raf" 
                 }
             ],
-            "expansion": "R&F"
+            "expansion": "raf"
         },
         {
             "name": "Scythian",
@@ -343,10 +343,10 @@
             "leaders": [
                 {
                     "name": "Shaka",
-                    "expansion": "R&F" 
+                    "expansion": "raf" 
                 }
             ],
-            "expansion": "R&F"
+            "expansion": "raf"
         }
     ]
 }

@@ -3,6 +3,7 @@
 <head>
     <title>PHP Test</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body class="bg-dark">
@@ -10,31 +11,53 @@
         <h2>Civilization 6 Randomizer</h2>
         <form action="/" method="post">
             <div class="row">
-                <div class="col-4">
-                    <label for="numPlayers">Please enter the number of players: </label>
+                <div class="col-12 col-md-6 col-lg-5 col-xl-4">
+                    <label for="numPlayers">Please enter the number of players: (1 - 12)</label>
                 </div>
                 <div class="col">
-                    <input id="numPlayers" name="numPlayers" type="number" max="12" min="1">
+                    <input id="numPlayers" name="numPlayers" type="number">
                 </div>
             </div>
             <div class="row">
-                <div class="col-4">
-                    <label for="numRandoms">Please enter the number of randoms: </label>
+                <div class="col-12 col-md-6 col-lg-5 col-xl-4">
+                    <label for="numRandoms">Please enter the number of randoms: (1 - 5)</label>
                 </div>
                 <div class="col">
                     <input id="numRandoms" name="numRandoms" type="number">
                 </div>
             </div>
-<!--             <label for="numPlayers">Please enter the number of players: </label>
-            <input id="numPlayers" name="numPlayers" type="number"><br>
-            <label for="numRandoms">Please enter the number of randoms per player: </label>
-            <input id="numRandoms" name="numRandoms" type="number"> -->
-            <button type="button" id="numPlayersBtn">OK</button>
+
+            <button type="button" id="numPlayersBtn" class="col-12 mt-2 btn btn-info">OK</button>
         </form>
 
-        <div id="players" class="row"></div>
+        <div id="settingsGrid" class="row mx-auto mt-4">
+            <div class="col-6">
+                <div id="players" class="row pr-2"></div>
+            </div>
+            <div id="civSelect" class="col-6 pl-2 border border-success">
+                <div class="row">
+                    <div id="civVersion" class="col-12 border-bottom border-info">
+                        <h4 class="text-center">Versions</h4>
+                        <div class="col-12 col-xl-3 custom-control custom-checkbox mx-auto" style="display: inline-block;">
+                            <input onchange="versionSelect('vanilla')" type="checkbox" class="custom-control-input" id="vanilla">
+                            <label class="custom-control-label" for="vanilla">Vanilla</label>
+                        </div>
+                        <div class="col-12 col-xl-3 custom-control custom-checkbox mx-auto" style="display: inline-block;">
+                            <input onchange="versionSelect('raf')" type="checkbox" class="custom-control-input" id="raf">
+                            <label class="custom-control-label" for="raf">Rise and Fall</label>
+                        </div>
+                        <div class="col-12 col-xl-3 custom-control custom-checkbox mx-auto" style="display: inline-block;">
+                            <input onchange="versionSelect('dlc')" type="checkbox" class="custom-control-input" id="dlc">
+                            <label class="custom-control-label" for="dlc">All DLC</label>
+                        </div>
+                    </div>
+                    <div id="allCivs" class="col-12"></div>
+                </div>
+            </div>
+            
+        </div>
         
-        <div class="row" id="randomsGrid"></div>
+        <div class="row mt-4" id="randomsGrid"></div>
         
     </div>
 

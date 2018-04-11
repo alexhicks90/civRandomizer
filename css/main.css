@@ -1,0 +1,5 @@
+#allCivs {
+    max-height: 180px;
+    overflow-y: scroll;
+    font-size: 0.92rem;
+}
