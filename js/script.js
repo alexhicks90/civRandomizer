@@ -32,6 +32,8 @@ $(document).ready(function() {
                     break;
             }
         }
+        console.log(rafCivs);
+        console.log(dlcCivs);
 
 
         $('#numPlayersBtn').click(function() {
@@ -39,9 +41,7 @@ $(document).ready(function() {
             $('#settingsGrid').show();
 
             if (typeof $('#numPlayers').val() !== 'undefined' && $('#numPlayers').val() > 0 && $('#numPlayers').val() < 13) {
-
                 numPlayers = $('#numPlayers').val();
-
             } else {
                 alert("Number of players must be 1 - 12. The value will default to 3 otherwise.");
             }
@@ -66,7 +66,7 @@ $(document).ready(function() {
             for (var i = 0; i < numCivs; i++) {
                 $('#allCivs').append(
                     '<div class="col-12 col-md-6 col-lg-4 col-xl-3" style="display: inline-block;">' +
-                        '<input type="checkbox" class="" id="' + civs[i].name + '">' +
+                        '<input type="checkbox" class="" id="' + civs[i].name + '" checked>' +
                         '<label class="pl-1" for="' + civs[i].name + '">' + civs[i].name + '</label>' +
                     '</div>'
                 );
@@ -142,37 +142,95 @@ $(document).ready(function() {
     });
 });
 
+dlcCount = 8;
 
 versionSelect = function(version) {
-    switch(version) {
-        case 'vanilla':
-            for (var civ in vanillaCivs) {      
-                if ($('#vanilla').prop("checked")) {
-                    $('#' + vanillaCivs[civ].name).prop("checked", true); 
-                } else {
-                    $('#' + vanillaCivs[civ].name).prop("checked", false); 
-                }          
-            }
-            break;
 
+    var civsSelected = [];
+    
+    switch(version) {
+
+        case 'vanilla':
+            civsSelected = vanillaCivs;
+            break;
+        
         case 'raf':
-            for (var civ in rafCivs) {
-                if ($('#raf').prop("checked")) {
-                    $('#' + rafCivs[civ].name).prop("checked", true); 
-                } else {
-                    $('#' + rafCivs[civ].name).prop("checked", false); 
-                }          
-            }
+            civsSelected = rafCivs;
             break;
 
         case 'dlc':
-            for (var civ in dlcCivs) {
-                if ($('#dlc').prop("checked")) {
-                    $('#' + dlcCivs[civ].name).prop("checked", true); 
+            civsSelected = dlcCivs;
+            for (var civ in civsSelected) {      
+                if ($('#' + version).prop("checked")) {
+                    $('#' + civsSelected[civ].dlcPack).prop("checked", true); 
                 } else {
-                    $('#' + dlcCivs[civ].name).prop("checked", false); 
-                }           
+                    $('#' + civsSelected[civ].dlcPack).prop("checked", false); 
+                }       
+            }
+
+            if ($('#' + version).prop("checked")) {
+                dlcCount = 8;
+            } else {
+                dlcCount = 0;
             }
             break;
+   
+        case 'aus':
+            civsSelected = [dlcCivs[0]];
+            dlcToggle();
+            break;
+        case 'azt':
+            civsSelected = [dlcCivs[1]];
+            dlcToggle();
+            break;
+        case 'pol':
+            civsSelected = [dlcCivs[7]];
+            dlcToggle();
+            break;
+        case 'kai':
+            civsSelected = [dlcCivs[3], dlcCivs[2]];
+            dlcToggle();
+            break;
+        case 'pam':
+            civsSelected = [dlcCivs[6], dlcCivs[4]];
+            dlcToggle();
+            break;
+        case 'nub':
+            civsSelected = [dlcCivs[5]];
+            dlcToggle();
+            break;
+
+        case 'default':
+            console.log("This shouldn't happen");
+            break;
     }
+    
+    for (var civ in civsSelected) {      
+        if ($('#' + version).prop("checked")) {
+            $('#' + civsSelected[civ].name).prop("checked", true); 
+        } else {
+            $('#' + civsSelected[civ].name).prop("checked", false); 
+        }          
+    }
+    
+    function dlcToggle() {
+        
+        if ($('#' + version).prop("checked")) {
+            for (var civ in civsSelected) {
+                dlcCount++;
+            }
+
+            if(dlcCount >= 8){
+                $('#dlc').prop("checked", true); 
+            }
+            
+        } else {
+            for (var civ in civsSelected) {
+                dlcCount--;
+            } 
+     
+            $('#dlc').prop("checked", false);           
+        } 
+    }
+
 }

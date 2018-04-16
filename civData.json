@@ -28,7 +28,8 @@
                     "expansion": "vanilla" 
                 }
             ],
-            "expansion": "dlc"
+            "expansion": "dlc",
+            "dlcPack": "aus"
         },
         {
             "name": "Aztec",
@@ -38,7 +39,8 @@
                     "expansion": "vanilla" 
                 }
             ],
-            "expansion": "dlc"
+            "expansion": "dlc",
+            "dlcPack": "azt"
         },
         {
             "name": "Brazilian",
@@ -163,10 +165,12 @@
             "leaders": [
                 {
                     "name": "Gitarja",
-                    "expansion": "dlc" 
+                    "expansion": "dlc",
+                    "dlcPack": "kai" 
                 }
             ],
-            "expansion": "dlc"
+            "expansion": "dlc",
+            "dlcPack": "kai"
         },
         {
             "name": "Japanese",
@@ -183,10 +187,12 @@
             "leaders": [
                 {
                     "name": "Jayavarman VII",
-                    "expansion": "dlc" 
+                    "expansion": "dlc",
+                    "dlcPack": "kai" 
                 }
             ],
-            "expansion": "dlc"
+            "expansion": "dlc",
+            "dlcPack": "kai"
         },
         {
             "name": "Kongolese",
@@ -213,10 +219,12 @@
             "leaders": [
                 {
                     "name": "Alexander",
-                    "expansion": "dlc" 
+                    "expansion": "dlc",
+                    "dlcPack": "pam" 
                 }
             ],
-            "expansion": "dlc"
+            "expansion": "dlc",
+            "dlcPack": "pam"
         },
         {
             "name": "Mapuche",
@@ -253,20 +261,24 @@
             "leaders": [
                 {
                     "name": "Amanitore",
-                    "expansion": "dlc" 
+                    "expansion": "dlc",
+                    "dlcPack": "nub" 
                 }
             ],
-            "expansion": "dlc"
+            "expansion": "dlc",
+            "dlcPack": "nub"
         },
         {
             "name": "Persian",
             "leaders": [
                 {
                     "name": "Cyrus",
-                    "expansion": "dlc" 
+                    "expansion": "dlc",
+                    "dlcPack": "pam" 
                 }
             ],
-            "expansion": "dlc"
+            "expansion": "dlc",
+            "dlcPack": "pam"
         },
         {
             "name": "Polish",
@@ -276,7 +288,8 @@
                     "expansion": "dlc" 
                 }
             ],
-            "expansion": "dlc"
+            "expansion": "dlc",
+            "dlcPack": "pol"
         },
         {
             "name": "Roman",
