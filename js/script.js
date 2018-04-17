@@ -39,6 +39,7 @@ $(document).ready(function() {
         $('#numPlayersBtn').click(function() {
 
             $('#settingsGrid').show();
+            $('#randomsGrid').hide();
 
             if (typeof $('#numPlayers').val() !== 'undefined' && $('#numPlayers').val() > 0 && $('#numPlayers').val() < 13) {
                 numPlayers = $('#numPlayers').val();
@@ -53,19 +54,19 @@ $(document).ready(function() {
                 alert("Number of randoms must be 1 - 6. The value will default to 3 otherwise (Or 2 if 12 players).");
             }        
             
-            $('#players').html('<h5 class="col-12">Enter player names (Optional): </h5>' +
+            $('#players').html('<h5 class="col-12 mt-2">Enter player names (Optional): </h5>' +
                                 '<form action="/">'
                             );
 
             for (var i = 0; i < numPlayers; i++) {
-                $('#players').append('<div class="col-12 col-lg-6 mt-2"><label class="pr-2" for="player' + parseInt(i+1) + '">Player ' + parseInt(i+1) + ': </label><input id="p'+i+'" type="text"></div>');
+                $('#players').append('<div class="col-12 col-lg-6 mt-3"><label class="pr-2" for="player' + parseInt(i+1) + '">Player ' + parseInt(i+1) + ': </label><input id="p'+i+'" type="text"></div>');
             }
 
-            $('#players').append('<button id="randomize" type="button" class="col-12 btn btn-info mt-2">Randomize</button></form>');
+            $('#players').append('<button id="randomize" type="button" class="col-12 btn btn-info my-4">Randomize</button></form>');
 
             for (var i = 0; i < numCivs; i++) {
                 $('#allCivs').append(
-                    '<div class="col-12 col-md-6 col-lg-4 col-xl-3" style="display: inline-block;">' +
+                    '<div class="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3" style="display: inline-block;">' +
                         '<input type="checkbox" class="" id="' + civs[i].name + '" checked>' +
                         '<label class="pl-1" for="' + civs[i].name + '">' + civs[i].name + '</label>' +
                     '</div>'
@@ -76,6 +77,8 @@ $(document).ready(function() {
 
         $('body').on('click', '#randomize', function() {
 
+            $('#settingsGrid').hide();
+            $('#randomsGrid').show();
             allRandoms = [];
             rolls = [];      
             civsUsed = [];
@@ -100,7 +103,7 @@ $(document).ready(function() {
                         } while (rolls.includes(roll));
 
                         rolls.push(roll);
-                        var civName = civsUsed[roll].name;
+                        var civName = civsUsed[roll];
                         randoms.push(civName);
                     }
 
@@ -114,7 +117,7 @@ $(document).ready(function() {
                     $('#randomsGrid').append(
                         '<div class="col-3 text-info">' +
                             '<h4 id="p' + i + 'name"></h4>' +
-                            '<ul id="p' + i + 'randoms"></ul>'+
+                            '<div class="list-group" id="p' + i + 'randoms"></div>'+
                         '</div>'
                     );
 
@@ -128,20 +131,43 @@ $(document).ready(function() {
 
                     for(var random in allRandoms[i]) {
                         $('#p' + i + 'randoms').append(
-                            '<li>'+
-                                allRandoms[i][random] +
-                            '</li>'
+                            '<button class="list-group-item list-group-item-action" type="button" data-toggle="modal" data-target="#exampleModal" id="' + allRandoms[i][random].name + 'btn" value="'+allRandoms[i][random].id+'">'+
+                                allRandoms[i][random].name +
+                            '</button>'
                         );
+
+                        $('body').on('click', '#' + allRandoms[i][random].name + 'btn', function() {
+                            
+                            var civObject = civs[this.value];
+                            console.log(civObject);
+                            
+                            $('#civCard').html(
+                                '<p>' + civObject.name + '</p>' +
+                                '<p>' + civObject.leaders[0].name + '</p>' +
+                                '<p>Abilities: </p>'     
+                            );
+                            
+                        });
                     }   
                 }
 
             } else {
                 alert("Number of civs requested exceeded the number of civs selected. Please change the values and try again");
             }
-        });    
+        });   
+        
+        
     });
 });
 
+/* $('.civCardBtn').click(function () {
+    console.log("civ card button click");
+    $('#civCard').html(
+            '<p>' + allRandoms[i][random] + '</p>' +
+            '<p>civCard</p>'
+        
+    );
+}); */
 dlcCount = 8;
 
 versionSelect = function(version) {
