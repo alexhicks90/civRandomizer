@@ -4,6 +4,10 @@
     font-size: 0.90rem;
 }
 
+#civCardTitle {
+    margin-top: 8px;
+}
+
 @media (min-width: 992px) {
     #dlcPackSelect {
         border-left: 1px solid;

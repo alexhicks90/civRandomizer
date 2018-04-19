@@ -139,13 +139,58 @@ $(document).ready(function() {
                         $('body').on('click', '#' + allRandoms[i][random].name + 'btn', function() {
                             
                             var civObject = civs[this.value];
+
+                            if (civObject.leaders.length > 1) {
+                                // things
+                            }
                             console.log(civObject);
                             
-                            $('#civCard').html(
-                                '<p>' + civObject.name + '</p>' +
-                                '<p>' + civObject.leaders[0].name + '</p>' +
-                                '<p>Abilities: </p>'     
+                            $('#civCardTitle').html(civObject.name);
+                            //$('#civCardTitle').css("color", civObject.color);
+
+                            $('#civCardImage').html(
+                                '<img src="' + civObject.leaders[0].img + '">'    
                             );
+
+                            $('#civCard').html(
+                                '<div class="col-12"><h5>Civ Ability - ' + civObject.abilityName + '</h5>' +
+                                '<p>' + civObject.ability + '</p></div>' +
+                                '<div class="col-6">' +
+                                    '<h5>Leader: ' + civObject.leaders[0].name + '</h5>' +
+                                    '<h5>Leader Bonus - ' + civObject.leaders[0].abilityName + '</h5>' +
+                                    '<p>' + civObject.leaders[0].ability + '</p>' +
+                                '</div>' +
+                                '<div class="col-6"><img src="' + civObject.leaders[0].portrait + '" width="200px" height="200px"></div>' +
+                                '<div class="col-12 col-lg">' +
+                                    '<h6>Unique Unit: ' + civObject.unit.name + '</h6>' +
+                                    '<p>' + civObject.unit.desc + '</p>' + '<span><img src="' + civObject.unit.img + '" alt="Unit Img"></span>' +
+                                    '<ul id="unitAttr"></ul>' +
+                                '</div>' +
+                                '<div class="col-12 col-lg">' +
+                                    '<h6>Unique Infrastructure: ' + civObject.infrastructure.name + '</h6>' +
+                                    '<p>' + civObject.infrastructure.desc + '</p>' + '<span><img src="' + civObject.infrastructure.img + '" alt="Infrastructure Img"></span>' +
+                                    '<ul id="infraAttr"></ul>' +
+                                '</div>'    
+                            );
+
+                            var unitAttributes = civObject.unit.attributes;
+                            for (attribute in unitAttributes) {
+                                $('#unitAttr').append(
+                                    '<li>' + unitAttributes[attribute] + '</li>'
+                                );
+                            }
+
+                            var infraAttributes = civObject.infrastructure.attributes;
+                            for (attribute in infraAttributes) {
+                                $('#infraAttr').append(
+                                    '<li>' + infraAttributes[attribute] + '</li>'
+                                );
+                            }
+
+                            $('#wikiLink').html(
+                                '<small class="pr-5">All Civ information and images pulled from the Civilization Wiki. For more in-depth information <a target="_blank" href="http://civilization.wikia.com/wiki/' + civObject.name + '_(Civ6)">click here</a> to visit their site</small>'
+                            );
+
                             
                         });
                     }   

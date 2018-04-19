@@ -3,9 +3,42 @@
         {
             "id": 0,
             "name": "American",
+            "abilityName": "Founding Fathers",
+            "ability": "Government legacy bonuses accumulate in half the usual number of turns. R&amp;F-Only All Diplomatic policy slots in the current government are converted to Wildcard slots.",
+            "color": "blue",
+            "unit": {
+                "name": "P-51 Mustang",
+                "desc": "The P-51 Mustang is a unique air fighter unit of the American civilization in Civilization VI. It replaces the Fighter.",
+                "img": "images/P-51.png",
+                "attributes": [
+                    "Higher Combat Strength (85 vs. 80) and Ranged Strength (85 vs. 80).",
+                    "Higher Movement (6 vs. 4).",
+                    "Gains +5 attack against fighter aircraft.",
+                    "Gains +50% experience.",
+                    "May perform Patrols to Intercept incoming enemy aircraft.",
+                    "Requires no resources."
+                ]
+            },
+            "infrastructure": {
+                "name": "Film Studio",
+                "desc": "The Film Studio is a unique building of the American civilization in Civilization VI. It is built in the Theater Square district and replaces the Broadcast Center.",
+                "img": "images/Film_Studio.png",
+                "attributes": [
+                    "+100% Tourism pressure from this city towards other civilizations starting from the Modern Era.",
+                    "+4 Culture",
+                    "+1 Citizen slot",
+                    "+1 Great Artist point/turn",
+                    "+2 Great Musician points/turn",
+                    "+1 Great Work of Music slot"
+                ]
+            },
             "leaders": [
                 {
                     "name": "Teddy Roosevelt",
+                    "abilityName": "Roosevelt Corollary",
+                    "ability": "Units receive a +5 Combat Strength bonus on their home continent. +1 Appeal to all tiles in a city with a National Park. Gain the Rough Rider unique unit when they research the Rifling technology.",
+                    "portrait": "images/Roosevelt.png",
+                    "img": "images/Civ_LEADER_T_ROOSEVELT.png",
                     "expansion": "vanilla" 
                 }
             ],
@@ -14,9 +47,38 @@
         {
             "id": 1,
             "name": "Arabian",
+            "abilityName": "The Last Prophet",
+            "ability": "Automatically receives the final Great Prophet when the next-to-last one is claimed (if they have not earned a Great Prophet already). +1 Science for each foreign city following Arabia's Religion.",
+            "color": "blue",
+            "unit": {
+                "name": "Mamluk",
+                "desc": "The Mamluk is a unique heavy cavalry unit of the Arabian civilization in Civilization VI. It replaces the Knight.",
+                "img": "images/Mamluk.png",
+                "attributes": [
+                    "Heals at the end of every turn, even if it moves or attacks an enemy unit.",
+                    "Vulnerable to anti-cavalry units.",
+                    "Does not require resources."
+                ]
+            },
+            "infrastructure": {
+                "name": "Madrasa",
+                "desc": "The Madrasa is a unique building of the Arabian civilization in Civilization VI. It is built in the Campus district and replaces the University.",
+                "img": "images/Madrasa.png",
+                "attributes": [
+                    "+5 Science",
+                    "Provides bonus Faith equal to the adjacency Science bonus of its district",
+                    "+1 Housing",
+                    "+1 Citizen slot",
+                    "+1 Great Scientist point per turn"
+                ]
+            },
             "leaders": [
                 {
                     "name": "Saladin",
+                    "abilityName": "Righteousness of the Faith",
+                    "ability": "The Worship building for Arabia's Religion can be purchased by any player at one-tenth of the usual Faith cost. 10% extra Science, Faith, and Culture on Arabian cities with this Worship building.",
+                    "portrait": "images/Saladin.png",
+                    "img": "images/Civ_LEADER_SALADIN.png",
                     "expansion": "vanilla" 
                 }
             ],
@@ -25,10 +87,42 @@
         {
             "id": 2,
             "name": "Australian",
+            "abilityName": "Land Down Under",
+            "ability": "+3 Housing in coastal cities. Building a Pasture triggers a Culture Bomb, claiming surrounding tiles. Campuses, Commercial Hubs, Holy Sites, and Theater Squares gain +1 to their yields in tiles with Charming Appeal, and +3 with Breathtaking Appeal.",
+            "color": "blue",
+            "unit": {
+                "name": "Digger",
+                "desc": "The Digger is a unique melee unit of the Australian civilization in Civilization VI. It replaces the Infantry.",
+                "img": "",
+                "attributes": [
+                    "Higher Combat Strength (72 vs. 70).",
+                    "+10 Combat Strength on coastal tiles.",
+                    "+5 Combat Strength outside Australian territory.",
+                    "Requires no resources."
+                ]
+            },
+            "infrastructure": {
+                "name": "Outback Station",
+                "desc": "The Outback Station is a unique tile improvement of the Australian civilization in Civilization VI. It cannot be built on Tundra or Snow tiles.",
+                "img": "images/Outback_Station.png",
+                "attributes": [
+                    "+1 Food",
+                    "+1 Production",
+                    "+0.5 Housing",
+                    "+1 Food from every adjacent Pasture",
+                    "+1 Production from every adjacent Pasture (with Steam Power)",
+                    "+1 Production from every 2 adjacent Outback Stations (with Steam Power)",
+                    "+1 Food from every 2 adjacent Outback Stations (with Rapid Deployment)"
+                ]
+            },
             "leaders": [
                 {
                     "name": "John Curtin",
-                    "expansion": "vanilla" 
+                    "abilityName": "Citadel of Civilization",
+                    "ability": "+100% Production if they have either received a declaration of war in the past 10 turns or liberated a city in the past 20 turns.",
+                    "portrait": "images/Curtin.png",
+                    "img": "images/Civ_LEADER_JOHN_CURTIN.png",
+                    "expansion": "dlc" 
                 }
             ],
             "expansion": "dlc",
@@ -37,10 +131,39 @@
         {
             "id": 3,
             "name": "Aztec",
+            "abilityName": "Legend of the Five Suns",
+            "ability": "Can spend Builder charges to complete 20% of a district's Production cost.",
+            "color": "blue",
+            "unit": {
+                "name": "Eagle Warrior",
+                "desc": "The Eagle Warrior is a unique melee unit of the Aztec civilization in Civilization VI. It replaces the Warrior and is available without any technological research.",
+                "img": "images/Eagles_Warrior.png",
+                "attributes": [
+                    "Higher Production cost (65 vs. 40).",
+                    "Higher Combat Strength (28 vs. 20).",
+                    "May capture defeated enemies, turning them into Builders for the Aztecs.",
+                    "Bonus vs. anti-cavalry units."
+                ]
+            },
+            "infrastructure": {
+                "name": "Tlachtli",
+                "desc": "The Tlachtli is a unique building of the Aztec civilization in Civilization VI. It is built in the Entertainment Complex district and replaces the Arena.",
+                "img": "images/Tlatchtli.png",
+                "attributes": [
+                    "+2 Faith",
+                    "+1 Culture (as of the March 2018 Update)",
+                    "+1 Amenity from Entertainment",
+                    "+1 Great General point per turn."
+                ]
+            },
             "leaders": [
                 {
                     "name": "Monteczuma",
-                    "expansion": "vanilla" 
+                    "abilityName": "Gifts for the Tlatoani",
+                    "ability": "Improved Luxury resources provide an Amenities6 Amenity to 2 extra cities. Military units receive +1 Combat Strength for each different improved Luxury resource in Aztec territory.",
+                    "portrait": "images/Montezuma.png",
+                    "img": "images/Civ_LEADER_MONTEZUMA.png",
+                    "expansion": "dlc" 
                 }
             ],
             "expansion": "dlc",
@@ -49,9 +172,36 @@
         {
             "id": 4,
             "name": "Brazilian",
+            "abilityName": "Amazon",
+            "ability": "Rainforest tiles provide a +1 adjacency bonus for Campuses, Commercial Hubs, Holy Sites, and Theater Squares. Tiles in Brazilian territory gain +1 Appeal from adjacent Rainforests, instead of -1.",
+            "color": "blue",
+            "unit": {
+                "name": "Minas Geraes",
+                "desc": "The Minas Geraes is a unique naval ranged unit of the Brazilian civilization in Civilization VI. It replaces the Battleship and is unlocked with Nationalism.",
+                "img": "images/Minas_Geraes.png",
+                "attributes": [
+                    "Higher Combat Strength (70 vs. 60), Ranged Strength (80 vs. 70), and Anti-Air Strength (75 vs. 70).",
+                    "Does not require strategic resources."
+                ]
+            },
+            "infrastructure": {
+                "name": "Street Carnival",
+                "desc": "The Street Carnival is a unique district of the Brazilian civilization in Civilization VI. It replaces the Entertainment Complex.",
+                "img": "images/Carnival.png",
+                "attributes": [
+                    "Lower Production cost (27 vs. 54).",
+                    "+2 Amenities from entertainment to parent city.",
+                    "Amenities from the Zoo and Stadium buildings extend to cities whose City Centers are up to 6 tiles away from the district.",
+                    "Cannot be built if Copacabana has already been built in this city."
+                ]
+            },
             "leaders": [
                 {
                     "name": "Pedro II",
+                    "abilityName": "Magnanimous",
+                    "ability": "Recruiting or patronizing a GreatPerson6 Great Person refunds 20% of their point cost.",
+                    "portrait": "images/Pedro.png",
+                    "img": "images/Civ_LEADER_PEDRO.png",
                     "expansion": "vanilla" 
                 }
             ],
@@ -60,9 +210,36 @@
         {
             "id": 5,
             "name": "Chinese",
+            "abilityName": "Dynastic Cycle",
+            "ability": "Eurekas and Inspirations provide an extra 10% of the cost for researching civics and technologies.",
+            "color": "blue",
+            "unit": {
+                "name": "Crouching Tiger",
+                "desc": "The Crouching Tiger is a unique ranged unit of the Chinese civilization in Civilization VI.",
+                "img": "images/Crouching_Tiger.png",
+                "attributes": [
+                    "High Ranged Strength (50).",
+                    "Short Range (1)."
+                ]
+            },
+            "infrastructure": {
+                "name": "Great Wall",
+                "desc": "The Great Wall is a unique tile improvement of the Chinese civilization in Civilization VI. It can only be built in a line on the current border of your territory and cannot be built on top of resources.",
+                "img": "images/Great_Wall.png",
+                "attributes": [
+                    "Occupying unit receives +4 Defense Strength and automatically gains 2 turns of fortification.",
+                    "+1 Gold for each adjacent Great Wall (with Masonry)",
+                    "+1 Culture for each adjacent Great Wall (with Castles)",
+                    "Gains bonus Tourism6 Tourism (with Flight) if providing Culture and when worked by a city."
+                ]
+            },
             "leaders": [
                 {
                     "name": "Qin Shi Huang",
+                    "abilityName": "The First Emperor",
+                    "ability": "Builders receive an additional charge. Can spend Builder charges to complete 15% of the Production cost for Ancient and Classical wonders.",
+                    "portrait": "images/Qin.png",
+                    "img": "images/Civ_LEADER_QIN.png",
                     "expansion": "vanilla" 
                 }
             ],
@@ -71,9 +248,40 @@
         {
             "id": 6,
             "name": "Cree",
+            "abilityName": "Nîhithaw",
+            "ability": "Gains +1 Trade Route capacity and a free Trader upon researching Pottery. Unclaimed tiles within three tiles of a Cree city come under Cree control when a Trader first moves into them.",
+            "color": "blue",
+            "unit": {
+                "name": "Okihtcitaw",
+                "desc": "The Okihtcitaw is a unique recon unit of the Cree civilization in Civilization VI: Rise and Fall. It replaces the Scout.",
+                "img": "",
+                "attributes": [
+                    "Higher Production cost (40 vs. 30).",
+                    "Higher Combat Strength (20 vs. 10).",
+                    "Starts with one free promotion."
+                ]
+            },
+            "infrastructure": {
+                "name": "Mekewap",
+                "desc": "The Mekewap is a unique tile improvement of the Cree civilization in Civilization VI: Rise and Fall. It must be built adjacent to a Bonus or Luxury Resource and cannot be adjacent to another Mekewap.",
+                "img": "",
+                "attributes": [
+                    "+1 Production",
+                    "+1 Housing",
+                    "+1 Gold if adjacent to a Luxury Resource",
+                    "+1 Food for every two adjacent Bonus Resources",
+                    "+1 additional Food for every adjacent Bonus Resource (with Conservation)",
+                    "+1 additional Gold for every two adjacent Luxury Resources (with Cartography)",
+                    "+1 additional Production and Housing6 Housing (with Civil Service)"
+                ]
+            },
             "leaders": [
                 {
                     "name": "Poundmaker",
+                    "abilityName": "Favorable Terms",
+                    "ability": "All Alliance types provide Shared Visibility. Trade Routes grant +1 Food in the sending city and +1 Gold in the receiving city per Camp or Pasture in the receiving city.",
+                    "portrait": "images/Poundmaker.png",
+                    "img": "images/Civ_LEADER_POUNDMAKER.png",
                     "expansion": "vanilla" 
                 }
             ],
@@ -82,9 +290,40 @@
         {
             "id": 7,
             "name": "Dutch",
+            "abilityName": "Grote Rivieren",
+            "ability": "Rivers provide a +2 adjacency bonus for Campuses, Theater Squares, and Industrial Zones. Building a Harbor triggers a Culture Bomb, claiming surrounding tiles.",
+            "color": "blue",
+            "unit": {
+                "name": "De Zeven Provinciën",
+                "desc": "The De Zeven Provinciën is a unique naval ranged unit of the Dutch civilization in Civilization VI: Rise and Fall. It replaces the Frigate.",
+                "img": "",
+                "attributes": [
+                    "Higher Combat Strength (50 vs. 45) and Ranged Strength (60 vs. 55).",
+                    "Receives a +7 bonus when attacking defensible districts."
+                ]
+            },
+            "infrastructure": {
+                "name": "Polder",
+                "desc": "The Polder is a unique tile improvement of the Dutch civilization in Civilization VI: Rise and Fall. It must be built on Coast or Lake tiles with at least three adjacent land tiles.",
+                "img": "",
+                "attributes": [
+                    "+1 Food",
+                    "+1 Food for every adjacent Polder",
+                    "+1 Production",
+                    "+0.5 Housing",
+                    "+4 Gold (with Civil Engineering)",
+                    "+2 Food for every adjacent Polder (with Replaceable Parts, replaces earlier +1 bonus)",
+                    "+1 Production for every adjacent Polder (with Replaceable Parts)",
+                    "Increases Movement cost of tile to 3."
+                ]
+            },
             "leaders": [
                 {
                     "name": "Wilhelmina",
+                    "abilityName": "Radio Oranje",
+                    "ability": "Your Trade Routes to your own cities provide +1 Loyalty per turn for the starting city. Trade Routes to or from foreign cities provide +1 Culture to you.",
+                    "portrait": "images/Wilhelmina.png",
+                    "img": "images/Civ_LEADER_WILHELMINA.png",
                     "expansion": "raf" 
                 }
             ],
@@ -93,9 +332,38 @@
         {
             "id": 8,
             "name": "Egyptian",
+            "abilityName": "Iteru",
+            "ability": "+15% Production towards districts and wonders built next to a River. Floodplains do not block placement of districts and wonders.",
+            "color": "blue",
+            "unit": {
+                "name": "Maryannu Chariot Archer",
+                "desc": "The Maryannu Chariot Archer is a unique ranged unit of the Egyptian civilization in Civilization VI. It replaces the Heavy Chariot.",
+                "img": "images/Chariot_Archer.png",
+                "attributes": [
+                    "Early ranged unit. Has Range of 2.",
+                    "High Ranged Strength (35).",
+                    "Gains +2 movement points if it starts on flat terrain.",
+                    "Does not require Horses."
+                ]
+            },
+            "infrastructure": {
+                "name": "Sphinx",
+                "desc": "The Sphinx is a unique tile improvement of the Egyptian civilization in Civilization VI. It can be built on any land terrain (including Hills and Floodplains) and cannot be adjacent to another Sphinx.",
+                "img": "images/Sphinx.png",
+                "attributes": [
+                    "+1 Culture",
+                    "+1 Appeal",
+                    "+1 Faith",
+                    "+2 additional Faith if placed next to a Wonder"
+                ]
+            },
             "leaders": [
                 {
                     "name": "Cleopatra",
+                    "abilityName": "Mediterranean's Bride",
+                    "ability": "Your Trade Routes to other civilizations provide +4 Gold for Egypt. Other civilizations' Trade Routes to Egypt provide +2 Food for them and +2 Gold for Egypt. R&amp;F-Only Your Trade Routes to other civilizations provide +4 Gold for Egypt. Other civilizations' Trade Routes to Egypt provide +2 Food for them and +2 Gold for Egypt. Earn twice as many Alliance Points from trading with allies.",
+                    "portrait": "images/Cleopatra.png",
+                    "img": "images/Civ_LEADER_CLEOPATRA.png",
                     "expansion": "vanilla" 
                 }
             ],
@@ -104,9 +372,47 @@
         {
             "id": 9,
             "name": "English",
+            "abilityName": "British Museum",
+            "ability": "Each Archaeological Museum can hold six Artifacts instead of three and can support two Archaeologists at once. Archaeological Museums are automatically themed when they have six Artifacts.",
+            "color": "blue",
+            "unit": {
+                "name": "Sea Dog",
+                "desc": "The Sea Dog is a unique naval raider unit of the English civilization in Civilization VI. It replaces the Privateer.",
+                "img": "images/Sea_Dog.png",
+                "attributes": [
+                    "Can capture adjacent enemy naval units. (Doesn't work for Barbarian or city-state ships.)",
+                    "Cannot be seen except by units adjacent to it.",
+                    "Can perform Coastal Raids."
+                ]
+            },
+            "infrastructure": {
+                "name": "Royal Navy Dockyard",
+                "desc": "The Royal Navy Dockyard is a unique district of the English civilization in Civilization VI. It replaces the Harbor and must be built on a Coastal tile next to land.",
+                "img": "",
+                "attributes": [
+                    "Lower Production cost (27 vs. 54)",
+                    "+1 Movement for all units built in Dockyard.",
+                    "+2 Gold when built on a foreign continent.",
+                    "Receives Standard Bonus (+1 Gold) per each adjacent Sea resource; receives Minor Bonus (+0.5 Gold) per each adjacent District.",
+                    "+1 Great Admiral point per turn.",
+                    "+1 Trade Route capacity if this city doesn't have a Commercial Hub. (Requires a Lighthouse in Rise and Fall.)",
+                    "Allows its parent city to build ships, even if the City Center is inland.",
+                    "Newly built ships will spawn at the Royal Navy Dockyard tile.",
+                    "Removes movement penalties for units Embarking to and from its tile.",
+                    "Allows its parent city to build Ships requiring strategic Resources with only 1 count of the relevant resource.",
+                    "When the Seaport is built, the parent city may construct Fleets and Armadas.",
+                    "Buildings grant an experience bonus to ships built in this city.",
+                    "Specialists add +2 Gold and +1 Science each.",
+                    "R&amp;F-Only +4 Loyalty when built on a foreign continent."
+                ]
+            },
             "leaders": [
                 {
                     "name": "Victoria",
+                    "abilityName": "Pax Britannica",
+                    "ability": "All found or conquered cities on a continent other than your home continent receive a free melee unit. Gain the Redcoat unique unit when the Military Science technology is researched.",
+                    "portrait": "images/Victoria.png",
+                    "img": "images/Civ_LEADER_VICTORIA.png",
                     "expansion": "vanilla" 
                 }
             ],
@@ -115,9 +421,37 @@
         {
             "id": 10,
             "name": "French",
+            "abilityName": "Grand Tour",
+            "ability": "+20% Production towards Medieval, Renaissance, and Industrial era Wonders. Tourism from Wonders of any era is doubled.",
+            "color": "blue",
+            "unit": {
+                "name": "Garde Imperiale",
+                "desc": "The Garde Imperiale is a unique melee unit of the French civilization in Civilization VI.",
+                "img": "images/Garde_Imperiale.png",
+                "attributes": [
+                    "Receives a bonus for fighting on the starting Capital6 Capital's home continent.",
+                    "Earns Great General points from kills.",
+                    "Does not require strategic resources."
+                ]
+            },
+            "infrastructure": {
+                "name": "Château",
+                "desc": "The Château is a unique tile improvement of the French civilization in Civilization VI. It must be built adjacent to a River.",
+                "img": "images/Chateau.png",
+                "attributes": [
+                    "+2 Culture",
+                    "+1 Appeal",
+                    "+2 Culture if adjacent to a Wonder",
+                    "+1 Gold if adjacent to a luxury resource"
+                ]
+            },
             "leaders": [
                 {
                     "name": "Catherine de Medici",
+                    "abilityName": "Catherine's Flying Squadron",
+                    "ability": "Has 1 level of Diplomatic Visibility greater than normal with every civilization that she's met. Receives a free Spy (and extra spy capacity) with the Castles technology. All spies start as Agents with a free promotion.",
+                    "portrait": "images/Catherine.png",
+                    "img": "images/Civ_LEADER_CATHERINE_DE_MEDICI.png",
                     "expansion": "vanilla" 
                 }
             ],
@@ -126,9 +460,38 @@
         {
             "id": 11,
             "name": "Georgian",
+            "abilityName": "Strength in Unity",
+            "ability": "When making a Dedication at the beginning of a Golden Age, receive its Normal Age bonus towards improving Era Score, in addition to its Golden Age bonus.",
+            "color": "blue",
+            "unit": {
+                "name": "Khevsur",
+                "desc": "The Khevsur is a unique melee unit of the Georgian civilization in Civilization VI: Rise and Fall.",
+                "img": "",
+                "attributes": [
+                    "+7 Combat Strength and no Movement penalties in Hills."
+                ]
+            },
+            "infrastructure": {
+                "name": "Tsikhe",
+                "desc": "The Tsikhe is a unique building of the Georgian civilization in Civilization VI: Rise and Fall. It is built in the City Center and replaces the Renaissance Walls.",
+                "img": "images/Tsikhe.png",
+                "attributes": [
+                    "Lower Production cost (265 vs. 305).",
+                    "+3 Faith.",
+                    "+50 Outer Defense Strength.",
+                    "+3 Housing under the Monarchy Government.",
+                    "Becomes obsolete with Steel, which automatically builds defenses in every city.",
+                    "Cannot be purchased with Gold.",
+                    "+3 Tourism (with Conservation)"
+                ]
+            },
             "leaders": [
                 {
                     "name": "Tamar",
+                    "abilityName": "Glory of the World, Kingdom and Faith",
+                    "ability": "+100% Faith for 10 turns after declaring a Protectorate War. Each Envoy you send to a city-state of your majority Religion counts as two Envoys. (Must have a majority Religion.)",
+                    "portrait": "images/Tamar.png",
+                    "img": "images/Civ_LEADER_TAMAR.png",
                     "expansion": "raf" 
                 }
             ],
@@ -137,9 +500,39 @@
         {
             "id": 12,
             "name": "German",
+            "abilityName": "Free Imperial Cities",
+            "ability": "Can build one more district than the population limit would normally allow.",
+            "color": "blue",
+            "unit": {
+                "name": "U-Boat",
+                "desc": "The U-Boat is a unique naval raider unit of the German civilization in Civilization VI. It replaces the Submarine.",
+                "img": "images/U-Boat.png",
+                "attributes": [
+                    "Lower Production cost (430 vs. 480).",
+                    "Gains +1 Sight and +10 Combat Strength when fighting on Ocean tiles.",
+                    "Able to reveal other submarines."
+                ]
+            },
+            "infrastructure": {
+                "name": "Hansa",
+                "desc": "The Hansa is a unique district of the German civilization in Civilization VI. It replaces the Industrial Zone.",
+                "img": "images/Hansa.png",
+                "attributes": [
+                    "Lower Production cost (27 vs. 54).",
+                    "Unlike the Industrial Zone, the Hansa gets adjacency bonuses from any and all resources (rather than Mines/Quarries).",
+                    "+2 Production if placed next to a Commercial Hub.",
+                    "It still receives a Minor bonus (+½) to Production yield for all other adjacent district tiles.",
+                    "+1 Great Engineer point per turn.",
+                    "Effect of some Buildings extends to other cities whose City Centers are within 6 tiles of the Zone."
+                ]
+            },
             "leaders": [
                 {
                     "name": "Frederik Barbarossa",
+                    "abilityName": "Holy Roman Emperor",
+                    "ability": "Additional Military policy slot. +7 Combat Strength when attacking city-states.",
+                    "portrait": "images/Barbarossa.png",
+                    "img": "images/Civ_LEADER_BARBAROSSA.png",
                     "expansion": "vanilla" 
                 }
             ],
@@ -148,13 +541,47 @@
         {
             "id": 13,
             "name": "Greek",
+            "abilityName": "Plato's Republic",
+            "ability": "Receive an extra Wildcard policy slot in any government.",
+            "color": "blue",
+            "unit": {
+                "name": "Hoplite",
+                "desc": "The Hoplite is a unique anti-cavalry unit of the Greek civilization in Civilization VI. It replaces the Spearman.",
+                "img": "images/.pngimages/Hoplite.png",
+                "attributes": [
+                    "Gains +10 Combat Strength when adjacent to at least one Hoplite unit.",
+                    "Bonus vs. cavalry units."
+                ]
+            },
+            "infrastructure": {
+                "name": "Acropolis",
+                "desc": "The Acropolis is a unique district of the Greek civilization in Civilization VI. It replaces the Theater Square and can only be built on Hills.",
+                "img": "images/.png",
+                "attributes": [
+                    "Lower Production cost (27 vs. 54)",
+                    "Receives a Standard bonus (+1) to Culture yield for each adjacent Wonder and for each adjacent district tile. Also receives a Major (+2) Bonus when adjacent to the City Center",
+                    "+1 Citizen slot",
+                    "+1 Great Writer, Great Artist and Great Musician points per turn",
+                    "Buildings have slots for Great Works and Artifacts",
+                    "Specialists add +2 Culture each",
+                    "Awards 1 Envoy when completed"
+                ]
+            },
             "leaders": [
                 {
                     "name": "Pericles",
+                    "abilityName": "Surrounded by Glory",
+                    "ability": "+5% Culture per city-state you are the Suzerain of.",
+                    "portrait": "images/Pericles.png",
+                    "img": "images/Civ_LEADER_PERICLES.png",
                     "expansion": "vanilla" 
                 },
                 {
                     "name": "Gorgo",
+                    "abilityName": "Thermopylae",
+                    "ability": "Combat victories provide Culture equal to 50% of the Combat Strength of the defeated unit.",
+                    "portrait": "images/Gorgo.png",
+                    "img": "images/Civ_LEADER_GORGO.png",
                     "expansion": "vanilla" 
                 }
             ],
@@ -163,13 +590,47 @@
         {
             "id": 14,
             "name": "Indian",
+            "abilityName": "Dharma",
+            "ability": "Receive the benefits of all Follower beliefs of Religions present in your cities, not just the one you founded.",
+            "color": "blue",
+            "unit": {
+                "name": "Varu",
+                "desc": "The Varu is a unique heavy cavalry unit of the Indian civilization in Civilization VI. It replaces the Horseman.",
+                "img": "images/Varu.png",
+                "attributes": [
+                    "Higher Combat Strength (40 vs. 35).",
+                    "Lower Movement (2 vs. 4).",
+                    "Higher Production cost (120 vs. 80).",
+                    "Reduces the Combat Strength of adjacent enemy units by 5, with the penalties being cumulative for enemies adjacent to multiple Varu.",
+                    "Vulnerable to anti-cavalry units."
+                ]
+            },
+            "infrastructure": {
+                "name": "Stepwell",
+                "desc": "The Stepwell is a unique tile improvement of the Indian civilization in Civilization VI. It cannot be built on Hills or adjacent to another Stepwell.",
+                "img": "images/Stepwell.png",
+                "attributes": [
+                    "+1 Housing",
+                    "+1 Food",
+                    "+1 additional Food if placed adjacent to a Farm",
+                    "+1 additional Faith if placed adjacent to a Holy Site"
+                ]
+            },
             "leaders": [
                 {
                     "name": "Gandhi",
+                    "abilityName": "Satyagraha",
+                    "ability": "+5 Faith for each civilization (including India) they have met that has founded a Religion and is not currently at war. Opposing civilizations receive double the war weariness for fighting against Gandhi.",
+                    "portrait": "images/Gandhi.png",
+                    "img": "images/Civ_LEADER_GANDHI.png",
                     "expansion": "vanilla" 
                 },
                 {
                     "name": "Chandragupta",
+                    "abilityName": "Dharma",
+                    "ability": "Receive the benefits of all Follower beliefs of Religions present in your cities, not just the one you founded.",
+                    "portrait": "images/Chandragupta.png",
+                    "img": "images/Civ_LEADER_CHANDRAGUPTA.png",
                     "expansion": "raf" 
                 }
             ],
@@ -178,9 +639,39 @@
         {
             "id": 15,
             "name": "Indonesian",
+            "abilityName": "Great Nusantara",
+            "ability": "Coast and Lake tiles provide a minor adjacency bonus for Holy Site, Campus, Industrial Zone, and Theater Square districts. +1 Amenity from entertainment to each Entertainment Complex adjacent to a Coast or Lake tile.",
+            "color": "blue",
+            "unit": {
+                "name": "Jong",
+                "desc": "The Jong is a unique naval ranged unit of the Indonesian civilization in Civilization VI. It replaces the Frigate and is unlocked with Mercenaries.",
+                "img": "images/.png",
+                "attributes": [
+                    "Higher Production cost (300 vs. 280).",
+                    "Higher Movement (5 vs. 4).",
+                    "When in formation, +5 Combat Strength and shares its Movement with all units in the formation."
+                ]
+            },
+            "infrastructure": {
+                "name": "Kampung",
+                "desc": "The Kampung is a unique tile improvement of the Indonesian civilization in Civilization VI. It must be built on Coast or Lake tiles adjacent to sea resources but cannot be built on reefs.",
+                "img": "images/.png",
+                "attributes": [
+                    "+1 Production",
+                    "+1 Housing",
+                    "+1 Food from every adjacent Fishing Boats",
+                    "+1 Housing (with Mass Production)",
+                    "+1 Production (with Civil Engineering)",
+                    "+1 Tourism from every bonus Food (with Flight)"
+                ]
+            },
             "leaders": [
                 {
                     "name": "Gitarja",
+                    "abilityName": "Exalted Goddess of the Three Worlds",
+                    "ability": "Naval units can be purchased with Faith. Religious units pay no movement to embark or disembark. +2 Faith to City Centers that are adjacent to Coast or Lake tiles.",
+                    "portrait": "images/Gitarja.png",
+                    "img": "images/Civ_LEADER_GITARJA.png",
                     "expansion": "dlc",
                     "dlcPack": "kai" 
                 }
@@ -191,9 +682,37 @@
         {
             "id": 16,
             "name": "Japanese",
+            "abilityName": "Meiji Restoration",
+            "ability": "All districts receive an additional standard adjacency bonus for being adjacent to another district.",
+            "color": "blue",
+            "unit": {
+                "name": "Samurai",
+                "desc": "The Samurai is a unique melee unit of the Japanese civilization in Civilization VI.",
+                "img": "images/Samurai.png",
+                "attributes": [
+                    "High Combat Strength (45).",
+                    "Does not suffer combat penalties when damaged.",
+                    "Does not require resources."
+                ]
+            },
+            "infrastructure": {
+                "name": "Electronics Factory",
+                "desc": "The Electronics Factory is a unique building of the Japanese civilization in Civilization VI. It is built in the Industrial Zone district and replaces the Factory.",
+                "img": "images/Electronics_Factory.png",
+                "attributes": [
+                    "+4 Production to all City Centers within 6 tiles of the Electronics Factory's Industrial Zone.",
+                    "+1 Citizen slot",
+                    "+1 Great Engineer point per turn",
+                    "+4 Culture (after researching Electricity)"
+                ]
+            },
             "leaders": [
                 {
                     "name": "Hojo Tokimune",
+                    "abilityName": "Divine Wind",
+                    "ability": "Land units receive +5 Combat Strength in land tiles adjacent to Coast; naval units receive +5 Combat Strength in shallow water tiles. Build Encampment, Holy Site and Theater Square districts in half the time.",
+                    "portrait": "images/Hojo.png",
+                    "img": "images/Civ_LEADER_HOJO.png",
                     "expansion": "vanilla" 
                 }
             ],
@@ -202,9 +721,39 @@
         {
             "id": 17,
             "name": "Khmer",
+            "abilityName": "Grand Barays",
+            "ability": "+3 Faith and +1 Amenity from entertainment to each city with an Aqueduct. Farms provide +2 Food if adjacent to an Aqueduct.",
+            "color": "blue",
+            "unit": {
+                "name": "Domrey",
+                "desc": "The Domrey is a unique siege unit of the Khmer civilization in Civilization VI.",
+                "img": "images/Domrey.png",
+                "attributes": [
+                    "Deals bombard-type damage, effective against district defenses.",
+                    "Can move and attack on the same turn.",
+                    "Exerts Zone of Control."
+                ]
+            },
+            "infrastructure": {
+                "name": "Prasat",
+                "desc": "The Prasat is a unique building of the Khmer civilization in Civilization VI. It is built in the Holy Site district and replaces the Temple.",
+                "img": "images/Prasat.png",
+                "attributes": [
+                    "+4 Faith; x2 with Simultaneum Policy",
+                    "+1 Citizen slot",
+                    "+1 Great Prophet point per turn",
+                    "+2 Relic slots",
+                    "Allows purchasing of Apostles and Inquisitors in this city.",
+                    "Missionaries purchased in this city receive the Martyr promotion."
+                ]
+            },
             "leaders": [
                 {
                     "name": "Jayavarman VII",
+                    "abilityName": "Monasteries of the King",
+                    "ability": "Holy Sites provide +2 Food and +1 Housing6 Housing if placed on a river. Holy Sites trigger a culture bomb.",
+                    "portrait": "images/Jayavarman.png",
+                    "img": "images/Civ_LEADER_JAYAVARMAN.png",
                     "expansion": "dlc",
                     "dlcPack": "kai" 
                 }
@@ -215,9 +764,38 @@
         {
             "id": 18,
             "name": "Kongolese",
+            "abilityName": "Nkisi",
+            "ability": "+2 Food, +2 Production, and +4 Gold from each Relic, Artifact, and Sculpture Great Work of Art in addition to the usual Culture. Receive 50% more Great Writer, Great Artist, Great Musician, and Great Merchant points. Palace has slots for 5 Great Works.",
+            "color": "blue",
+            "unit": {
+                "name": "Ngao Mbeba",
+                "desc": "The Ngao Mbeba is a unique melee unit of the Kongolese civilization. It replaces the Swordsman.",
+                "img": "images/Ngao_Mbeba.png",
+                "attributes": [
+                    "Does not suffer movement or sight penalties in Woods or Rainforests.",
+                    "Gains a defensive bonus against ranged attacks.",
+                    "Does not require Iron to build."
+                ]
+            },
+            "infrastructure": {
+                "name": "Mbanza",
+                "desc": "The Mbanza is a unique district of the Kongolese civilization in Civilization VI. It replaces the Neighborhood and must be built on Woods or Rainforest tiles.",
+                "img": "images/Mbanza.png",
+                "attributes": [
+                    "Available earlier (with Guilds rather than Urbanization)",
+                    "+5 Housing",
+                    "+2 Food",
+                    "+4 Gold",
+                    "Yield does not change based on the tile's Appeal"
+                ]
+            },
             "leaders": [
                 {
                     "name": "Mvemba a Nzinga",
+                    "abilityName": "Religious Convert",
+                    "ability": "May not build Holy Site Districts, gain Great Prophets, or found Religions. Gains all Beliefs of any Religion that has established itself in a majority of his cities. Receives an Apostle each time he finishes a M'banza or Theater Square (of that city's majority Religion).",
+                    "portrait": "images/Mvemba.png",
+                    "img": "images/Civ_LEADER_MVEMBA.png",
                     "expansion": "vanilla" 
                 }
             ],
@@ -226,9 +804,38 @@
         {
             "id": 19,
             "name": "Korean",
+            "abilityName": "Three Kingdoms",
+            "ability": "Mines receive +1 Science if there is an adjacent Seowon district. Farms receive bonus Food if there is an adjacent Seowon district.",
+            "color": "blue",
+            "unit": {
+                "name": "Hwacha",
+                "desc": "The Hwacha is a unique ranged unit of the Korean civilization in Civilization VI: Rise and Fall. It replaces the Field Cannon and is unlocked with Gunpowder.",
+                "img": "images/Hwacha.png",
+                "attributes": [
+                    "Lower Production cost (250 vs. 330).",
+                    "Lower Combat Strength (45 vs. 50).",
+                    "Cannot move and attack in the same turn."
+                ]
+            },
+            "infrastructure": {
+                "name": "Seowon",
+                "desc": "The Seowon is a unique district of the Korean civilization in Civilization VI: Rise and Fall. It replaces the Campus and must be built on hills.",
+                "img": "images/Seowon.png",
+                "attributes": [
+                    "Lower Production cost (27 vs. 54).",
+                    "+1 Great Scientist Point per turn.",
+                    "Specialists add +2 Science each",
+                    "+4 Science",
+                    "-1 penalty to Science for each adjacent district tile."
+                ]
+            },
             "leaders": [
                 {
                     "name": "Seondeok",
+                    "abilityName": "Hwarang",
+                    "ability": "+10% Culture and +10% Science in all cities with an established Governor.",
+                    "portrait": "images/Seondeok.png",
+                    "img": "images/Civ_LEADER_SEONDEOK.png",
                     "expansion": "raf" 
                 }
             ],
@@ -237,9 +844,40 @@
         {
             "id": 20,
             "name": "Macedonian",
+            "abilityName": "Hellenistic Fusion",
+            "ability": "Receive boosts upon city conquest: a Eureka for each Encampment or Campus in the conquered city and an Inspiration6 Inspiration for each Holy Site or Theater Square.",
+            "color": "blue",
+            "unit": {
+                "name": "Hypaspist",
+                "desc": "The Hypaspist is a unique melee unit of the Macedonian civilization in Civilization VI. It replaces the Swordsman.",
+                "img": "images/Hypaspist.png",
+                "attributes": [
+                    "+5 Combat Strength when besieging a district.",
+                    "+50% support bonuses.",
+                    "Does not require strategic resources."
+                ]
+            },
+            "infrastructure": {
+                "name": "Basilikoi Paides",
+                "desc": "The Basilikoi Paides is a unique building of the Macedonian civilization in Civilization VI. It is built in the Encampment district and replaces the Barracks.",
+                "img": "images/Basilikoi_Paides.png",
+                "attributes": [
+                    "+1 Production",
+                    "+1 Housing",
+                    "+1 Citizen slot",
+                    "+1 Great General point per turn",
+                    "+25% combat experience for all melee, ranged land units, and Hetairoi trained in this city.",
+                    "Gain Science equal to 25% of the unit's cost when a non-civilian unit is created in this city.",
+                    "Cannot be built in an Encampment district that already has a Stable."
+                ]
+            },
             "leaders": [
                 {
                     "name": "Alexander",
+                    "abilityName": "To the World's End",
+                    "ability": "Cities do not incur war weariness. All military units heal completely when this player captures a city with a world wonder. (Hidden: Allows access to the Hetairoi unique unit.)",
+                    "portrait": "images/Alexander.png",
+                    "img": "images/Civ_LEADER_ALEXANDER.png",
                     "expansion": "dlc",
                     "dlcPack": "pam" 
                 }
@@ -250,9 +888,33 @@
         {
             "id": 21,
             "name": "Mapuche",
+            "abilityName": "Toqui",
+            "ability": "All units trained in cities with an established Governor gain 25% more experience in combat. +10 Combat Strength bonus against civilizations that are in a Golden Age.",
+            "color": "blue",
+            "unit": {
+                "name": "Malón Raider",
+                "desc": "The Malón Raider is a unique light cavalry unit of the Mapuche civilization in Civilization VI: Rise and Fall.",
+                "img": "images/Malon_Raider.png",
+                "attributes": [
+                    "+5 Combat Strength within 4 tiles of friendly territory.",
+                    "Uses less Movement to pillage."
+                ]
+            },
+            "infrastructure": {
+                "name": "Chemamull",
+                "desc": "The Chemamull is a unique tile improvement of the Mapuche civilization in Civilization VI: Rise and Fall. It must be built on a tile with an Appeal of Breathtaking (4 or more).",
+                "img": "images/Chemamull.png",
+                "attributes": [
+                    "Provides Culture equal to 75% of its tile's Appeal."
+                ]
+            },
             "leaders": [
                 {
                     "name": "Lautaro",
+                    "abilityName": "Swift Hawk",
+                    "ability": "If a Mapuche unit defeats an enemy unit within the borders of the enemy city, that city loses 20 Loyalty.",
+                    "portrait": "images/Lautaro.png",
+                    "img": "images/Civ_LEADER_LAUTARO.png",
                     "expansion": "raf" 
                 }
             ],
@@ -261,10 +923,40 @@
         {
             "id": 22,
             "name": "Mongolian",
+            "abilityName": "Örtöö",
+            "ability": "Starting a Trade Route immediately creates a Trading Post in the destination city. Receive an extra level of Diplomatic Visibility for possessing a Trading Post in any city of a civilization. All Mongolian units gain +3 Combat Strength for each level of Diplomatic Visibility on their opponent.",
+            "color": "blue",
+            "unit": {
+                "name": "Keshig",
+                "desc": "The Keshig is a unique ranged cavalry unit of the Mongolian civilization in Civilization VI: Rise and Fall.",
+                "img": "images/Keshig.png",
+                "attributes": [
+                    "High Movement (4).",
+                    "When in formation, shares its Civ6Movement Movement with all units in the formation."
+                ]
+            },
+            "infrastructure": {
+                "name": "Ordu",
+                "desc": "The Ordu is a unique building of the Mongolian civilization in Civilization VI: Rise and Fall. It is built in the Encampment district and replaces the Stable.",
+                "img": "images/Ordu.png",
+                "attributes": [
+                    "+1 Production",
+                    "+1 Housing",
+                    "+1 Citizen slot",
+                    "+1 Great General point per turn",
+                    "+25% combat experience for all light and heavy cavalry units trained in this city",
+                    "+1 Movement for all light and heavy cavalry units trained in this city",
+                    "Cannot be built in an Encampment district that already has a Barracks."
+                ]
+            },
             "leaders": [
                 {
                     "name": "Genghis Khan",
-                    "expansion": "" 
+                    "abilityName": "Mongol Horde",
+                    "ability": "All cavalry class units gain +3 Combat Strength and a chance to capture defeated enemy cavalry class units.",
+                    "portrait": "images/Genghis_Khan.png",
+                    "img": "images/Civ_LEADER_GENGHIS_KHAN.png",
+                    "expansion": "raf" 
                 }
             ],
             "expansion": "raf"
@@ -272,9 +964,40 @@
         {
             "id": 23,
             "name": "Norwegian",
+            "abilityName": "Knarr",
+            "ability": "Norwegian units gain the ability to enter ocean tiles after researching Shipbuilding. Naval melee units heal in neutral territory. Units ignore additional Movement costs from embarking and disembarking.",
+            "color": "blue",
+            "unit": {
+                "name": "Berserker",
+                "desc": "The Berserker is a unique melee unit of the Norwegian civilization in Civilization VI.",
+                "img": "images/Berserker.png",
+                "attributes": [
+                    "Uses one less movement to pillage tiles.",
+                    "Has 4 Movement if this unit starts in enemy territory.",
+                    "+7 Combat Strength when attacking and -7 Combat Strength when defending.",
+                    "Requires no resources."
+                ]
+            },
+            "infrastructure": {
+                "name": "Stave Church",
+                "desc": "The Stave Church is a unique building of the Norwegian civilization in Civilization VI. It is built in the Holy Site district and replaces the Temple.",
+                "img": "images/Stave_Church.png",
+                "attributes": [
+                    "Holy Site gets an additional Standard Adjacency bonus (+1) from Woods.",
+                    "+4 Faith; x2 with Simultaneum Policy",
+                    "+1 Citizen slot",
+                    "+1 Great Prophet point per turn",
+                    "+1 Relic slot",
+                    "+1 Production for every coastal resource worked by the city"
+                ]
+            },
             "leaders": [
                 {
                     "name": "Harald Hardrada",
+                    "abilityName": "Thunderbolt of the North",
+                    "ability": "Allows coastal raiding for all naval melee units and +50% Production toward all naval melee units. (Hidden: Allows access to the Viking Longship unique unit.)",
+                    "portrait": "images/Harald.png",
+                    "img": "images/Civ_LEADER_HARDRADA.png",
                     "expansion": "vanilla" 
                 }
             ],
@@ -283,9 +1006,42 @@
         {
             "id": 24,
             "name": "Nubian",
+            "abilityName": "Ta-Seti",
+            "ability": "+50% Production toward Ranged units. All Ranged units gain +50% combat experience. Mines over strategic resources provide +1 Production. Mines over bonus and luxury resources provide +2 Gold.",
+            "color": "blue",
+            "unit": {
+                "name": "Pítati Archer",
+                "desc": "The Pítati Archer is a unique ranged unit of the Nubian civilization in Civilization VI. It replaces the Archer.",
+                "img": "images/Pítati_Archer.png",
+                "attributes": [
+                    "Higher Production cost (70 vs. 60).",
+                    "Higher Combat Strength (17 vs. 15).",
+                    "Higher Ranged Strength (30 vs. 25).",
+                    "Higher Movement (3 vs. 2)."
+                ]
+            },
+            "infrastructure": {
+                "name": "Nubian Pyramid",
+                "desc": "The Nubian Pyramid is a unique tile improvement of the Nubian civilization in Civilization VI. It must be built on Desert (including Hills) or Floodplains tiles.",
+                "img": "images/Nubian_Pyramid.png",
+                "attributes": [
+                    "+1 Faith",
+                    "+1 Food if adjacent to a City Center",
+                    "+1 Science if adjacent to a Campus",
+                    "+1 Gold if adjacent to a Commercial Hub",
+                    "+1 Gold if adjacent to a Harbor",
+                    "+1 Faith if adjacent to a Holy Site",
+                    "+1 Production if adjacent to an Industrial Zone",
+                    "+1 Culture if adjacent to a Theater Square"
+                ]
+            },
             "leaders": [
                 {
                     "name": "Amanitore",
+                    "abilityName": "Kandake of Meroë",
+                    "ability": "+20% Production on all districts rising to +40% if the city contains a Nubian Pyramid adjacent to the City Center.",
+                    "portrait": "images/Amanitore.png",
+                    "img": "images/Civ_LEADER_AMANITORE.png",
                     "expansion": "dlc",
                     "dlcPack": "nub" 
                 }
@@ -296,9 +1052,39 @@
         {
             "id": 25,
             "name": "Persian",
+            "abilityName": "Satrapies",
+            "ability": "+1 Trade Route capacity with Political Philosophy civic. Receive +2 Gold and +1 Culture for routes between your own cities. Roads built in your territory are one level more advanced than usual.",
+            "color": "blue",
+            "unit": {
+                "name": "Immortal",
+                "desc": "The Immortal is a unique melee unit of the Persian civilization in Civilization VI. It replaces the Swordsman.",
+                "img": "images/Immortal.png",
+                "attributes": [
+                    "Lower Combat Strength (30 vs. 36).",
+                    "Has a ranged attack (25 Ranged Strength, 2 Range).",
+                    "Does not require strategic resources."
+                ]
+            },
+            "infrastructure": {
+                "name": "Pairidaeza",
+                "desc": "The Pairidaeza is a unique tile improvement of the Persian civilization in Civilization VI. It cannot be built on Tundra or Snow tiles, or adjacent to another Pairidaeza.",
+                "img": "images/Pairidaeza.png",
+                "attributes": [
+                    "+1 Culture",
+                    "+2 Gold",
+                    "+2 Appeal",
+                    "+1 Culture for every adjacent Holy Site and Theater Square",
+                    "+1 Gold for every adjacent Commercial Hub and City Center",
+                    "+1 Culture (with Diplomatic Service)"
+                ]
+            },
             "leaders": [
                 {
                     "name": "Cyrus",
+                    "abilityName": "Fall of Babylon",
+                    "ability": "+2 Movement for the first 10 turns after declaring a Surprise War. No penalties to yields in occupied cities. Declaring a Surprise War only counts as a Formal War for the purpose of warmongering and war weariness.",
+                    "portrait": "images/Cyrus.png",
+                    "img": "images/Civ_LEADER_CYRUS.png",
                     "expansion": "dlc",
                     "dlcPack": "pam" 
                 }
@@ -309,9 +1095,37 @@
         {
             "id": 26,
             "name": "Polish",
+            "abilityName": "Golden Liberty",
+            "ability": "Building an Encampment district or Fort in friendly territory claims all surrounding tiles, even from foreign cities. One military policy slot is turned into a wildcard slot.",
+            "color": "blue",
+            "unit": {
+                "name": "Winged Hussar",
+                "desc": "The Winged Hussar is a unique heavy cavalry unit of the Polish civilization in Civilization VI. It is unlocked through the Mercenaries civic.",
+                "img": "images/Winged_Hussar.png",
+                "attributes": [
+                    "Pushes back enemies if it does more damage than it takes when attacking. Defenders that cannot be pushed back take additional damage.",
+                    "Ignores enemy Zone of Control."
+                ]
+            },
+            "infrastructure": {
+                "name": "Sukiennice",
+                "desc": "The Sukiennice is a unique building of the Polish civilization in Civilization VI. It is built in the Commercial Hub district and replaces the Market.",
+                "img": "images/Sukiennice.png",
+                "attributes": [
+                    "+3 Gold",
+                    "+1 Citizen slot",
+                    "+1 Great Merchant point per turn",
+                    "+4 Gold from domestic Trade Routes",
+                    "+2 Production from international Trade Routes"
+                ]
+            },
             "leaders": [
                 {
                     "name": "Jadwiga",
+                    "abilityName": "Lithuanian Union",
+                    "ability": "Claiming territory off another city via Poland's Civ Ability converts it to your religion. Relics provide +4 Gold, +2 Culture and +2 Faith. Holy Sites have increased adjacency bonuses.",
+                    "portrait": "images/Jadwiga.png",
+                    "img": "images/Civ_LEADER_JADWIGA.png",
                     "expansion": "dlc" 
                 }
             ],
@@ -321,9 +1135,39 @@
         {
             "id": 27,
             "name": "Roman",
+            "abilityName": "All Roads Lead to Rome",
+            "ability": "All cities start with a Trading Post, and new cities in Trade Route range of your Capital will automatically have a road going to them. Trade Routes going through your cities earn extra Gold.",
+            "color": "blue",
+            "unit": {
+                "name": "Legion",
+                "desc": "The Legion is a unique melee unit of the Roman civilization in Civilization VI. It replaces the Swordsman.",
+                "img": "images/Legion.png",
+                "attributes": [
+                    "Higher Production cost (110 vs. 90).",
+                    "Higher Combat Strength (40 vs. 36).",
+                    "Does not require Iron.",
+                    "Can construct a Roman Fort, available earlier than Forts built by Military Engineers, or clear terrain. A Legion has only one build charge, and loses this ability upon upgrade to Musketman."
+                ]
+            },
+            "infrastructure": {
+                "name": "Bath",
+                "desc": "The Bath is a unique district of the Roman civilization in Civilization VI. It replaces the Aqueduct district and must be built adjacent to both the City Center and a River, Lake, Oasis, or Mountain.",
+                "img": "images/Bath.png",
+                "attributes": [
+                    "Lower Production cost (18 vs. 36).",
+                    "Provides the city with a source of fresh water from an adjacent River, Lake, Oasis, or Mountain.",
+                    "Cities that do not yet have existing fresh water receive up to 6 Housing.",
+                    "Cities that already have existing fresh water will instead get +2 Housing.",
+                    "Provides an additional bonus of +2 Housing and +1 Amenities6 Amenity in either case."
+                ]
+            },
             "leaders": [
                 {
                     "name": "Trajan",
+                    "abilityName": "Trajan's Column",
+                    "ability": "All cities start with an additional City Center building. (Starts with a Monument building in the Ancient era.)",
+                    "portrait": "images/Trajan.png",
+                    "img": "images/Civ_LEADER_TRAJAN.png",
                     "expansion": "vanilla" 
                 }
             ],
@@ -332,9 +1176,44 @@
         {
             "id": 28,
             "name": "Russian",
+            "abilityName": "Mother Russia",
+            "ability": "Gain extra territory when they found their cities, and extra Faith and Production from tundra tiles.",
+            "color": "blue",
+            "unit": {
+                "name": "Cossack",
+                "desc": "The Cossack is a unique light cavalry unit of the Russian civilization in Civilization VI. It replaces the Cavalry.",
+                "img": "images/Cossack.png",
+                "attributes": [
+                    "Higher Production cost (340 vs. 330).",
+                    "Higher Combat Strength (67 vs. 62).",
+                    "+5 Combat Strength when fighting in or next to home territory.",
+                    "Can move after attacking.",
+                    "Requires no resources."
+                ]
+            },
+            "infrastructure": {
+                "name": "Lavra",
+                "desc": "The Lavra is a unique district of the Russian civilization in Civilization VI. It replaces the Holy Site.",
+                "img": "images/Lavra.png",
+                "attributes": [
+                    "Lower Production cost (27 vs. 54)",
+                    "It generates an additional +1 Great Prophet point per turn (for a total of +2 Great Prophet points per turn).",
+                    "It also provides +1 Great Writer point, +1 Great Artist point, and +1 Great Musician point per turn. These three aren't improved by the Oracle.",
+                    "It expands the city's borders whenever a GreatPerson6 Great Person is used in the city.",
+                    "Receives Major bonus (+2) to Faith yield for each adjacent Natural Wonder, a Standard bonus (+1) to Faith yield for each adjacent Mountain tile, and Minor bonus (+½) to Faith for each adjacent district tile and each adjacent unimproved Woods tile.",
+                    "A religion can be founded in a Lavra.",
+                    "Religious units can be purchased in a city with a Lavra, spawning in the Lavra or if that's unavailable in the City Center (stacking limits permitting).",
+                    "Religious units heal in a Lavra and in tiles adjacent to it.",
+                    "Specialists add +2 Faith each."
+                ]
+            },
             "leaders": [
                 {
                     "name": "Peter",
+                    "abilityName": "The Grand Embassy",
+                    "ability": "Receives Science or Culture from TradeRoute6 Trade Routes to civilizations that are more advanced than Russia (+1 per 3 technologies or civics ahead).",
+                    "portrait": "images/Peter.png",
+                    "img": "images/Civ_LEADER_PETER_GREAT.png",
                     "expansion": "vanilla" 
                 }
             ],
@@ -343,9 +1222,39 @@
         {
             "id": 29,
             "name": "Scottish",
+            "abilityName": "Scottish Enlightenment",
+            "ability": "Happy cities receive an additional +5% Science and +5% Production. Happy cities generate +1 Great Scientist point per Campus and +1 Great Engineer point per Industrial Zone. Ecstatic cities double all these amounts.",
+            "color": "blue",
+            "unit": {
+                "name": "Highlander",
+                "desc": "The Highlander is a unique recon unit of the Scottish civilization in Civilization VI: Rise and Fall. It replaces the Ranger.",
+                "img": "images/Highlander.png",
+                "attributes": [
+                    "Higher Strength (50 vs. 45) and Ranged Strength (65 vs. 60).",
+                    "+5 Combat Strength in Hills and Woods."
+                ]
+            },
+            "infrastructure": {
+                "name": "Golf Course",
+                "desc": "The Golf Course is a unique tile improvement of the Scottish civilization in Civilization VI: Rise and Fall. It cannot be placed on Desert or Desert Hills tiles, and there is a limit of one Golf Course per city.",
+                "img": "images/Golf_Course.png",
+                "attributes": [
+                    "+1 Amenity",
+                    "+2 Gold",
+                    "+1 Appeal",
+                    "+1 Culture if adjacent to a City Center",
+                    "+1 Culture if adjacent to an Entertainment Complex",
+                    "+1 Housing (with Globalization)",
+                    "Tiles with Golf Courses cannot be swapped."
+                ]
+            },
             "leaders": [
                 {
                     "name": "Robert the Bruce",
+                    "abilityName": "Bannockburn",
+                    "ability": "Can declare a War of Liberation after gaining the Defensive Tactics Civic, instead of the Diplomatic Service Civic. +100% Civ6Production Production and +2 Civ6Movement Movement for the first 10 turns after declaring a War of Liberation.",
+                    "portrait": "images/Robert.png",
+                    "img": "images/Civ_LEADER_ROBERT_THE_BRUCE.png",
                     "expansion": "raf" 
                 }
             ],
@@ -354,9 +1263,37 @@
         {
             "id": 30,
             "name": "Scythian",
+            "abilityName": "People of the Steppe",
+            "ability": "Receive a second light cavalry unit or Saka Horse Archer each time you train a light cavalry unit or Saka Horse Archer.",
+            "color": "blue",
+            "unit": {
+                "name": "Saka Horse Archer",
+                "desc": "The Saka Horse Archer is a unique ranged unit of the Scythian civilization in Civilization VI.",
+                "img": "images/Saka_Horse_Archer.png",
+                "attributes": [
+                    "Has Range of 1.",
+                    "Does not require Horses to build.",
+                    "No vulnerability to anti-cavalry units.",
+                    "Upgrades to Field Cannon instead of Crossbowman."
+                ]
+            },
+            "infrastructure": {
+                "name": "Kurgan",
+                "desc": "The Kurgan is a unique tile improvement of the Scythian civilization in Civilization VI. It cannot be built on Hills.",
+                "img": "images/Kurgan.png",
+                "attributes": [
+                    "+1 Faith",
+                    "+1 Gold",
+                    "+1 Faith for each adjacent Pasture"
+                ]
+            },
             "leaders": [
                 {
                     "name": "Tomyris",
+                    "abilityName": "Killer of Cyrus",
+                    "ability": "All units receive +5 Combat Strength when attacking wounded units. When they eliminate a unit, they heal up to 30 hit points.",
+                    "portrait": "images/Tomyris.png",
+                    "img": "images/Civ_LEADER_TOMYRIS.png",
                     "expansion": "vanilla" 
                 }
             ],
@@ -365,9 +1302,36 @@
         {
             "id": 31,
             "name": "Spanish",
+            "abilityName": "Treasure Fleet",
+            "ability": "May form Fleets and Armadas earlier than usual (Mercantilism). Trade Routes between multiple continents receive bonus Gold for routes to other civilizations, and bonus Food and Production for routes between your own cities.",
+            "color": "blue",
+            "unit": {
+                "name": "Conquistador",
+                "desc": "The Conquistador is a unique melee unit of the Spanish civilization in Civilization VI. It replaces the Musketman.",
+                "img": "images/Conquistador.png",
+                "attributes": [
+                    "+10 Combat Strength when escorting (or when in the same tile with) a religious unit.",
+                    "Converts cities to Spain's religion (if they have founded one) if it captures a city or is adjacent to the city when it is captured."
+                ]
+            },
+            "infrastructure": {
+                "name": "Mission",
+                "desc": "The Mission is a unique tile improvement of the Spanish civilization in Civilization VI.",
+                "img": "images/Mission.png",
+                "attributes": [
+                    "+2 Faith",
+                    "+2 Faith if on a different continent than your Capital6 Capital",
+                    "+2 Science if built next to a Campus district",
+                    "+2 Science (requires Cultural Heritage)"
+                ]
+            },
             "leaders": [
                 {
                     "name": "Philip II",
+                    "abilityName": "El Escorial",
+                    "ability": "Inquisitors can Remove Heresy one extra time. Combat units have a bonus of +4 Combat Strength against players following other Religions.",
+                    "portrait": "images/Philip.png",
+                    "img": "images/Civ_LEADER_PHILIP_II.png",
                     "expansion": "vanilla" 
                 }
             ],
@@ -376,9 +1340,37 @@
         {
             "id": 32,
             "name": "Sumerian",
+            "abilityName": "Epic Quest",
+            "ability": "Every time you capture a barbarian outpost, you also get a tribal village reward. Pay in half the usual cost to levy city-state units.",
+            "color": "blue",
+            "unit": {
+                "name": "War-Cart",
+                "desc": "The War-Cart is a unique heavy cavalry unit of the Sumerian civilization in Civilization VI. It is available without any technological research.",
+                "img": "images/War_Cart.png",
+                "attributes": [
+                    "Strongest of the starting units in the game.",
+                    "No combat penalties against anti-cavalry units.",
+                    "+1 Movement if starting in open terrain.",
+                    "Ignores enemy Zone of Control."
+                ]
+            },
+            "infrastructure": {
+                "name": "Ziggurat",
+                "desc": "The Ziggurat is a unique tile improvement of the Sumerian civilization in Civilization VI. It cannot be built on Hills.",
+                "img": "images/Ziggurat.png",
+                "attributes": [
+                    "+2 Science",
+                    "+1 Culture if placed adjacent to a river",
+                    "+1 Culture (with Natural History)"
+                ]
+            },
             "leaders": [
                 {
                     "name": "Gilgamesh",
+                    "abilityName": "Adventures with Enkidu",
+                    "ability": "May declare war on anyone at war with their allies without warmonger penalties. When at war with a common foe, they and their allies share pillage rewards and share combat experience gains if within 5 tiles. R&amp;F-Only May declare war on anyone at war with their allies without warmonger penalties. When at war with a common foe, they and their allies share pillage rewards and share combat experience gains if within 5 tiles. Their Alliances gain Alliance Points for being at war with a common foe.",
+                    "portrait": "images/Gilgamesh.png",
+                    "img": "images/Civ_LEADER_GILGAMESH.png",
                     "expansion": "vanilla" 
                 }
             ],
@@ -387,9 +1379,45 @@
         {
             "id": 33,
             "name": "Zulu",
+            "abilityName": "Isibongo",
+            "ability": "Cities with a garrisoned unit get +3 Loyalty per turn, or +5 if it is a Corps or Army. Conquering a city with a unit will upgrade it into a Corps or Army, if the proper Civics are unlocked.",
+            "color": "blue",
+            "unit": {
+                "name": "Impi",
+                "desc": "The Impi is a unique anti-cavalry unit of the Zulu civilization in Civilization VI: Rise and Fall. It replaces the Pikeman.",
+                "img": "images/Impi.png",
+                "attributes": [
+                    "Lower Civ6Production Production cost (125 vs. 200).",
+                    "Lower maintenance cost (1 vs. 3).",
+                    "Increased flanking bonus.",
+                    "Gains XP faster."
+                ]
+            },
+            "infrastructure": {
+                "name": "Ikanda",
+                "desc": "The Ikanda is a unique district of the Zulu civilization in Civilization VI: Rise and Fall. It replaces the Encampment.",
+                "img": "images/Ikanda.png",
+                "attributes": [
+                    "Lower Production cost (27 vs. 54).",
+                    "+1 Great General point per turn.",
+                    "+1 Housing",
+                    "Acquires Walls and Ranged Strike along with the City Center.",
+                    "Spawns all Land Military Units the city builds.",
+                    "Gives its parent city the ability to build Land Units with only 1 count of the relative Strategic resource",
+                    "Provides XP bonus to units built in it once Buildings have been added to the District",
+                    "Specialists provide +1 Production and Culture each",
+                    "25% faster training of Corps and Armies",
+                    "Allows Corps and Armies to be built outright"
+
+                ]
+            },
             "leaders": [
                 {
                     "name": "Shaka",
+                    "abilityName": "Amabutho",
+                    "ability": "May form Corps (Mercenaries Civic) and Armies (Nationalism Civic) earlier. An additional +5 Base Combat Strength to both Corps and Armies.",
+                    "portrait": "images/Shaka.png",
+                    "img": "images/Civ_LEADER_SHAKA.png",
                     "expansion": "raf" 
                 }
             ],
