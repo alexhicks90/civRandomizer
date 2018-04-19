@@ -388,7 +388,7 @@
             "infrastructure": {
                 "name": "Royal Navy Dockyard",
                 "desc": "The Royal Navy Dockyard is a unique district of the English civilization in Civilization VI. It replaces the Harbor and must be built on a Coastal tile next to land.",
-                "img": "",
+                "img": "images/Dockyard.png",
                 "attributes": [
                     "Lower Production cost (27 vs. 54)",
                     "+1 Movement for all units built in Dockyard.",
@@ -547,7 +547,7 @@
             "unit": {
                 "name": "Hoplite",
                 "desc": "The Hoplite is a unique anti-cavalry unit of the Greek civilization in Civilization VI. It replaces the Spearman.",
-                "img": "images/.pngimages/Hoplite.png",
+                "img": "images/images/Hoplite.png",
                 "attributes": [
                     "Gains +10 Combat Strength when adjacent to at least one Hoplite unit.",
                     "Bonus vs. cavalry units."
@@ -556,7 +556,7 @@
             "infrastructure": {
                 "name": "Acropolis",
                 "desc": "The Acropolis is a unique district of the Greek civilization in Civilization VI. It replaces the Theater Square and can only be built on Hills.",
-                "img": "images/.png",
+                "img": "images/Acropolis.png",
                 "attributes": [
                     "Lower Production cost (27 vs. 54)",
                     "Receives a Standard bonus (+1) to Culture yield for each adjacent Wonder and for each adjacent district tile. Also receives a Major (+2) Bonus when adjacent to the City Center",
@@ -1346,7 +1346,7 @@
             "unit": {
                 "name": "War-Cart",
                 "desc": "The War-Cart is a unique heavy cavalry unit of the Sumerian civilization in Civilization VI. It is available without any technological research.",
-                "img": "images/War_Cart.png",
+                "img": "images/War-Cart.png",
                 "attributes": [
                     "Strongest of the starting units in the game.",
                     "No combat penalties against anti-cavalry units.",
