@@ -160,7 +160,7 @@
                 {
                     "name": "Monteczuma",
                     "abilityName": "Gifts for the Tlatoani",
-                    "ability": "Improved Luxury resources provide an Amenities6 Amenity to 2 extra cities. Military units receive +1 Combat Strength for each different improved Luxury resource in Aztec territory.",
+                    "ability": "Improved Luxury resources provide an Amenity to 2 extra cities. Military units receive +1 Combat Strength for each different improved Luxury resource in Aztec territory.",
                     "portrait": "images/Montezuma.png",
                     "img": "images/Civ_LEADER_MONTEZUMA.png",
                     "expansion": "dlc" 
@@ -199,7 +199,7 @@
                 {
                     "name": "Pedro II",
                     "abilityName": "Magnanimous",
-                    "ability": "Recruiting or patronizing a GreatPerson6 Great Person refunds 20% of their point cost.",
+                    "ability": "Recruiting or patronizing a Great Person refunds 20% of their point cost.",
                     "portrait": "images/Pedro.png",
                     "img": "images/Civ_LEADER_PEDRO.png",
                     "expansion": "vanilla" 
@@ -230,7 +230,7 @@
                     "Occupying unit receives +4 Defense Strength and automatically gains 2 turns of fortification.",
                     "+1 Gold for each adjacent Great Wall (with Masonry)",
                     "+1 Culture for each adjacent Great Wall (with Castles)",
-                    "Gains bonus Tourism6 Tourism (with Flight) if providing Culture and when worked by a city."
+                    "Gains bonus Tourism (with Flight) if providing Culture and when worked by a city."
                 ]
             },
             "leaders": [
@@ -272,7 +272,7 @@
                     "+1 Food for every two adjacent Bonus Resources",
                     "+1 additional Food for every adjacent Bonus Resource (with Conservation)",
                     "+1 additional Gold for every two adjacent Luxury Resources (with Cartography)",
-                    "+1 additional Production and Housing6 Housing (with Civil Service)"
+                    "+1 additional Production and Housing (with Civil Service)"
                 ]
             },
             "leaders": [
@@ -429,7 +429,7 @@
                 "desc": "The Garde Imperiale is a unique melee unit of the French civilization in Civilization VI.",
                 "img": "images/Garde_Imperiale.png",
                 "attributes": [
-                    "Receives a bonus for fighting on the starting Capital6 Capital's home continent.",
+                    "Receives a bonus for fighting on the starting Capital's home continent.",
                     "Earns Great General points from kills.",
                     "Does not require strategic resources."
                 ]
@@ -751,7 +751,7 @@
                 {
                     "name": "Jayavarman VII",
                     "abilityName": "Monasteries of the King",
-                    "ability": "Holy Sites provide +2 Food and +1 Housing6 Housing if placed on a river. Holy Sites trigger a culture bomb.",
+                    "ability": "Holy Sites provide +2 Food and +1 Housing if placed on a river. Holy Sites trigger a culture bomb.",
                     "portrait": "images/Jayavarman.png",
                     "img": "images/Civ_LEADER_JAYAVARMAN.png",
                     "expansion": "dlc",
@@ -845,7 +845,7 @@
             "id": 20,
             "name": "Macedonian",
             "abilityName": "Hellenistic Fusion",
-            "ability": "Receive boosts upon city conquest: a Eureka for each Encampment or Campus in the conquered city and an Inspiration6 Inspiration for each Holy Site or Theater Square.",
+            "ability": "Receive boosts upon city conquest: a Eureka for each Encampment or Campus in the conquered city and an Inspiration for each Holy Site or Theater Square.",
             "color": "blue",
             "unit": {
                 "name": "Hypaspist",
@@ -932,7 +932,7 @@
                 "img": "images/Keshig.png",
                 "attributes": [
                     "High Movement (4).",
-                    "When in formation, shares its Civ6Movement Movement with all units in the formation."
+                    "When in formation, shares its Movement with all units in the formation."
                 ]
             },
             "infrastructure": {
@@ -1158,7 +1158,7 @@
                     "Provides the city with a source of fresh water from an adjacent River, Lake, Oasis, or Mountain.",
                     "Cities that do not yet have existing fresh water receive up to 6 Housing.",
                     "Cities that already have existing fresh water will instead get +2 Housing.",
-                    "Provides an additional bonus of +2 Housing and +1 Amenities6 Amenity in either case."
+                    "Provides an additional bonus of +2 Housing and +1 Amenity in either case."
                 ]
             },
             "leaders": [
@@ -1199,7 +1199,7 @@
                     "Lower Production cost (27 vs. 54)",
                     "It generates an additional +1 Great Prophet point per turn (for a total of +2 Great Prophet points per turn).",
                     "It also provides +1 Great Writer point, +1 Great Artist point, and +1 Great Musician point per turn. These three aren't improved by the Oracle.",
-                    "It expands the city's borders whenever a GreatPerson6 Great Person is used in the city.",
+                    "It expands the city's borders whenever a Great Person is used in the city.",
                     "Receives Major bonus (+2) to Faith yield for each adjacent Natural Wonder, a Standard bonus (+1) to Faith yield for each adjacent Mountain tile, and Minor bonus (+½) to Faith for each adjacent district tile and each adjacent unimproved Woods tile.",
                     "A religion can be founded in a Lavra.",
                     "Religious units can be purchased in a city with a Lavra, spawning in the Lavra or if that's unavailable in the City Center (stacking limits permitting).",
@@ -1211,7 +1211,7 @@
                 {
                     "name": "Peter",
                     "abilityName": "The Grand Embassy",
-                    "ability": "Receives Science or Culture from TradeRoute6 Trade Routes to civilizations that are more advanced than Russia (+1 per 3 technologies or civics ahead).",
+                    "ability": "Receives Science or Culture from Trade Routes to civilizations that are more advanced than Russia (+1 per 3 technologies or civics ahead).",
                     "portrait": "images/Peter.png",
                     "img": "images/Civ_LEADER_PETER_GREAT.png",
                     "expansion": "vanilla" 
@@ -1252,7 +1252,7 @@
                 {
                     "name": "Robert the Bruce",
                     "abilityName": "Bannockburn",
-                    "ability": "Can declare a War of Liberation after gaining the Defensive Tactics Civic, instead of the Diplomatic Service Civic. +100% Civ6Production Production and +2 Civ6Movement Movement for the first 10 turns after declaring a War of Liberation.",
+                    "ability": "Can declare a War of Liberation after gaining the Defensive Tactics Civic, instead of the Diplomatic Service Civic. +100% Production and +2 Movement for the first 10 turns after declaring a War of Liberation.",
                     "portrait": "images/Robert.png",
                     "img": "images/Civ_LEADER_ROBERT_THE_BRUCE.png",
                     "expansion": "raf" 
@@ -1320,7 +1320,7 @@
                 "img": "images/Mission.png",
                 "attributes": [
                     "+2 Faith",
-                    "+2 Faith if on a different continent than your Capital6 Capital",
+                    "+2 Faith if on a different continent than your Capital",
                     "+2 Science if built next to a Campus district",
                     "+2 Science (requires Cultural Heritage)"
                 ]
@@ -1387,7 +1387,7 @@
                 "desc": "The Impi is a unique anti-cavalry unit of the Zulu civilization in Civilization VI: Rise and Fall. It replaces the Pikeman.",
                 "img": "images/Impi.png",
                 "attributes": [
-                    "Lower Civ6Production Production cost (125 vs. 200).",
+                    "Lower Production cost (125 vs. 200).",
                     "Lower maintenance cost (1 vs. 3).",
                     "Increased flanking bonus.",
                     "Gains XP faster."
