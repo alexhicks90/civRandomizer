@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
-	$('#settingsGrid').hide();
+    $('#settingsGrid').hide();
+    $('#randomizeContainer').hide();
 	
 	$.getJSON("civData.json", function (data) {
 
@@ -40,6 +41,7 @@ $(document).ready(function() {
 
             $('#settingsGrid').show();
             $('#randomsGrid').hide();
+            $('#randomizeContainer').show();
 
             if (typeof $('#numPlayers').val() !== 'undefined' && $('#numPlayers').val() > 0 && $('#numPlayers').val() < 13) {
                 numPlayers = $('#numPlayers').val();
@@ -62,8 +64,9 @@ $(document).ready(function() {
                 $('#players').append('<div class="col-12 col-lg-6 mt-3"><label class="pr-2" for="player' + parseInt(i+1) + '">Player ' + parseInt(i+1) + ': </label><input id="p'+i+'" type="text"></div>');
             }
 
-            $('#players').append('<button id="randomize" type="button" class="col-12 btn btn-info my-4">Randomize</button></form>');
-
+            // $('#randomizeContainer').html('<button id="randomize" type="button" class="col-12 btn btn-info my-4">Randomize</button>');
+            
+            $('#allCivs').html('<h5 class="text-center">Civs Included:</h5>');
             for (var i = 0; i < numCivs; i++) {
                 $('#allCivs').append(
                     '<div class="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3" style="display: inline-block;">' +
@@ -76,7 +79,7 @@ $(document).ready(function() {
 
 
         $('body').on('click', '#randomize', function() {
-
+            $('#randomizeContainer').hide();
             $('#settingsGrid').hide();
             $('#randomsGrid').show();
             allRandoms = [];
@@ -129,9 +132,12 @@ $(document).ready(function() {
                         $('#p' + i + 'name').html("Player " + parseInt(i+1));
                     }
 
+
                     for(var random in allRandoms[i]) {
+
+                        var civObject = allRandoms[i][random].leaders[0];
                         $('#p' + i + 'randoms').append(
-                            '<button class="list-group-item list-group-item-action" type="button" data-toggle="modal" data-target="#modal" id="' + allRandoms[i][random].name + 'btn" value="'+allRandoms[i][random].id+'">'+
+                            '<button class="list-group-item list-group-item-action" style="color:' + civObject.fColor + '; background: ' + civObject.bColor + ';" type="button" data-toggle="modal" data-target="#modal" id="' + allRandoms[i][random].name + 'btn" value="'+allRandoms[i][random].id+'">'+
                                 allRandoms[i][random].name +
                             '</button>'
                         );
@@ -141,7 +147,7 @@ $(document).ready(function() {
                             var civObject = civs[this.value];
 
                             if (civObject.leaders.length > 1) {
-                                // things
+                                console.log("this must be greek or indian");
                             }
                             console.log(civObject);
                             
@@ -166,12 +172,16 @@ $(document).ready(function() {
                                 '</div>' +
 
                                 '<div class="row border-top">' +
-                                    '<div class="col-6 my-2 d-flex align-items-center h100">' +
-                                        '<h5>Leader: ' + civObject.leaders[0].name + '</h5>' +
+                                    '<div class="col-6 my-2 d-flex align-items-center h100 pr-2">' +
+                                        // '<h5 class="">Leader: </h5><br><br>' + 
+                                        (civObject.leaders.length > 1 ? '<h5>Leader: </h5><select class="mb-1" id="leaders"></select>': '<h5>Leader: ' + civObject.leaders[0].name + '</h5>') +
+                                        // '<select class="mb-1" id="leaders">' + 
+                                        //     civObject.leaders[0].name + 
+                                        // '</select>' +
                                         '<img class="mx-auto" src="' + civObject.leaders[0].portrait + '" width="200px" height="200px">' +
                                     '</div>' +
                                     '<div class="col-6 my-2 d-flex align-items-center h100">' +
-                                        '<div>' +     
+                                        '<div class="">' +     
                                             '<h5>Leader Bonus - ' + civObject.leaders[0].abilityName + '</h5>' +
                                             '<p>' + civObject.leaders[0].ability + '</p>' +
                                         '</div>' +
@@ -191,6 +201,14 @@ $(document).ready(function() {
                                     '</div>' +
                                 '</div>'    
                             );
+
+                            for (leader in civObject.leaders) {
+                                $('#leaders').append(
+                                    '<option value="civObject.leaders[leader].name">' +
+                                        civObject.leaders[leader].name +
+                                    '</option>'
+                                );
+                            }
 
                             var unitAttributes = civObject.unit.attributes;
                             for (attribute in unitAttributes) {
@@ -224,14 +242,7 @@ $(document).ready(function() {
     });
 });
 
-/* $('.civCardBtn').click(function () {
-    console.log("civ card button click");
-    $('#civCardBody').html(
-            '<p>' + allRandoms[i][random] + '</p>' +
-            '<p>civCard</p>'
-        
-    );
-}); */
+
 dlcCount = 8;
 
 versionSelect = function(version) {

@@ -710,7 +710,7 @@
                     "ability": "Naval units can be purchased with Faith. Religious units pay no movement to embark or disembark. +2 Faith to City Centers that are adjacent to Coast or Lake tiles.",
                     "portrait": "images/Gitarja.png",
                     "img": "images/Civ_LEADER_GITARJA.png",
-                    "bColor": "#A91501",
+                    "bColor": "#7F0E16",
                     "fColor": "#01C19D",
                     "expansion": "dlc",
                     "dlcPack": "kai" 
