@@ -754,7 +754,7 @@
                     "ability": "Land units receive +5 Combat Strength in land tiles adjacent to Coast; naval units receive +5 Combat Strength in shallow water tiles. Build Encampment, Holy Site and Theater Square districts in half the time.",
                     "portrait": "images/Hojo.png",
                     "img": "images/Civ_LEADER_HOJO.png",
-                    "bColor": "#95B0C2",
+                    "bColor": "#D5F0E4",
                     "fColor": "#81110F",
                     "expansion": "vanilla" 
                 }

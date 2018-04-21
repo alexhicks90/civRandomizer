@@ -157,24 +157,38 @@ $(document).ready(function() {
                                 "background": civObject.leaders[0].bColor
                             });
 
+                            $('.close').css("color", civObject.leaders[0].fColor);
+
                             $('#civCardBody').html(
-                                '<div class="col-12"><h5>Civ Ability - ' + civObject.abilityName + '</h5>' +
-                                '<p>' + civObject.ability + '</p></div>' +
-                                '<div class="col-6">' +
-                                    '<h5>Leader: ' + civObject.leaders[0].name + '</h5>' +
-                                    '<h5>Leader Bonus - ' + civObject.leaders[0].abilityName + '</h5>' +
-                                    '<p>' + civObject.leaders[0].ability + '</p>' +
+                                '<div class="row">' +
+                                    '<div class="col-12 my-2"><h5>Civ Ability - ' + civObject.abilityName + '</h5>' +
+                                    '<p>' + civObject.ability + '</p></div>' +
                                 '</div>' +
-                                '<div class="col-6"><img src="' + civObject.leaders[0].portrait + '" width="200px" height="200px"></div>' +
-                                '<div class="col-12 col-lg">' +
-                                    '<h6>Unique Unit: ' + civObject.unit.name + '</h6>' +
-                                    '<p>' + civObject.unit.desc + '</p>' + '<span><img src="' + civObject.unit.img + '" alt="Unit Img"></span>' +
-                                    '<ul id="unitAttr"></ul>' +
+
+                                '<div class="row border-top">' +
+                                    '<div class="col-6 my-2 d-flex align-items-center h100">' +
+                                        '<h5>Leader: ' + civObject.leaders[0].name + '</h5>' +
+                                        '<img class="mx-auto" src="' + civObject.leaders[0].portrait + '" width="200px" height="200px">' +
+                                    '</div>' +
+                                    '<div class="col-6 my-2 d-flex align-items-center h100">' +
+                                        '<div>' +     
+                                            '<h5>Leader Bonus - ' + civObject.leaders[0].abilityName + '</h5>' +
+                                            '<p>' + civObject.leaders[0].ability + '</p>' +
+                                        '</div>' +
+                                    '</div>' +
                                 '</div>' +
-                                '<div class="col-12 col-lg">' +
-                                    '<h6>Unique Infrastructure: ' + civObject.infrastructure.name + '</h6>' +
-                                    '<p>' + civObject.infrastructure.desc + '</p>' + '<span><img src="' + civObject.infrastructure.img + '" alt="Infrastructure Img"></span>' +
-                                    '<ul id="infraAttr"></ul>' +
+
+                                '<div class="row border-top">' +
+                                    '<div class="col-12 col-lg mt-5">' +
+                                        '<h5>Unique Unit: ' + civObject.unit.name + '</h5>' +
+                                        '<p>' + civObject.unit.desc + '</p>' + '<span><img src="' + civObject.unit.img + '" alt="Unit Img"></span>' +
+                                        '<ul class="mt-2" id="unitAttr"></ul>' +
+                                    '</div>' +
+                                    '<div class="col-12 col-lg mt-5">' +
+                                        '<h5>Unique Infrastructure: ' + civObject.infrastructure.name + '</h5>' +
+                                        '<p>' + civObject.infrastructure.desc + '</p>' + '<span><img src="' + civObject.infrastructure.img + '" alt="Infrastructure Img"></span>' +
+                                        '<ul class="mt-2" id="infraAttr"></ul>' +
+                                    '</div>' +
                                 '</div>'    
                             );
 
