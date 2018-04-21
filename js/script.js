@@ -131,7 +131,7 @@ $(document).ready(function() {
 
                     for(var random in allRandoms[i]) {
                         $('#p' + i + 'randoms').append(
-                            '<button class="list-group-item list-group-item-action" type="button" data-toggle="modal" data-target="#exampleModal" id="' + allRandoms[i][random].name + 'btn" value="'+allRandoms[i][random].id+'">'+
+                            '<button class="list-group-item list-group-item-action" type="button" data-toggle="modal" data-target="#modal" id="' + allRandoms[i][random].name + 'btn" value="'+allRandoms[i][random].id+'">'+
                                 allRandoms[i][random].name +
                             '</button>'
                         );
@@ -152,7 +152,12 @@ $(document).ready(function() {
                                 '<img src="' + civObject.leaders[0].img + '">'    
                             );
 
-                            $('#civCard').html(
+                            $('#civCard').css({
+                                "color": civObject.leaders[0].fColor, 
+                                "background": civObject.leaders[0].bColor
+                            });
+
+                            $('#civCardBody').html(
                                 '<div class="col-12"><h5>Civ Ability - ' + civObject.abilityName + '</h5>' +
                                 '<p>' + civObject.ability + '</p></div>' +
                                 '<div class="col-6">' +
@@ -207,7 +212,7 @@ $(document).ready(function() {
 
 /* $('.civCardBtn').click(function () {
     console.log("civ card button click");
-    $('#civCard').html(
+    $('#civCardBody').html(
             '<p>' + allRandoms[i][random] + '</p>' +
             '<p>civCard</p>'
         
