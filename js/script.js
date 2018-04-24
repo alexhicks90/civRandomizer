@@ -33,8 +33,6 @@ $(document).ready(function() {
                     break;
             }
         }
-        console.log(rafCivs);
-        console.log(dlcCivs);
 
 
         $('#numPlayersBtn').click(function() {
@@ -64,7 +62,6 @@ $(document).ready(function() {
                 $('#players').append('<div class="col-12 col-lg-6 mt-3"><label class="pr-2" for="player' + parseInt(i+1) + '">Player ' + parseInt(i+1) + ': </label><input id="p'+i+'" type="text"></div>');
             }
 
-            // $('#randomizeContainer').html('<button id="randomize" type="button" class="col-12 btn btn-info my-4">Randomize</button>');
             
             $('#allCivs').html('<h5 class="text-center">Civs Included:</h5>');
             for (var i = 0; i < numCivs; i++) {
@@ -142,11 +139,9 @@ $(document).ready(function() {
                             '</button>'
                         );
 
-                        $('body').on('click', '#' + allRandoms[i][random].name + 'btn', function() {
+                        $('body').on('click', '#' + allRandoms[i][random].name + 'btn', function() {                          
                             
                             var civObject = civs[this.value];
-
-                            console.log(civObject);
                             
                             $('#civCardTitle').html(civObject.name);
 
@@ -222,8 +217,7 @@ $(document).ready(function() {
                             $('#wikiLink').html(
                                 '<small class="pr-5">All Civ information and images pulled from the Civilization Wiki. For more in-depth information <a target="_blank" href="http://civilization.wikia.com/wiki/' + civObject.name + '_(Civ6)">click here</a> to visit their site</small>'
                             );
-
-                            
+                           
                         });
                     }   
                 }
@@ -231,28 +225,16 @@ $(document).ready(function() {
             } else {
                 alert("Number of civs requested exceeded the number of civs selected. Please change the values and try again");
             }
-        });   
-        
-
-        /* $('body').on('change', '#leaderSelect', function() {
-            console.log(this.value);
-        }) */
-        
+        });        
     });
 });
 
 
 leaderChange = function(leader) {
-    console.log("leaderchange: ");
-    console.log(leader);
 
     $('body').on('change', '#leaderSelect', function() {
-        console.log(this.value);
 
         var leaders = civs[leader].leaders;
-        console.log(leaders);
-
-        console.log(leaders[this.value].abilityName);
 
         $('#abilityName').html('Leader Bonus - ' + leaders[this.value].abilityName);
         $('#ability').html(leaders[this.value].ability);
@@ -262,8 +244,7 @@ leaderChange = function(leader) {
         $('#civCard').css({
             "color": leaders[this.value].fColor, 
             "background": leaders[this.value].bColor
-        });
-        
+        });       
     })
 }
 
@@ -357,5 +338,4 @@ versionSelect = function(version) {
             $('#dlc').prop("checked", false);           
         } 
     }
-
 }
