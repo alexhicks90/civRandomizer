@@ -118,7 +118,7 @@ $(document).ready(function() {
                 for(var i = 0; i < numPlayers; i++) {
 
                     $('#randomsGrid').append(
-                        '<div class="col-3 text-info">' +
+                        '<div class="col-12 col-sm-6 col-md-3 text-info my-2">' +
                             '<h4 id="p' + i + 'name"></h4>' +
                             '<div class="list-group" id="p' + i + 'randoms"></div>'+
                         '</div>'
@@ -146,16 +146,12 @@ $(document).ready(function() {
                             
                             var civObject = civs[this.value];
 
-                            if (civObject.leaders.length > 1) {
-                                console.log("this must be greek or indian");
-                            }
                             console.log(civObject);
                             
                             $('#civCardTitle').html(civObject.name);
-                            //$('#civCardTitle').css("color", civObject.color);
 
-                            $('#civCardImage').html(
-                                '<img src="' + civObject.leaders[0].img + '">'    
+                            $('#civCardImageContainer').html(
+                                '<img id="civCardImage" src="' + civObject.leaders[0].img + '">'    
                             );
 
                             $('#civCard').css({
@@ -173,17 +169,16 @@ $(document).ready(function() {
 
                                 '<div class="row border-top">' +
                                     '<div class="col-6 my-2 d-flex align-items-center h100 pr-2">' +
-                                        // '<h5 class="">Leader: </h5><br><br>' + 
-                                        (civObject.leaders.length > 1 ? '<h5>Leader: </h5><select class="mb-1" id="leaders"></select>': '<h5>Leader: ' + civObject.leaders[0].name + '</h5>') +
-                                        // '<select class="mb-1" id="leaders">' + 
-                                        //     civObject.leaders[0].name + 
-                                        // '</select>' +
-                                        '<img class="mx-auto" src="' + civObject.leaders[0].portrait + '" width="200px" height="200px">' +
+                                        '<div>' +                               
+                                            (civObject.leaders.length > 1 ? '<h5>Leader: </h5><select onchange="leaderChange(' + this.value + ')" class="mb-1" id="leaderSelect"></select>': '<h5>Leader: ' + civObject.leaders[0].name + '</h5>') +
+                                        '</div>' +
+                                        
+                                        '<img id="leaderPic" class="mx-auto" src="' + civObject.leaders[0].portrait + '" width="200px" height="200px">' +
                                     '</div>' +
                                     '<div class="col-6 my-2 d-flex align-items-center h100">' +
                                         '<div class="">' +     
-                                            '<h5>Leader Bonus - ' + civObject.leaders[0].abilityName + '</h5>' +
-                                            '<p>' + civObject.leaders[0].ability + '</p>' +
+                                            '<h5 id="abilityName">Leader Bonus - ' + civObject.leaders[0].abilityName + '</h5>' +
+                                            '<p id="ability">' + civObject.leaders[0].ability + '</p>' +
                                         '</div>' +
                                     '</div>' +
                                 '</div>' +
@@ -191,20 +186,20 @@ $(document).ready(function() {
                                 '<div class="row border-top">' +
                                     '<div class="col-12 col-lg mt-5">' +
                                         '<h5>Unique Unit: ' + civObject.unit.name + '</h5>' +
-                                        '<p>' + civObject.unit.desc + '</p>' + '<span><img src="' + civObject.unit.img + '" alt="Unit Img"></span>' +
+                                        '<p>' + civObject.unit.desc + '</p>' + '<span><img src="' + civObject.unit.img + '" alt="Unit Img Not Available"></span>' +
                                         '<ul class="mt-2" id="unitAttr"></ul>' +
                                     '</div>' +
                                     '<div class="col-12 col-lg mt-5">' +
                                         '<h5>Unique Infrastructure: ' + civObject.infrastructure.name + '</h5>' +
-                                        '<p>' + civObject.infrastructure.desc + '</p>' + '<span><img src="' + civObject.infrastructure.img + '" alt="Infrastructure Img"></span>' +
+                                        '<p>' + civObject.infrastructure.desc + '</p>' + '<span><img src="' + civObject.infrastructure.img + '" alt="Infrastructure Img Not Available"></span>' +
                                         '<ul class="mt-2" id="infraAttr"></ul>' +
                                     '</div>' +
                                 '</div>'    
                             );
 
                             for (leader in civObject.leaders) {
-                                $('#leaders').append(
-                                    '<option value="civObject.leaders[leader].name">' +
+                                $('#leaderSelect').append(
+                                    '<option value="' + civObject.leaders[leader].id + '">' +
                                         civObject.leaders[leader].name +
                                     '</option>'
                                 );
@@ -238,10 +233,39 @@ $(document).ready(function() {
             }
         });   
         
+
+        /* $('body').on('change', '#leaderSelect', function() {
+            console.log(this.value);
+        }) */
         
     });
 });
 
+
+leaderChange = function(leader) {
+    console.log("leaderchange: ");
+    console.log(leader);
+
+    $('body').on('change', '#leaderSelect', function() {
+        console.log(this.value);
+
+        var leaders = civs[leader].leaders;
+        console.log(leaders);
+
+        console.log(leaders[this.value].abilityName);
+
+        $('#abilityName').html('Leader Bonus - ' + leaders[this.value].abilityName);
+        $('#ability').html(leaders[this.value].ability);
+        $('#leaderPic').attr('src', leaders[this.value].portrait);
+        $('#civCardImage').attr('src', leaders[this.value].img);
+
+        $('#civCard').css({
+            "color": leaders[this.value].fColor, 
+            "background": leaders[this.value].bColor
+        });
+        
+    })
+}
 
 dlcCount = 8;
 

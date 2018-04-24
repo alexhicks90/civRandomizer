@@ -601,6 +601,7 @@
             },
             "leaders": [
                 {
+                    "id": 0,
                     "name": "Pericles",
                     "abilityName": "Surrounded by Glory",
                     "ability": "+5% Culture per city-state you are the Suzerain of.",
@@ -611,6 +612,7 @@
                     "expansion": "vanilla" 
                 },
                 {
+                    "id": 1,
                     "name": "Gorgo",
                     "abilityName": "Thermopylae",
                     "ability": "Combat victories provide Culture equal to 50% of the Combat Strength of the defeated unit.",
@@ -653,6 +655,7 @@
             },
             "leaders": [
                 {
+                    "id": 0,
                     "name": "Gandhi",
                     "abilityName": "Satyagraha",
                     "ability": "+5 Faith for each civilization (including India) they have met that has founded a Religion and is not currently at war. Opposing civilizations receive double the war weariness for fighting against Gandhi.",
@@ -663,6 +666,7 @@
                     "expansion": "vanilla" 
                 },
                 {
+                    "id": 1,
                     "name": "Chandragupta",
                     "abilityName": "Dharma",
                     "ability": "Receive the benefits of all Follower beliefs of Religions present in your cities, not just the one you founded.",
