@@ -9,8 +9,8 @@
 <body class="bg-dark">
     <div id="app" class="container text-white">
         <h2>Civilization 6 Randomizer</h2>
-        <form action="/" method="post">
-            <div class="row">
+        <div id="numberOptions">
+            <div class="row mt-3">
                 <div class="col-12 col-md-6 col-lg-5 col-xl-4">
                     <label for="numPlayers">Please enter the number of players: (1 - 12)</label>
                 </div>
@@ -18,7 +18,7 @@
                     <input id="numPlayers" name="numPlayers" type="number">
                 </div>
             </div>
-            <div class="row">
+            <div class="row mt-3">
                 <div class="col-12 col-md-6 col-lg-5 col-xl-4">
                     <label for="numRandoms">Please enter the number of randoms: (1 - 5)</label>
                 </div>
@@ -27,8 +27,8 @@
                 </div>
             </div>
 
-            <button type="button" id="numPlayersBtn" class="col-12 mt-2 btn btn-info">OK</button>
-        </form>
+            <button type="button" id="numPlayersBtn" class="col-12 my-3 btn btn-info">OK</button>
+        </div>
 
         <div id="settingsGrid" class="row mx-auto mt-4">
             

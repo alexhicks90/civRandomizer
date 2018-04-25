@@ -36,7 +36,7 @@ $(document).ready(function() {
 
 
         $('#numPlayersBtn').click(function() {
-
+            $('#numberOptions').hide();
             $('#settingsGrid').show();
             $('#randomsGrid').hide();
             $('#randomizeContainer').show();
@@ -116,7 +116,7 @@ $(document).ready(function() {
 
                     $('#randomsGrid').append(
                         '<div class="col-12 col-sm-6 col-md-3 text-info my-2">' +
-                            '<h4 id="p' + i + 'name"></h4>' +
+                            '<h4 class="ml-2" id="p' + i + 'name"></h4>' +
                             '<div class="list-group" id="p' + i + 'randoms"></div>'+
                         '</div>'
                     );
@@ -221,6 +221,9 @@ $(document).ready(function() {
                         });
                     }   
                 }
+
+                // Restart Button
+                $('#randomsGrid').append('<div class="col-12 btn btn-info my-3" onclick="location.reload()">Restart</div>')
 
             } else {
                 alert("Number of civs requested exceeded the number of civs selected. Please change the values and try again");
