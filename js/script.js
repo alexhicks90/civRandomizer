@@ -222,9 +222,6 @@ $(document).ready(function() {
                     }   
                 }
 
-                // Restart Button
-                $('#randomsGrid').append('<div class="col-12 btn btn-info my-3" onclick="location.reload()">Restart</div>')
-
             } else {
                 alert("Number of civs requested exceeded the number of civs selected. Please change the values and try again");
             }
