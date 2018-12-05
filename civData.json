@@ -271,7 +271,7 @@
             "unit": {
                 "name": "Okihtcitaw",
                 "desc": "The Okihtcitaw is a unique recon unit of the Cree civilization in Civilization VI: Rise and Fall. It replaces the Scout.",
-                "img": "",
+                "img": "images/Okihtcitaw.png",
                 "attributes": [
                     "Higher Production cost (40 vs. 30).",
                     "Higher Combat Strength (20 vs. 10).",
@@ -281,7 +281,7 @@
             "infrastructure": {
                 "name": "Mekewap",
                 "desc": "The Mekewap is a unique tile improvement of the Cree civilization in Civilization VI: Rise and Fall. It must be built adjacent to a Bonus or Luxury Resource and cannot be adjacent to another Mekewap.",
-                "img": "",
+                "img": "images/Mekewap.png",
                 "attributes": [
                     "+1 Production",
                     "+1 Housing",
@@ -316,7 +316,7 @@
             "unit": {
                 "name": "De Zeven Provinciën",
                 "desc": "The De Zeven Provinciën is a unique naval ranged unit of the Dutch civilization in Civilization VI: Rise and Fall. It replaces the Frigate.",
-                "img": "",
+                "img": "images/De_Zeven_Provincien.png",
                 "attributes": [
                     "Higher Combat Strength (50 vs. 45) and Ranged Strength (60 vs. 55).",
                     "Receives a +7 bonus when attacking defensible districts."
@@ -325,7 +325,7 @@
             "infrastructure": {
                 "name": "Polder",
                 "desc": "The Polder is a unique tile improvement of the Dutch civilization in Civilization VI: Rise and Fall. It must be built on Coast or Lake tiles with at least three adjacent land tiles.",
-                "img": "",
+                "img": "images/Polder.png",
                 "attributes": [
                     "+1 Food",
                     "+1 Food for every adjacent Polder",
@@ -687,7 +687,7 @@
             "unit": {
                 "name": "Jong",
                 "desc": "The Jong is a unique naval ranged unit of the Indonesian civilization in Civilization VI. It replaces the Frigate and is unlocked with Mercenaries.",
-                "img": "images/.png",
+                "img": "",
                 "attributes": [
                     "Higher Production cost (300 vs. 280).",
                     "Higher Movement (5 vs. 4).",
@@ -697,7 +697,7 @@
             "infrastructure": {
                 "name": "Kampung",
                 "desc": "The Kampung is a unique tile improvement of the Indonesian civilization in Civilization VI. It must be built on Coast or Lake tiles adjacent to sea resources but cannot be built on reefs.",
-                "img": "images/.png",
+                "img": "images/Kampung.png",
                 "attributes": [
                     "+1 Production",
                     "+1 Housing",
