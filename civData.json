@@ -145,7 +145,7 @@
             "unit": {
                 "name": "Eagle Warrior",
                 "desc": "The Eagle Warrior is a unique melee unit of the Aztec civilization in Civilization VI. It replaces the Warrior and is available without any technological research.",
-                "img": "images/Eagles_Warrior.png",
+                "img": "images/Eagle_Warrior.png",
                 "attributes": [
                     "Higher Production cost (65 vs. 40).",
                     "Higher Combat Strength (28 vs. 20).",
@@ -156,7 +156,7 @@
             "infrastructure": {
                 "name": "Tlachtli",
                 "desc": "The Tlachtli is a unique building of the Aztec civilization in Civilization VI. It is built in the Entertainment Complex district and replaces the Arena.",
-                "img": "images/Tlatchtli.png",
+                "img": "images/Tlachtli.png",
                 "attributes": [
                     "+2 Faith",
                     "+1 Culture (as of the March 2018 Update)",
