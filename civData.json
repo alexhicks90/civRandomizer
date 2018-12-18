@@ -1506,6 +1506,174 @@
                 }
             ],
             "expansion": "raf"
+        },
+        {
+            "id": 34,
+            "name": "Canadian",
+            "abilityName": "Four Faces of Peace",
+            "ability": "Cannot declare war on City-States or surprise wars. Surprise wars cannot be declared on Canada. For every 100 Tourism earn 1 Diplomatic Favor. Receive +100% Diplomatic Favor from successfully completing an Emergency or Scored Competition.",
+            "bColor": "blue",
+            "fColor": "white",
+            "unit": {
+                "name": "Mountie",
+                "desc": "The Mountie is a unique light cavalry unit of the Canadian civilization in Civilization VI: Gathering Storm.",
+                "img": "",
+                "attributes": [
+                    "+5 Combat Strength when within 2 tiles of a National Park. +5 additional Combat Strength if the park is Canadian.",
+                    "Has one build charge. (Lost upon upgrade.)",
+                    "Can establish a National Park. (Consumes build charge.)"
+                ]
+            },
+            "infrastructure": {
+                "name": "Ice Hockey Rink",
+                "desc": "The Ice Hockey Rink is a unique tile improvement of the Canadian civilization in Civilization VI: Gathering Storm. It must be built on Tundra, Tundra Hills, Snow, or Snow Hills tiles.",
+                "img": "",
+                "attributes": [
+                    "+1 Amenity",
+                    "+2 Appeal",
+                    "+1 Culture for each adjacent Tundra, Tundra Hills, Snow, and Snow Hills tile",
+                    "+2 Food and Production (with Professional Sports)",
+                    "+4 Culture if adjacent to a Stadium",
+                    "** Limit 1 per city **"
+                ]
+            },
+            "leaders": [
+                {
+                    "name": "Wilfrid Laurier",
+                    "abilityName": "The Last Best West",
+                    "ability": "Allows Farms to be built on Tundra terrain. After Civil Engineering is unlocked Farms can be built on Tundra Hills. Reduces the cost of purchasing Snow, Snow Hills, Tundra Hills, and Tundra tiles by 50%. +100% extraction rate of accumulated resources on Snow, Snow Hills, Tundra Hills, and Tundra tiles.",
+                    "portrait": "images/Laurier.png",
+                    "img": "",
+                    "bColor": "#256426",
+                    "fColor": "#BFD09A",
+                    "expansion": "gs" 
+                }
+            ],
+            "expansion": "gs"
+        },
+        {
+            "id": 35,
+            "name": "Māori",
+            "abilityName": "Mana",
+            "ability": "Starts the game with Sailing and Shipbuilding unlocked and the ability to enter Ocean tiles. Embarked units gain +5 Combat Strength and +2 Movement. Unimproved Woods and Rainforest provide +1 Production, increased to +2 with Conservation. Fishing Boats provide +1 Food. Building a Fishing Boat triggers a Culture Bomb, claiming surrounding tiles. Resources cannot be harvested. Great Writers cannot be earned.",
+            "bColor": "blue",
+            "fColor": "white",
+            "unit": {
+                "name": "Toa",
+                "desc": "The Toa is a unique melee unit of the Māori civilization in Civilization VI: Gathering Storm.",
+                "img": "",
+                "attributes": [
+                    "Reduces the Combat Strength of adjacent enemy units by 5.",
+                    "No strategic resource requirement.",
+                    "Has one build charge. (Lost upon upgrade.)",
+                    "Can construct a Pā. (Consumes build charge.)"
+                ]
+            },
+            "infrastructure": {
+                "name": "Marae",
+                "desc": "The Marae is a unique building of the Māori civilization in Civilization VI: Gathering Storm. It is built in the Theater Square district and replaces the Amphitheater.",
+                "img": "",
+                "attributes": [
+                    "+2 Culture and Faith to all of this city's tiles with a passable feature.",
+                    "+2 Tourism to all of this city's tiles with a feature (with Flight).",
+                    "No maintenance cost.",
+                    "No Great Work slots."
+                ]
+            },
+            "leaders": [
+                {
+                    "name": "Kupe",
+                    "abilityName": "Kupe's Voyage",
+                    "ability": "Starts the game in the Ocean. +2 Science and +2 Culture per turn before the first city is settled. Their first settled city receives a free Builder and +1 Population. The Palace grants +3 Housing and +1 Amenity.",
+                    "portrait": "images/Kupe.png",
+                    "img": "",
+                    "bColor": "#256426",
+                    "fColor": "#BFD09A",
+                    "expansion": "gs" 
+                }
+            ],
+            "expansion": "gs"
+        },
+        {
+            "id": 36,
+            "name": "Hungarian",
+            "abilityName": "Pearl of the Danube",
+            "ability": "+50% Civ6Production Production for districts and buildings built across a river from a City Center.",
+            "bColor": "blue",
+            "fColor": "white",
+            "unit": {
+                "name": "Huszár",
+                "desc": "The Huszár is a unique light cavalry unit of the Hungarian civilization in Civilization VI: Gathering Storm. It replaces the Cavalry.",
+                "img": "",
+                "attributes": [
+                    "+3 Combat Strength for every active Alliance.",
+                    "No strategic resource requirement."
+                ]
+            },
+            "infrastructure": {
+                "name": "Thermal Bath",
+                "desc": "The Thermal Bath is a unique building of the Hungarian civilization in Civilization VI: Gathering Storm. It is built in the Entertainment Complex district and replaces the Zoo.",
+                "img": "",
+                "attributes": [
+                    "+2 Amenities from entertainment. This bonus extends to each City Center within 6 tiles.",
+                    "+2 Production. This bonus extends to each City Center within 6 tiles.",
+                    "+3 Tourism and +2 additional Amenities to this city if there is at least one Geothermal Fissure within its borders."
+                ]
+            },
+            "leaders": [
+                {
+                    "name": "Matthias Corvinus",
+                    "abilityName": "Raven King",
+                    "ability": "Levied city-state units receive +2 Civ6Movement Movement and +5 Civ6StrengthIcon Combat Strength, and can be upgraded at no cost in Civ6Gold Gold or resources. Levying troops from a city-state grants 2 Envoy6 Envoys with that city-state. Gain the Black Army unique unit with Castles.",
+                    "portrait": "images/Corvinus.png",
+                    "img": "",
+                    "bColor": "#256426",
+                    "fColor": "#BFD09A",
+                    "expansion": "gs" 
+                }
+            ],
+            "expansion": "gs"
+        },
+        {
+            "id": 37,
+            "name": "Incan",
+            "abilityName": "Mit'a",
+            "ability": "Citizens may work Mountain tiles. Mountain tiles provide +2 Production. +1 Food to Mountain tiles for every adjacent Terrace Farm.",
+            "bColor": "blue",
+            "fColor": "white",
+            "unit": {
+                "name": "Warak'aq",
+                "desc": "The Warak'aq a unique recon unit of the Incan civilization in Civilization VI: Rise and Fall. It replaces the Skirmisher.",
+                "img": "",
+                "attributes": [
+                    "Higher Ranged Strength.",
+                    "May make 1 additional attack per turn."
+                ]
+            },
+            "infrastructure": {
+                "name": "Terrace Farm",
+                "desc": "The Terrace Farm is a unique tile improvement of the Incan civilization in Civilization VI: Gathering Storm. It must be built on Grassland Hills, Plains Hills, or Desert Hills tiles.",
+                "img": "",
+                "attributes": [
+                    "+1 Food",
+                    "+1 Food for each adjacent Mountain",
+                    "+2 Production for each adjacent Aqueduct",
+                    "+1 Production if adjacent to fresh water and not an Aqueduct"
+                ]
+            },
+            "leaders": [
+                {
+                    "name": "Pachacuti",
+                    "abilityName": "Qhapaq Ñan",
+                    "ability": "Domestic Trade Routes gain +1 Food for every Mountain tile in the origin city. Gain the Qhapaq Ñan improvement when Foreign Trade civic is discovered.",
+                    "portrait": "",
+                    "img": "",
+                    "bColor": "#256426",
+                    "fColor": "#BFD09A",
+                    "expansion": "gs" 
+                }
+            ],
+            "expansion": "gs"
         }
     ]
 }
