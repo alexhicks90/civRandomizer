@@ -7,12 +7,13 @@ $(document).ready(function() {
 
         numPlayers = 3;
         numRandoms = 3;
-        numCivs = 34;
+        numCivs = 38;
 
         civs = data.civs;
         vanillaCivs = [];
         rafCivs = [];
         dlcCivs = [];
+        gsCivs = [];
 
         // Populate civ version arrays
         for(var i = 0; i < numCivs; i++) {
@@ -24,6 +25,10 @@ $(document).ready(function() {
                 case 'raf':
                     rafCivs.push(civs[i]);
                     break;
+                
+                case 'gs':
+                    gsCivs.push(civs[i]);
+                    break;
 
                 case 'dlc':
                     dlcCivs.push(civs[i]);
@@ -33,6 +38,9 @@ $(document).ready(function() {
                     break;
             }
         }
+
+        console.log("DLC: " + dlcCivs);
+        console.log("GS" + gsCivs);
 
 
         $('#numPlayersBtn').click(function() {
@@ -262,6 +270,10 @@ versionSelect = function(version) {
         
         case 'raf':
             civsSelected = rafCivs;
+            break;
+
+        case 'gs':
+            civsSelected = gsCivs;
             break;
 
         case 'dlc':
