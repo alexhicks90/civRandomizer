@@ -4,7 +4,7 @@
             "id": 0,
             "name": "American",
             "abilityName": "Founding Fathers",
-            "ability": "Government legacy bonuses accumulate in half the usual number of turns. R&amp;F-Only All Diplomatic policy slots in the current government are converted to Wildcard slots.",
+            "ability": "Government legacy bonuses accumulate in half the usual number of turns. R&amp;F: All Diplomatic policy slots in the current government are converted to Wildcard slots. Gathering Storm: Gains +1 Diplomatic Favor per turn for every Wildcard slot in their government.",
             "unit": {
                 "name": "P-51 Mustang",
                 "desc": "The P-51 Mustang is a unique air fighter unit of the American civilization in Civilization VI. It replaces the Fighter.",
@@ -395,8 +395,10 @@
         {
             "id": 9,
             "name": "English",
-            "abilityName": "British Museum",
-            "ability": "Each Archaeological Museum can hold six Artifacts instead of three and can support two Archaeologists at once. Archaeological Museums are automatically themed when they have six Artifacts.",
+            "abilityName": "Workshop of the World",
+            "ability": "Iron and Coal Mines accumulate 1 more resource per turn. +100% Production towards Military Engineers. Military Engineers receive +2 charges. Buildings that provide additional yields when powered receive +2 of their respective yield.",
+            "oldAbilityName": "British Museum",
+            "oldAbility": "Each Archaeological Museum can hold six Artifacts instead of three and can support two Archaeologists at once. Archaeological Museums are automatically themed when they have six Artifacts.",
             "bColor": "blue",
             "fColor": "white",
             "unit": {
@@ -440,6 +442,16 @@
                     "bColor": "#4D0306",
                     "fColor": "#F8EFF0",
                     "expansion": "vanilla" 
+                },
+                {
+                    "name": "Eleanor of Aquitaine",
+                    "abilityName": "Court of Love",
+                    "ability": "Each Great Work in her cities causes foreign cities within 9 tiles to lose 1 Loyalty per turn. Any foreign city that leaves its civilization due to loss of Loyalty and is receiving the most Loyalty pressure from Eleanor instantly joins her empire, instead of becoming a Free City.",
+                    "portrait": "",
+                    "img": "images/Civ_LEADER_VICTORIA.png",
+                    "bColor": "#4D0306",
+                    "fColor": "#F8EFF0",
+                    "expansion": "gs" 
                 }
             ],
             "expansion": "vanilla"
@@ -480,6 +492,16 @@
                     "bColor": "#163970",
                     "fColor": "#EFDD50",
                     "expansion": "vanilla" 
+                },
+                {
+                    "name": "Eleanor of Aquitaine",
+                    "abilityName": "Court of Love",
+                    "ability": "Each Great Work in her cities causes foreign cities within 9 tiles to lose 1 Loyalty per turn. Any foreign city that leaves its civilization due to loss of Loyalty and is receiving the most Loyalty pressure from Eleanor instantly joins her empire, instead of becoming a Free City.",
+                    "portrait": "",
+                    "img": "images/Civ_LEADER_CATHERINE_DE_MEDICI.png",
+                    "bColor": "#163970",
+                    "fColor": "#EFDD50",
+                    "expansion": "gs" 
                 }
             ],
             "expansion": "vanilla"
@@ -1666,6 +1688,173 @@
                     "name": "Pachacuti",
                     "abilityName": "Qhapaq Ñan",
                     "ability": "Domestic Trade Routes gain +1 Food for every Mountain tile in the origin city. Gain the Qhapaq Ñan improvement when Foreign Trade civic is discovered.",
+                    "portrait": "",
+                    "img": "",
+                    "bColor": "#256426",
+                    "fColor": "#BFD09A",
+                    "expansion": "gs" 
+                }
+            ],
+            "expansion": "gs"
+        },
+        {
+            "id": 38,
+            "name": "Mali",
+            "abilityName": "Songs of the Jeli",
+            "ability": "City Centers gain +1 Faith and +1 Food for every adjacent Desert and Desert Hills tile. Mines receive -1 Production and +4 Gold. May purchase Commercial Hub buildings with Faith. -30% Production towards buildings and units.",
+            "bColor": "blue",
+            "fColor": "white",
+            "unit": {
+                "name": "Mandekalu Cavalry",
+                "desc": "Mali unique Medieval Era unit that replaces the Knight.",
+                "img": "",
+                "attributes": [
+                    "Trader units are immune to being plundered within 4 tiles of a Mandekalu Cavalry and on a land tile.",
+                    "Combat victories provide Gold equal to 100% that unit's base Combat Strength."
+                ]
+            },
+            "infrastructure": {
+                "name": "Suguba",
+                "desc": "A district unique to Mali specializing in finance and trade that replaces the Commercial Hub.",
+                "img": "",
+                "attributes": [
+                    "Units, Buildings, and Districts are 20% cheaper to purchase with Gold and Faith in this city.",
+                    "+2 Gold Adjacency bonus for each adjacent holy site.",
+                    "+2 Gold Adjacency bonus for being next to a river.",
+                    "+1 Gold Adjacency for every 2 adjacent district tiles."
+                ]
+            },
+            "leaders": [
+                {
+                    "name": "Mansa Musa",
+                    "abilityName": "Sahel Merchants",
+                    "ability": "International Trade Routes gain +1 Gold for every flat Desert tile in the sending city. Entering a Golden Age permanently grants +1 Trade Route capacity.",
+                    "portrait": "",
+                    "img": "",
+                    "bColor": "#256426",
+                    "fColor": "#BFD09A",
+                    "expansion": "gs" 
+                }
+            ],
+            "expansion": "gs"
+        },
+        {
+            "id": 39,
+            "name": "Phoenician",
+            "abilityName": "Mediterranean Colonies",
+            "ability": "Starts with the Eureka for Writing. Coastal cities founded by Phoenicia and in the same continent as their Capital always have full Loyalty. Settlers receive +2 Movement and sight radius while embarked, and pay no Movement costs to embark or disembark.",
+            "bColor": "blue",
+            "fColor": "white",
+            "unit": {
+                "name": "Bireme",
+                "desc": "The Bireme is a unique naval melee unit of the Phoenician civilization in Civilization VI: Gathering Storm. It replaces the Galley",
+                "img": "",
+                "attributes": [
+                    "Higher Combat Strength (30 vs. 25).",
+                    "Higher Movement (4 vs. 3).",
+                    "Prevents friendly Traders within 4 tiles from being plundered as long as they are on a water tile."
+                ]
+            },
+            "infrastructure": {
+                "name": "Cothon",
+                "desc": "The Cothon is a unique district of the Phoenician civilization in Civilization VI: Gathering Storm. It replaces the Harbor and must be built on a Coast or Lake tile next to land.",
+                "img": "/images/Cothon.png",
+                "attributes": [
+                    "Lower Production cost (27 vs. 54).",
+                    "+50% Production towards naval units and Settlers in this city.",
+                    "All wounded naval units in the city's borders heal +100 HP each turn.",
+                    "Allows for sea lane Trade Route (even if the district is still under construction)."
+                ]
+            },
+            "leaders": [
+                {
+                    "name": "Dido",
+                    "abilityName": "Founder of Carthage",
+                    "ability": "Cities with a Cothon gain the unique Move Capital project, which moves the Phoenician capital to that city. Gains +1 Trade Route capacity after building the Government Plaza or any Government Plaza building. +50% Production towards districts in the city with the Government Plaza.",
+                    "portrait": "",
+                    "img": "",
+                    "bColor": "#256426",
+                    "fColor": "#BFD09A",
+                    "expansion": "gs" 
+                }
+            ],
+            "expansion": "gs"
+        },
+        {
+            "id": 40,
+            "name": "Ottoman",
+            "abilityName": "Great Turkish Bombard",
+            "ability": "+50% Production toward Siege units. Siege units gain +5 Combat Strength when attacking defensible districts. Conquering a city doesn't cause that city to lose Population. +1 Amenity and +4 Loyalty per turn for cities not founded by the Ottomans.",
+            "bColor": "blue",
+            "fColor": "white",
+            "unit": {
+                "name": "Barbary Corsair",
+                "desc": "The Barbary Corsair is a unique naval raider unit of the Ottoman civilization in Civilization VI: Gathering Storm. It replaces the Privateer and is unlocked at Medieval Faires.",
+                "img": "",
+                "attributes": [
+                    "Invisible except to City Centers, Encampments, Destroyers, and units in an adjacent tile.",
+                    "Uses no Movement to perform coastal raids."
+                ]
+            },
+            "infrastructure": {
+                "name": "Grand Bazaar",
+                "desc": "The Grand Bazaar is a unique building of the Ottoman civilization in Civilization VI: Gathering Storm. It is built in the Commercial Hub district and replaces the Bank.",
+                "img": "",
+                "attributes": [
+                    "+5 Gold",
+                    "+1 Citizen slot",
+                    "+1 Great Merchant point per turn",
+                    "Accumulate one extra Strategic resource for every different type of Strategic resources this city has improved.",
+                    "Receive 1 Amenity for every Luxury resource this city has improved."
+                ]
+            },
+            "leaders": [
+                {
+                    "name": "Suleiman",
+                    "abilityName": "Grand Vizier",
+                    "ability": "Has access to a unique Governor, Ibrahim, the Grand Vizier. Gain the Janissary unique unit with Gunpowder.",
+                    "portrait": "",
+                    "img": "",
+                    "bColor": "#256426",
+                    "fColor": "#BFD09A",
+                    "expansion": "gs" 
+                }
+            ],
+            "expansion": "gs"
+        },
+        {
+            "id": 41,
+            "name": "Swedish",
+            "abilityName": "Nobel Prize",
+            "ability": "Gains 50 Diplomatic Favor whenever a Great Person is earned. +1 Great Engineer points from Factories and +1 Great Scientist points from Universities. Sweden's presence in the game adds three unique World Congress competitions in the Industrial Era.",
+            "bColor": "blue",
+            "fColor": "white",
+            "unit": {
+                "name": "Carolean",
+                "desc": "The Carolean is a unique anti-cavalry unit of the Swedish civilization in Civilization VI: Gathering Storm. It replaces the Pike and Shot.",
+                "img": "",
+                "attributes": [
+                    "Higher Movement (3 vs. 2).",
+                    "+3 Combat Strength per point of unused Movement.",
+                    "+10 Combat Strength vs. light, heavy, and ranged cavalry units."
+                ]
+            },
+            "infrastructure": {
+                "name": "Open-Air Museum",
+                "desc": "The Open-Air Museum is a unique tile improvement of the Swedish civilization in Civilization VI: Gathering Storm. It may be built on any passable land tile.",
+                "img": "",
+                "attributes": [
+                    "+2 Loyalty per turn in this city.",
+                    "+2 Culture and Tourism for each type of terrain (Snow, Tundra, Desert, Plains, or Grassland) in which at least one Swedish city is founded.",
+                    "Tiles with Open-Air Museums cannot be swapped.",
+                    "Limit of one per city."
+                ]
+            },
+            "leaders": [
+                {
+                    "name": "Kristina",
+                    "abilityName": "Minerva of the North",
+                    "ability": "Buildings with at least three Great Work slots and wonders with at least two Great Work slots are automatically themed when all slots are filled. Gains the Queen's Bibliotheque unique building in the Government Plaza.",
                     "portrait": "",
                     "img": "",
                     "bColor": "#256426",
