@@ -434,6 +434,7 @@
             },
             "leaders": [
                 {
+                    "id": 0,
                     "name": "Victoria",
                     "abilityName": "Pax Britannica",
                     "ability": "All found or conquered cities on a continent other than your home continent receive a free melee unit. Gain the Redcoat unique unit when the Military Science technology is researched.",
@@ -444,13 +445,14 @@
                     "expansion": "vanilla" 
                 },
                 {
+                    "id": 1,
                     "name": "Eleanor of Aquitaine",
                     "abilityName": "Court of Love",
                     "ability": "Each Great Work in her cities causes foreign cities within 9 tiles to lose 1 Loyalty per turn. Any foreign city that leaves its civilization due to loss of Loyalty and is receiving the most Loyalty pressure from Eleanor instantly joins her empire, instead of becoming a Free City.",
-                    "portrait": "",
-                    "img": "images/Civ_LEADER_VICTORIA.png",
-                    "bColor": "#4D0306",
-                    "fColor": "#F8EFF0",
+                    "portrait": "images/Eleanor.png",
+                    "img": "images/Civ_LEADER_ELEANOR_ENGLAND.png",
+                    "bColor": "#ec9594",
+                    "fColor": "#f0f2f0",
                     "expansion": "gs" 
                 }
             ],
@@ -484,6 +486,7 @@
             },
             "leaders": [
                 {
+                    "id": 0,
                     "name": "Catherine de Medici",
                     "abilityName": "Catherine's Flying Squadron",
                     "ability": "Has 1 level of Diplomatic Visibility greater than normal with every civilization that she's met. Receives a free Spy (and extra spy capacity) with the Castles technology. All spies start as Agents with a free promotion.",
@@ -494,13 +497,14 @@
                     "expansion": "vanilla" 
                 },
                 {
+                    "id": 1,
                     "name": "Eleanor of Aquitaine",
                     "abilityName": "Court of Love",
                     "ability": "Each Great Work in her cities causes foreign cities within 9 tiles to lose 1 Loyalty per turn. Any foreign city that leaves its civilization due to loss of Loyalty and is receiving the most Loyalty pressure from Eleanor instantly joins her empire, instead of becoming a Free City.",
-                    "portrait": "",
-                    "img": "images/Civ_LEADER_CATHERINE_DE_MEDICI.png",
-                    "bColor": "#163970",
-                    "fColor": "#EFDD50",
+                    "portrait": "images/Eleanor.png",
+                    "img": "images/Civ_LEADER_ELEANOR_FRANCE.png",
+                    "bColor": "#d71c1c",
+                    "fColor": "#ede14a",
                     "expansion": "gs" 
                 }
             ],
@@ -1549,7 +1553,7 @@
             "infrastructure": {
                 "name": "Ice Hockey Rink",
                 "desc": "The Ice Hockey Rink is a unique tile improvement of the Canadian civilization in Civilization VI: Gathering Storm. It must be built on Tundra, Tundra Hills, Snow, or Snow Hills tiles.",
-                "img": "",
+                "img": "images/Ice_Hockey_Rink.png",
                 "attributes": [
                     "+1 Amenity",
                     "+2 Appeal",
@@ -1565,9 +1569,9 @@
                     "abilityName": "The Last Best West",
                     "ability": "Allows Farms to be built on Tundra terrain. After Civil Engineering is unlocked Farms can be built on Tundra Hills. Reduces the cost of purchasing Snow, Snow Hills, Tundra Hills, and Tundra tiles by 50%. +100% extraction rate of accumulated resources on Snow, Snow Hills, Tundra Hills, and Tundra tiles.",
                     "portrait": "images/Laurier.png",
-                    "img": "",
-                    "bColor": "#256426",
-                    "fColor": "#BFD09A",
+                    "img": "images/Civ_LEADER_LAURIER.png",
+                    "bColor": "#d8d8d8",
+                    "fColor": "#a40001",
                     "expansion": "gs" 
                 }
             ],
@@ -1608,9 +1612,9 @@
                     "abilityName": "Kupe's Voyage",
                     "ability": "Starts the game in the Ocean. +2 Science and +2 Culture per turn before the first city is settled. Their first settled city receives a free Builder and +1 Population. The Palace grants +3 Housing and +1 Amenity.",
                     "portrait": "images/Kupe.png",
-                    "img": "",
-                    "bColor": "#256426",
-                    "fColor": "#BFD09A",
+                    "img": "images/Civ_LEADER_KUPE.png",
+                    "bColor": "#740002",
+                    "fColor": "#74eff7",
                     "expansion": "gs" 
                 }
             ],
@@ -1648,9 +1652,9 @@
                     "abilityName": "Raven King",
                     "ability": "Levied city-state units receive +2 Civ6Movement Movement and +5 Civ6StrengthIcon Combat Strength, and can be upgraded at no cost in Civ6Gold Gold or resources. Levying troops from a city-state grants 2 Envoy6 Envoys with that city-state. Gain the Black Army unique unit with Castles.",
                     "portrait": "images/Corvinus.png",
-                    "img": "",
-                    "bColor": "#256426",
-                    "fColor": "#BFD09A",
+                    "img": "images/Civ_LEADER_MATTHIAS_CORVINUS.png",
+                    "bColor": "#103412",
+                    "fColor": "#e34100",
                     "expansion": "gs" 
                 }
             ],
@@ -1675,7 +1679,7 @@
             "infrastructure": {
                 "name": "Terrace Farm",
                 "desc": "The Terrace Farm is a unique tile improvement of the Incan civilization in Civilization VI: Gathering Storm. It must be built on Grassland Hills, Plains Hills, or Desert Hills tiles.",
-                "img": "",
+                "img": "images/Terrace_Farm.png",
                 "attributes": [
                     "+1 Food",
                     "+1 Food for each adjacent Mountain",
@@ -1688,10 +1692,10 @@
                     "name": "Pachacuti",
                     "abilityName": "Qhapaq Ñan",
                     "ability": "Domestic Trade Routes gain +1 Food for every Mountain tile in the origin city. Gain the Qhapaq Ñan improvement when Foreign Trade civic is discovered.",
-                    "portrait": "",
-                    "img": "",
-                    "bColor": "#256426",
-                    "fColor": "#BFD09A",
+                    "portrait": "images/Pachacuti.png",
+                    "img": "images/Civ_LEADER_PACHACUTI.png",
+                    "bColor": "#91510e",
+                    "fColor": "#cdb318",
                     "expansion": "gs" 
                 }
             ],
@@ -1716,7 +1720,7 @@
             "infrastructure": {
                 "name": "Suguba",
                 "desc": "A district unique to Mali specializing in finance and trade that replaces the Commercial Hub.",
-                "img": "",
+                "img": "images/Suguba.png",
                 "attributes": [
                     "Units, Buildings, and Districts are 20% cheaper to purchase with Gold and Faith in this city.",
                     "+2 Gold Adjacency bonus for each adjacent holy site.",
@@ -1730,9 +1734,9 @@
                     "abilityName": "Sahel Merchants",
                     "ability": "International Trade Routes gain +1 Gold for every flat Desert tile in the sending city. Entering a Golden Age permanently grants +1 Trade Route capacity.",
                     "portrait": "",
-                    "img": "",
-                    "bColor": "#256426",
-                    "fColor": "#BFD09A",
+                    "img": "images/Civ_LEADER_MANSA_MUSA.png",
+                    "bColor": "#610102",
+                    "fColor": "#7f6e02",
                     "expansion": "gs" 
                 }
             ],
@@ -1772,9 +1776,9 @@
                     "abilityName": "Founder of Carthage",
                     "ability": "Cities with a Cothon gain the unique Move Capital project, which moves the Phoenician capital to that city. Gains +1 Trade Route capacity after building the Government Plaza or any Government Plaza building. +50% Production towards districts in the city with the Government Plaza.",
                     "portrait": "",
-                    "img": "",
-                    "bColor": "#256426",
-                    "fColor": "#BFD09A",
+                    "img": "images/Civ_LEADER_DIDO.png",
+                    "bColor": "#5903a5",
+                    "fColor": "#6ea0e9",
                     "expansion": "gs" 
                 }
             ],
@@ -1814,9 +1818,9 @@
                     "abilityName": "Grand Vizier",
                     "ability": "Has access to a unique Governor, Ibrahim, the Grand Vizier. Gain the Janissary unique unit with Gunpowder.",
                     "portrait": "",
-                    "img": "",
-                    "bColor": "#256426",
-                    "fColor": "#BFD09A",
+                    "img": "images/Civ_LEADER_SULEIMAN.png",
+                    "bColor": "#b0b2aa",
+                    "fColor": "#37731d",
                     "expansion": "gs" 
                 }
             ],
@@ -1856,9 +1860,9 @@
                     "abilityName": "Minerva of the North",
                     "ability": "Buildings with at least three Great Work slots and wonders with at least two Great Work slots are automatically themed when all slots are filled. Gains the Queen's Bibliotheque unique building in the Government Plaza.",
                     "portrait": "",
-                    "img": "",
-                    "bColor": "#256426",
-                    "fColor": "#BFD09A",
+                    "img": "images/Civ_LEADER_KRISTINA.png",
+                    "bColor": "#73a1f0",
+                    "fColor": "#fef51a",
                     "expansion": "gs" 
                 }
             ],
