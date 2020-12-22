@@ -256,7 +256,7 @@ leaderChange = function(leader) {
     })
 }
 
-dlcCount = 8;
+dlcCount = 10;
 
 versionSelect = function(version) {
 
@@ -343,7 +343,7 @@ versionSelect = function(version) {
                 dlcCount++;
             }
 
-            if(dlcCount >= 8){
+            if(dlcCount >= 10){
                 $('#dlc').prop("checked", true); 
             }
             
