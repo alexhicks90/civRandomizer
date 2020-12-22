@@ -32,6 +32,7 @@ $(document).ready(function() {
 
                 case 'dlc':
                     dlcCivs.push(civs[i]);
+                    console.log("DLC Civ: " + civs[i].name);
                     break;
                 
                 case 'default':
