@@ -7,7 +7,11 @@ $(document).ready(function() {
 
         numPlayers = 3;
         numRandoms = 3;
+<<<<<<< Updated upstream
         numCivs = 34;
+=======
+        numCivs = 44;
+>>>>>>> Stashed changes
 
         civs = data.civs;
         vanillaCivs = [];
