@@ -1506,8 +1506,6 @@
                 }
             ],
             "expansion": "raf"
-<<<<<<< Updated upstream
-=======
         },
         {
             "id": 34,
@@ -1880,7 +1878,8 @@
                     "img": "images/Civ_LEADER_LADY_SIX_SKY.png",
                     "bColor": "#4e87bb",
                     "fColor": "#00573f",
-                    "expansion": "magc" 
+                    "expansion": "dlc",
+                    "dlcPack": "magc" 
                 }
             ],
             "expansion": "dlc",
@@ -1923,12 +1922,12 @@
                     "img": "images/Civ_LEADER_SIMON_BOLIVAR.png",
                     "bColor": "#131f63",
                     "fColor": "#c8d110",
-                    "expansion": "magc" 
+                    "expansion": "dlc",
+                    "dlcPack": "magc"  
                 }
             ],
             "expansion": "dlc",
             "dlcPack": "magc"
->>>>>>> Stashed changes
         }
     ]
 }

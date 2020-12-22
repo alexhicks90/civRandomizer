@@ -318,6 +318,11 @@ versionSelect = function(version) {
             dlcToggle();
             break;
 
+        case 'magc':
+            civsSelected = [dlcCivs[8], dlcCivs[9]];
+            dlcToggle();
+            break;
+
         case 'default':
             console.log("This shouldn't happen");
             break;
