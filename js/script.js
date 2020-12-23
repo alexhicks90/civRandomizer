@@ -32,7 +32,7 @@ $(document).ready(function() {
 
                 case 'dlc':
                     dlcCivs.push(civs[i]);
-                    console.log("DLC Civ: " + civs[i].name);
+                    //console.log("DLC Civ: " + civs[i].name);
                     break;
                 
                 case 'default':
@@ -40,8 +40,8 @@ $(document).ready(function() {
             }
         }
 
-        console.log("DLC: " + dlcCivs);
-        console.log("GS" + gsCivs);
+        //console.log("DLC: " + dlcCivs);
+        //console.log("GS" + gsCivs);
 
 
         $('#numPlayersBtn').click(function() {
@@ -90,12 +90,12 @@ $(document).ready(function() {
             $('#randomsGrid').show();
             allRandoms = [];
             rolls = [];      
-            civsUsed = [];
+            civsIncluded = [];
             civCount = 0;
 
             for (var i = 0; i < numCivs; i++) {
                 if ( $('#' + civs[i].name).prop("checked")) {
-                    civsUsed.push(civs[i]);
+                    civsIncluded.push(civs[i]);
                     civCount++;
                 }
             }
@@ -112,8 +112,8 @@ $(document).ready(function() {
                         } while (rolls.includes(roll));
 
                         rolls.push(roll);
-                        var civName = civsUsed[roll];
-                        randoms.push(civName);
+                        var civ = civsIncluded[roll];
+                        randoms.push(civ);
                     }
 
                     allRandoms[i] = randoms;
