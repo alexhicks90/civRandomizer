@@ -7,11 +7,7 @@ $(document).ready(function() {
 
         numPlayers = 3;
         numRandoms = 3;
-<<<<<<< HEAD
-        numCivs = 42;
-=======
         numCivs = 48;
->>>>>>> testing
 
         civs = data.civs;
         vanillaCivs = [];
