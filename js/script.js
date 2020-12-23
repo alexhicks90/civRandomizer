@@ -7,7 +7,7 @@ $(document).ready(function() {
 
         numPlayers = 3;
         numRandoms = 3;
-        numCivs = 44;
+        numCivs = 48;
 
         civs = data.civs;
         vanillaCivs = [];
@@ -257,7 +257,7 @@ leaderChange = function(leader) {
     })
 }
 
-dlcCount = 10;
+dlcCount = 14;
 
 versionSelect = function(version) {
 
@@ -288,7 +288,7 @@ versionSelect = function(version) {
             }
 
             if ($('#' + version).prop("checked")) {
-                dlcCount = 8;
+                dlcCount = 14;
             } else {
                 dlcCount = 0;
             }
@@ -323,6 +323,21 @@ versionSelect = function(version) {
             civsSelected = [dlcCivs[8], dlcCivs[9]];
             dlcToggle();
             break;
+        
+        case 'eth':
+            civsSelected = [dlcCivs[10]];
+            dlcToggle();
+            break;
+        
+        case 'bag':
+            civsSelected = [dlcCivs[11], dlcCivs[12]];
+            dlcToggle();
+            break;
+        
+        case 'bab':
+            civsSelected = [dlcCivs[13]];
+            dlcToggle();
+                break;
 
         case 'default':
             console.log("This shouldn't happen");
@@ -344,7 +359,7 @@ versionSelect = function(version) {
                 dlcCount++;
             }
 
-            if(dlcCount >= 10){
+            if(dlcCount >= 14){
                 $('#dlc').prop("checked", true); 
             }
             

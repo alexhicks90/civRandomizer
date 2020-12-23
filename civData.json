@@ -1928,6 +1928,181 @@
             ],
             "expansion": "dlc",
             "dlcPack": "magc"
+        },
+        {
+            "id": 44,
+            "name": "Ethiopia",
+            "abilityName": "Aksumite Legacy",
+            "ability": "Improved resource tiles receive +1 Faith for each copy of that resource the city owns. International Trade Routes grant +0.5 Faith for each resource in the origin city. Can purchase Archaeologists and Archaeological Museums with Faith.",
+            "unit": {
+                "name": "Oromo Cavalry",
+                "desc": "The Oromo Cavalry is a unique light cavalry unit of the Ethiopian civilization in Civilization VI.",
+                "img": "images/Oromo_Cavalry.png",
+                "attributes": [
+                    "Ignores enemy zone of control.",
+                    "No Movement penalty in Hills.",
+                    "Better Sight (3 vs. 2).",
+                    "Higher Combat Strength (46 vs. 44)."
+                ]
+            },
+            "infrastructure": {
+                "name": "Rock-Hewn Church",
+                "desc": "The Rock-Hewn Church is a unique tile improvement of the Ethiopian civilization in Civilization VI. It must be built on Hills or Volcanic Soil tiles.",
+                "img": "images/Rock-Hewn_Church.png",
+                "attributes": [
+                    "+1 Faith",
+                    "+1 Faith for every adjacent Mountain and Hills tile.",
+                    "Provides Tourism after researching Flight.",
+                    "+1 Appeal.",
+                    "Can only be pillaged (never destroyed) by natural disasters."
+                ]
+            },
+            "leaders": [
+                {
+                    "name": "Simón Bolívar",
+                    "abilityName": "Council of Ministers",
+                    "ability": "Ethiopian cities founded on Hills receive Science and Culture equal to 15% of their Faith output. +4 Combat Strength for all units when fighting on Hills.",
+                    "portrait": "images/Menelik.png",
+                    "img": "images/Civ_LEADER_MENELIK.png",
+                    "bColor": "#e5cd2c",
+                    "fColor": "#156c30",
+                    "expansion": "dlc",
+                    "dlcPack": "eth"  
+                }
+            ],
+            "expansion": "dlc",
+            "dlcPack": "eth"
+        },
+        {
+            "id": 45,
+            "name": "Byzantine",
+            "abilityName": "Taxis",
+            "ability": "+3 Combat and Religious Strength for all units for each Holy City converted to Byzantium's Religion (including Byzantium's own Holy City). Byzantium's Religion is spread to nearby cities when a unit from an enemy civilization or city-state is defeated. +1 Great Prophet point from Holy Sites.",
+            "unit": {
+                "name": "Dromon",
+                "desc": "The Dromon is a unique naval ranged unit of the Byzantine civilization in Civilization VI. It replaces the Quadrireme.",
+                "img": "images/Dromon.png",
+                "attributes": [
+                    "+10 Ranged Strength against land and naval units.",
+                    "Has a ranged attack with Range 2."
+                ]
+            },
+            "infrastructure": {
+                "name": "Hippodrome",
+                "desc": "The Hippodrome is a unique District of the Byzantine civilization in Civilization VI. It replaces the Entertainment Complex.",
+                "img": "images/Hippodrome.png",
+                "attributes": [
+                    "Lower Production cost (27 vs. 54).",
+                    "+3 Amenities from entertainment to parent city",
+                    "Amenities from the Zoo and Stadium buildings extend to cities whose City Centers are up to 6 tiles away from the district.",
+                    "Provides a free heavy cavalry unit when first constructed and for each building constructed. These units require no resource to be created or maintain.",
+                    "Cannot be built if a Water Park has already been built in this city."
+                ]
+            },
+            "leaders": [
+                {
+                    "name": "Basil II",
+                    "abilityName": "Porphyrogénnētos",
+                    "ability": "Heavy and light cavalry units deal full damage when attacking cities following the same Religion as Byzantium. Gain the Tagma unique unit with Divine Right.",
+                    "portrait": "images/Basil_II.png",
+                    "img": "images/Civ_LEADER_BASIL.png",
+                    "bColor": "#50088c",
+                    "fColor": "#ccc611",
+                    "expansion": "dlc",
+                    "dlcPack": "bag"  
+                }
+            ],
+            "expansion": "dlc",
+            "dlcPack": "bag"
+        },
+        {
+            "id": 46,
+            "name": "Gallic",
+            "abilityName": "Hallstatt Culture",
+            "ability": "Mines gain +1 Culture, grant a +0.5 adjacency bonus for districts and trigger a Culture Bomb when built, claiming surrounding unowned tiles. Specialty districts do not receive adjacency bonuses from other districts and cannot be built next to the City Center.",
+            "unit": {
+                "name": "Gaesatae",
+                "desc": "The Gaesatae is a unique melee unit of the Gallic civilization in Civilization VI. It replaces the Warrior.",
+                "img": "images/Gaesatae.png",
+                "attributes": [
+                    "+10 Combat Strength when fighting units with a higher base Combat Strength.",
+                    "+5 Combat Strength when fighting against District defenses.",
+                    "Higher Production cost (60 vs. 40)."
+                ]
+            },
+            "infrastructure": {
+                "name": "Oppidum",
+                "desc": "The Oppidum is a unique District of the Gallic civilization in Civilization VI. It replaces the Industrial Zone and is unlocked with Iron Working.",
+                "img": "images/Oppidum.png",
+                "attributes": [
+                    "Lower Production cost (27 vs. 54).",
+                    "Acquires Outer Defenses and Ranged Strike along with the City Center once Walls have been built.",
+                    "Unlocks Apprenticeship when the first Oppidum is built.",
+                    "Major bonus (+2 Production) for each adjacent Quarry or Strategic Resource.",
+                    "+1 Great Engineer point per turn.",
+                    "Lowers the Appeal of nearby tiles.",
+                    "Effect of some Buildings (Factory, Power Plant) extends to other cities whose City Centers are within 6 tiles of the Zone, but effects of multiple factories or power plants do not stack.",
+                    "Specialists provide +2 Production each"
+                ]
+            },
+            "leaders": [
+                {
+                    "name": "Ambiorix",
+                    "abilityName": "King of the Eburones",
+                    "ability": "Receive Culture equal to 20% of the Production cost after training a non-civilian unit. Melee, ranged and anti-cavalry units receive +2 Combat Strength for each adjacent military unit.",
+                    "portrait": "images/Ambiorix.png",
+                    "img": "images/Civ_LEADER_AMBIORIX.png",
+                    "bColor": "#306c49",
+                    "fColor": "#62b9a8",
+                    "expansion": "dlc",
+                    "dlcPack": "bag"  
+                }
+            ],
+            "expansion": "dlc",
+            "dlcPack": "bag"
+        },
+        {
+            "id": 47,
+            "name": "Babylonian",
+            "abilityName": "Enuma Anu Enlil",
+            "ability": " Eurekas instantly unlock their respective technologies. -50% Science per turn.",
+            "unit": {
+                "name": "Sabum Kibittum",
+                "desc": "The Sabum Kibittum is a unique melee unit of the Babylonian civilization in Civilization VI. It is available without any technological research.",
+                "img": "images/Sabum_Kibittum.png",
+                "attributes": [
+                    "+5 Combat Strength vs. anti-cavalry units.",
+                    "+17 Combat Strength vs. heavy and light cavalry units.",
+                    "High Movement.",
+                    "High Sight"
+                ]
+            },
+            "infrastructure": {
+                "name": "Palgum",
+                "desc": "The Palgum is the unique building of the Babylonian civilization in Civilization VI. It is built in the City Center, replaces the Water Mill and is unlocked with Irrigation.",
+                "img": "images/Palgum.png",
+                "attributes": [
+                    "+2 Production",
+                    "+1 Housing",
+                    "+1 Food to all tiles adjacent to a source of Fresh Water.",
+                    "City must be adjacent to a River."
+                ]
+            },
+            "leaders": [
+                {
+                    "name": "Hammurabi",
+                    "abilityName": "Ninu Ilu Sirum",
+                    "ability": "Upon building each type of specialty district, except the Government Plaza, for the first time, instantly receive the building with the lowest Production cost that can be built in that district. Upon building any other district for the first time, receive a free Envoy.",
+                    "portrait": "images/Hammurabi.png",
+                    "img": "images/Civ_LEADER_HAMMURABI.png",
+                    "bColor": "#5787b6",
+                    "fColor": "#062864",
+                    "expansion": "dlc",
+                    "dlcPack": "bab"  
+                }
+            ],
+            "expansion": "dlc",
+            "dlcPack": "bab"
         }
     ]
 }
