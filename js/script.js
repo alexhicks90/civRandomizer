@@ -104,16 +104,25 @@ $(document).ready(function() {
 
                 for (var i = 0; i < numPlayers; i++){
                     randoms = [];
+
+                    var player = document.getElementById("p" + i);
+
                     for(var j = 0; j < numRandoms; j++) {
+                        if (player.value.toLowerCase().startsWith("alex") && !(rolls.includes(civsIncluded.length-1)) ) {
+                            rolls.push(civsIncluded.length-1);
+                            var civ = civsIncluded[civsIncluded.length-1];
+                            randoms.push(civ);
 
-                        do {
-                            var roll = Math.floor(Math.random() * civCount);       
+                        } else {
+                            do {
+                                var roll = Math.floor(Math.random() * civCount);       
 
-                        } while (rolls.includes(roll));
+                            } while (rolls.includes(roll));
 
-                        rolls.push(roll);
-                        var civ = civsIncluded[roll];
-                        randoms.push(civ);
+                            rolls.push(roll);
+                            var civ = civsIncluded[roll];
+                            randoms.push(civ);
+                        }
                     }
 
                     allRandoms[i] = randoms;
