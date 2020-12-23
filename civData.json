@@ -98,7 +98,7 @@
             "unit": {
                 "name": "Digger",
                 "desc": "The Digger is a unique melee unit of the Australian civilization in Civilization VI. It replaces the Infantry.",
-                "img": "",
+                "img": "images/Digger.png",
                 "attributes": [
                     "Higher Combat Strength (72 vs. 70).",
                     "+10 Combat Strength on coastal tiles.",
@@ -145,7 +145,7 @@
             "unit": {
                 "name": "Eagle Warrior",
                 "desc": "The Eagle Warrior is a unique melee unit of the Aztec civilization in Civilization VI. It replaces the Warrior and is available without any technological research.",
-                "img": "images/Eagles_Warrior.png",
+                "img": "images/Eagle_Warrior.png",
                 "attributes": [
                     "Higher Production cost (65 vs. 40).",
                     "Higher Combat Strength (28 vs. 20).",
@@ -156,7 +156,7 @@
             "infrastructure": {
                 "name": "Tlachtli",
                 "desc": "The Tlachtli is a unique building of the Aztec civilization in Civilization VI. It is built in the Entertainment Complex district and replaces the Arena.",
-                "img": "images/Tlatchtli.png",
+                "img": "images/Tlachtli.png",
                 "attributes": [
                     "+2 Faith",
                     "+1 Culture (as of the March 2018 Update)",
@@ -687,7 +687,7 @@
             "unit": {
                 "name": "Jong",
                 "desc": "The Jong is a unique naval ranged unit of the Indonesian civilization in Civilization VI. It replaces the Frigate and is unlocked with Mercenaries.",
-                "img": "images/.png",
+                "img": "images/Jong.png",
                 "attributes": [
                     "Higher Production cost (300 vs. 280).",
                     "Higher Movement (5 vs. 4).",
@@ -697,7 +697,7 @@
             "infrastructure": {
                 "name": "Kampung",
                 "desc": "The Kampung is a unique tile improvement of the Indonesian civilization in Civilization VI. It must be built on Coast or Lake tiles adjacent to sea resources but cannot be built on reefs.",
-                "img": "images/.png",
+                "img": "images/Kampung.png",
                 "attributes": [
                     "+1 Production",
                     "+1 Housing",
@@ -1073,7 +1073,7 @@
             "unit": {
                 "name": "Pítati Archer",
                 "desc": "The Pítati Archer is a unique ranged unit of the Nubian civilization in Civilization VI. It replaces the Archer.",
-                "img": "images/Pítati_Archer.png",
+                "img": "images/Pitati_Archer.png",
                 "attributes": [
                     "Higher Production cost (70 vs. 60).",
                     "Higher Combat Strength (17 vs. 15).",
@@ -1887,7 +1887,7 @@
         },
         {
             "id": 43,
-            "name": "Gran Colombian",
+            "name": "Gran-Colombian",
             "abilityName": "Ejército Patriota",
             "ability": "+1 Movement for all units. Promoting a unit does not end that unit's turn.",
             "unit": {
