@@ -98,7 +98,7 @@
             "unit": {
                 "name": "Digger",
                 "desc": "The Digger is a unique melee unit of the Australian civilization in Civilization VI. It replaces the Infantry.",
-                "img": "",
+                "img": "images/Digger.png",
                 "attributes": [
                     "Higher Combat Strength (72 vs. 70).",
                     "+10 Combat Strength on coastal tiles.",
@@ -520,7 +520,7 @@
             "unit": {
                 "name": "Khevsur",
                 "desc": "The Khevsur is a unique melee unit of the Georgian civilization in Civilization VI: Rise and Fall.",
-                "img": "",
+                "img": "images/Khevsur.png",
                 "attributes": [
                     "+7 Combat Strength and no Movement penalties in Hills."
                 ]
@@ -713,7 +713,7 @@
             "unit": {
                 "name": "Jong",
                 "desc": "The Jong is a unique naval ranged unit of the Indonesian civilization in Civilization VI. It replaces the Frigate and is unlocked with Mercenaries.",
-                "img": "",
+                "img": "images/Jong.png",
                 "attributes": [
                     "Higher Production cost (300 vs. 280).",
                     "Higher Movement (5 vs. 4).",
@@ -1099,7 +1099,7 @@
             "unit": {
                 "name": "Pítati Archer",
                 "desc": "The Pítati Archer is a unique ranged unit of the Nubian civilization in Civilization VI. It replaces the Archer.",
-                "img": "images/Pítati_Archer.png",
+                "img": "images/Pitati_Archer.png",
                 "attributes": [
                     "Higher Production cost (70 vs. 60).",
                     "Higher Combat Strength (17 vs. 15).",
@@ -1543,7 +1543,7 @@
             "unit": {
                 "name": "Mountie",
                 "desc": "The Mountie is a unique light cavalry unit of the Canadian civilization in Civilization VI: Gathering Storm.",
-                "img": "",
+                "img": "images/Mountie.png",
                 "attributes": [
                     "+5 Combat Strength when within 2 tiles of a National Park. +5 additional Combat Strength if the park is Canadian.",
                     "Has one build charge. (Lost upon upgrade.)",
@@ -1587,7 +1587,7 @@
             "unit": {
                 "name": "Toa",
                 "desc": "The Toa is a unique melee unit of the Māori civilization in Civilization VI: Gathering Storm.",
-                "img": "",
+                "img": "images/Toa.png",
                 "attributes": [
                     "Reduces the Combat Strength of adjacent enemy units by 5.",
                     "No strategic resource requirement.",
@@ -1598,7 +1598,7 @@
             "infrastructure": {
                 "name": "Marae",
                 "desc": "The Marae is a unique building of the Māori civilization in Civilization VI: Gathering Storm. It is built in the Theater Square district and replaces the Amphitheater.",
-                "img": "",
+                "img": "images/Marae.png",
                 "attributes": [
                     "+2 Culture and Faith to all of this city's tiles with a passable feature.",
                     "+2 Tourism to all of this city's tiles with a feature (with Flight).",
@@ -1630,7 +1630,7 @@
             "unit": {
                 "name": "Huszár",
                 "desc": "The Huszár is a unique light cavalry unit of the Hungarian civilization in Civilization VI: Gathering Storm. It replaces the Cavalry.",
-                "img": "",
+                "img": "images/Huszar.png",
                 "attributes": [
                     "+3 Combat Strength for every active Alliance.",
                     "No strategic resource requirement."
@@ -1639,7 +1639,7 @@
             "infrastructure": {
                 "name": "Thermal Bath",
                 "desc": "The Thermal Bath is a unique building of the Hungarian civilization in Civilization VI: Gathering Storm. It is built in the Entertainment Complex district and replaces the Zoo.",
-                "img": "",
+                "img": "images/Thermal_Bath.png",
                 "attributes": [
                     "+2 Amenities from entertainment. This bonus extends to each City Center within 6 tiles.",
                     "+2 Production. This bonus extends to each City Center within 6 tiles.",
@@ -1670,7 +1670,7 @@
             "unit": {
                 "name": "Warak'aq",
                 "desc": "The Warak'aq a unique recon unit of the Incan civilization in Civilization VI: Rise and Fall. It replaces the Skirmisher.",
-                "img": "",
+                "img": "images/Warak'aq.png",
                 "attributes": [
                     "Higher Ranged Strength.",
                     "May make 1 additional attack per turn."
@@ -1711,7 +1711,7 @@
             "unit": {
                 "name": "Mandekalu Cavalry",
                 "desc": "Mali unique Medieval Era unit that replaces the Knight.",
-                "img": "",
+                "img": "images/Mandekalu_Cavalry.png",
                 "attributes": [
                     "Trader units are immune to being plundered within 4 tiles of a Mandekalu Cavalry and on a land tile.",
                     "Combat victories provide Gold equal to 100% that unit's base Combat Strength."
@@ -1733,7 +1733,7 @@
                     "name": "Mansa Musa",
                     "abilityName": "Sahel Merchants",
                     "ability": "International Trade Routes gain +1 Gold for every flat Desert tile in the sending city. Entering a Golden Age permanently grants +1 Trade Route capacity.",
-                    "portrait": "",
+                    "portrait": "images/Mansa_Musa.png",
                     "img": "images/Civ_LEADER_MANSA_MUSA.png",
                     "bColor": "#610102",
                     "fColor": "#7f6e02",
@@ -1752,7 +1752,7 @@
             "unit": {
                 "name": "Bireme",
                 "desc": "The Bireme is a unique naval melee unit of the Phoenician civilization in Civilization VI: Gathering Storm. It replaces the Galley",
-                "img": "",
+                "img": "images/Bireme.png",
                 "attributes": [
                     "Higher Combat Strength (30 vs. 25).",
                     "Higher Movement (4 vs. 3).",
@@ -1775,7 +1775,7 @@
                     "name": "Dido",
                     "abilityName": "Founder of Carthage",
                     "ability": "Cities with a Cothon gain the unique Move Capital project, which moves the Phoenician capital to that city. Gains +1 Trade Route capacity after building the Government Plaza or any Government Plaza building. +50% Production towards districts in the city with the Government Plaza.",
-                    "portrait": "",
+                    "portrait": "images/Dido.png",
                     "img": "images/Civ_LEADER_DIDO.png",
                     "bColor": "#5903a5",
                     "fColor": "#6ea0e9",
@@ -1794,7 +1794,7 @@
             "unit": {
                 "name": "Barbary Corsair",
                 "desc": "The Barbary Corsair is a unique naval raider unit of the Ottoman civilization in Civilization VI: Gathering Storm. It replaces the Privateer and is unlocked at Medieval Faires.",
-                "img": "",
+                "img": "images/Barbary_Corsair.png",
                 "attributes": [
                     "Invisible except to City Centers, Encampments, Destroyers, and units in an adjacent tile.",
                     "Uses no Movement to perform coastal raids."
@@ -1803,7 +1803,7 @@
             "infrastructure": {
                 "name": "Grand Bazaar",
                 "desc": "The Grand Bazaar is a unique building of the Ottoman civilization in Civilization VI: Gathering Storm. It is built in the Commercial Hub district and replaces the Bank.",
-                "img": "",
+                "img": "images/Grand_Bazaar.png",
                 "attributes": [
                     "+5 Gold",
                     "+1 Citizen slot",
@@ -1817,7 +1817,7 @@
                     "name": "Suleiman",
                     "abilityName": "Grand Vizier",
                     "ability": "Has access to a unique Governor, Ibrahim, the Grand Vizier. Gain the Janissary unique unit with Gunpowder.",
-                    "portrait": "",
+                    "portrait": "images/Suleiman.png",
                     "img": "images/Civ_LEADER_SULEIMAN.png",
                     "bColor": "#b0b2aa",
                     "fColor": "#37731d",
@@ -1836,7 +1836,7 @@
             "unit": {
                 "name": "Carolean",
                 "desc": "The Carolean is a unique anti-cavalry unit of the Swedish civilization in Civilization VI: Gathering Storm. It replaces the Pike and Shot.",
-                "img": "",
+                "img": "images/Carolean.png",
                 "attributes": [
                     "Higher Movement (3 vs. 2).",
                     "+3 Combat Strength per point of unused Movement.",
@@ -1846,7 +1846,7 @@
             "infrastructure": {
                 "name": "Open-Air Museum",
                 "desc": "The Open-Air Museum is a unique tile improvement of the Swedish civilization in Civilization VI: Gathering Storm. It may be built on any passable land tile.",
-                "img": "",
+                "img": "images/Open-Air_Museum.png",
                 "attributes": [
                     "+2 Loyalty per turn in this city.",
                     "+2 Culture and Tourism for each type of terrain (Snow, Tundra, Desert, Plains, or Grassland) in which at least one Swedish city is founded.",
@@ -1859,7 +1859,7 @@
                     "name": "Kristina",
                     "abilityName": "Minerva of the North",
                     "ability": "Buildings with at least three Great Work slots and wonders with at least two Great Work slots are automatically themed when all slots are filled. Gains the Queen's Bibliotheque unique building in the Government Plaza.",
-                    "portrait": "",
+                    "portrait": "images/Kristina.png",
                     "img": "images/Civ_LEADER_KRISTINA.png",
                     "bColor": "#73a1f0",
                     "fColor": "#fef51a",
@@ -1867,6 +1867,268 @@
                 }
             ],
             "expansion": "gs"
+        },
+        {
+            "id": 42,
+            "name": "Mayan",
+            "abilityName": "Mayab",
+            "ability": "Cities do not receive additional Housing from being adjacent to fresh water or coast. Cities gain +1 Amenity for each Luxury Resource adjacent to the City Center. Farms grant +1 Housing and +1 Gold.",
+            "unit": {
+                "name": "Hul'che",
+                "desc": "The Hul'che is a unique ranged unit of the Mayan civilization in Civilization VI. It replaces the Archer.",
+                "img": "images/Hul'che.png",
+                "attributes": [
+                    "-17 Ranged Strength against District defenses and naval units.",
+                    "+5 Ranged Strength against wounded units.",
+                    "Higher Ranged Strength (28 vs. 25)."
+                ]
+            },
+            "infrastructure": {
+                "name": "Observatory",
+                "desc": "The Observatory is a unique District of the Mayan civilization in Civilization VI. It replaces the Campus.",
+                "img": "images/Observatory.png",
+                "attributes": [
+                    "Lower Production cost (27 vs. 54).",
+                    "Major bonus (+2 Science) for every adjacent Plantation.",
+                    "Minor bonus (+½ Science) for every adjacent Farm or district.",
+                    "+1 Great Scientist point per turn.",
+                    "Specialists add +2 Science each."
+                ]
+            },
+            "leaders": [
+                {
+                    "name": "Lady Six Sky",
+                    "abilityName": "Ix Mutal Ajaw",
+                    "ability": "Non-capital cities gain +10% to all yields if within six tiles of the Mayan Capital, and -15% to all yields if more than six tiles away. +5 Combat Strength for all units within six tiles of the Mayan Capital.",
+                    "portrait": "images/Lady_Six_Sky.png",
+                    "img": "images/Civ_LEADER_LADY_SIX_SKY.png",
+                    "bColor": "#4e87bb",
+                    "fColor": "#00573f",
+                    "expansion": "dlc",
+                    "dlcPack": "magc" 
+                }
+            ],
+            "expansion": "dlc",
+            "dlcPack": "magc"
+        },
+        {
+            "id": 43,
+            "name": "Gran-Colombian",
+            "abilityName": "Ejército Patriota",
+            "ability": "+1 Movement for all units. Promoting a unit does not end that unit's turn.",
+            "unit": {
+                "name": "Llanero",
+                "desc": "The Llanero is a unique light cavalry unit of the Gran Colombian civilization in Civilization VI. It replaces the Cavalry.",
+                "img": "images/Llanero.png",
+                "attributes": [
+                    "Ignores enemy zone of control.",
+                    "+2 Combat Strength for each adjacent Llanero.",
+                    "Regains all HP when in range of a Comandante General that uses its retire ability.",
+                    "Lower Gold maintenance cost (2 vs. 5)."
+                ]
+            },
+            "infrastructure": {
+                "name": "Hacienda",
+                "desc": "The Hacienda is the unique tile improvement of the Gran Colombian civilization in Civilization VI. It must be built on Grassland, Grassland Hills, Plains or Plains Hills tiles.",
+                "img": "images/Hacienda.png",
+                "attributes": [
+                    "+2 Gold",
+                    "+1 Production",
+                    "0.5 Housing",
+                    "+1 Food from every two adjacent Plantations, increasing +1 Food for each adjacent Plantation (with Replaceable Parts).",
+                    "Plantations and Haciendas receive +1 Production for every two adjacent Haciendas, increasing to +1 Production for each Hacienda (with Rapid Deployment)."
+                ]
+            },
+            "leaders": [
+                {
+                    "name": "Simón Bolívar",
+                    "abilityName": "Campaña Admirable",
+                    "ability": "Entering a new era grants a Comandante General, a unique type of Great Person.",
+                    "portrait": "images/Bolivar.png",
+                    "img": "images/Civ_LEADER_SIMON_BOLIVAR.png",
+                    "bColor": "#131f63",
+                    "fColor": "#c8d110",
+                    "expansion": "dlc",
+                    "dlcPack": "magc"  
+                }
+            ],
+            "expansion": "dlc",
+            "dlcPack": "magc"
+        },
+        {
+            "id": 44,
+            "name": "Ethiopia",
+            "abilityName": "Aksumite Legacy",
+            "ability": "Improved resource tiles receive +1 Faith for each copy of that resource the city owns. International Trade Routes grant +0.5 Faith for each resource in the origin city. Can purchase Archaeologists and Archaeological Museums with Faith.",
+            "unit": {
+                "name": "Oromo Cavalry",
+                "desc": "The Oromo Cavalry is a unique light cavalry unit of the Ethiopian civilization in Civilization VI.",
+                "img": "images/Oromo_Cavalry.png",
+                "attributes": [
+                    "Ignores enemy zone of control.",
+                    "No Movement penalty in Hills.",
+                    "Better Sight (3 vs. 2).",
+                    "Higher Combat Strength (46 vs. 44)."
+                ]
+            },
+            "infrastructure": {
+                "name": "Rock-Hewn Church",
+                "desc": "The Rock-Hewn Church is a unique tile improvement of the Ethiopian civilization in Civilization VI. It must be built on Hills or Volcanic Soil tiles.",
+                "img": "images/Rock-Hewn_Church.png",
+                "attributes": [
+                    "+1 Faith",
+                    "+1 Faith for every adjacent Mountain and Hills tile.",
+                    "Provides Tourism after researching Flight.",
+                    "+1 Appeal.",
+                    "Can only be pillaged (never destroyed) by natural disasters."
+                ]
+            },
+            "leaders": [
+                {
+                    "name": "Simón Bolívar",
+                    "abilityName": "Council of Ministers",
+                    "ability": "Ethiopian cities founded on Hills receive Science and Culture equal to 15% of their Faith output. +4 Combat Strength for all units when fighting on Hills.",
+                    "portrait": "images/Menelik.png",
+                    "img": "images/Civ_LEADER_MENELIK.png",
+                    "bColor": "#e5cd2c",
+                    "fColor": "#156c30",
+                    "expansion": "dlc",
+                    "dlcPack": "eth"  
+                }
+            ],
+            "expansion": "dlc",
+            "dlcPack": "eth"
+        },
+        {
+            "id": 45,
+            "name": "Byzantine",
+            "abilityName": "Taxis",
+            "ability": "+3 Combat and Religious Strength for all units for each Holy City converted to Byzantium's Religion (including Byzantium's own Holy City). Byzantium's Religion is spread to nearby cities when a unit from an enemy civilization or city-state is defeated. +1 Great Prophet point from Holy Sites.",
+            "unit": {
+                "name": "Dromon",
+                "desc": "The Dromon is a unique naval ranged unit of the Byzantine civilization in Civilization VI. It replaces the Quadrireme.",
+                "img": "images/Dromon.png",
+                "attributes": [
+                    "+10 Ranged Strength against land and naval units.",
+                    "Has a ranged attack with Range 2."
+                ]
+            },
+            "infrastructure": {
+                "name": "Hippodrome",
+                "desc": "The Hippodrome is a unique District of the Byzantine civilization in Civilization VI. It replaces the Entertainment Complex.",
+                "img": "images/Hippodrome.png",
+                "attributes": [
+                    "Lower Production cost (27 vs. 54).",
+                    "+3 Amenities from entertainment to parent city",
+                    "Amenities from the Zoo and Stadium buildings extend to cities whose City Centers are up to 6 tiles away from the district.",
+                    "Provides a free heavy cavalry unit when first constructed and for each building constructed. These units require no resource to be created or maintain.",
+                    "Cannot be built if a Water Park has already been built in this city."
+                ]
+            },
+            "leaders": [
+                {
+                    "name": "Basil II",
+                    "abilityName": "Porphyrogénnētos",
+                    "ability": "Heavy and light cavalry units deal full damage when attacking cities following the same Religion as Byzantium. Gain the Tagma unique unit with Divine Right.",
+                    "portrait": "images/Basil_II.png",
+                    "img": "images/Civ_LEADER_BASIL.png",
+                    "bColor": "#50088c",
+                    "fColor": "#ccc611",
+                    "expansion": "dlc",
+                    "dlcPack": "bag"  
+                }
+            ],
+            "expansion": "dlc",
+            "dlcPack": "bag"
+        },
+        {
+            "id": 46,
+            "name": "Gallic",
+            "abilityName": "Hallstatt Culture",
+            "ability": "Mines gain +1 Culture, grant a +0.5 adjacency bonus for districts and trigger a Culture Bomb when built, claiming surrounding unowned tiles. Specialty districts do not receive adjacency bonuses from other districts and cannot be built next to the City Center.",
+            "unit": {
+                "name": "Gaesatae",
+                "desc": "The Gaesatae is a unique melee unit of the Gallic civilization in Civilization VI. It replaces the Warrior.",
+                "img": "images/Gaesatae.png",
+                "attributes": [
+                    "+10 Combat Strength when fighting units with a higher base Combat Strength.",
+                    "+5 Combat Strength when fighting against District defenses.",
+                    "Higher Production cost (60 vs. 40)."
+                ]
+            },
+            "infrastructure": {
+                "name": "Oppidum",
+                "desc": "The Oppidum is a unique District of the Gallic civilization in Civilization VI. It replaces the Industrial Zone and is unlocked with Iron Working.",
+                "img": "images/Oppidum.png",
+                "attributes": [
+                    "Lower Production cost (27 vs. 54).",
+                    "Acquires Outer Defenses and Ranged Strike along with the City Center once Walls have been built.",
+                    "Unlocks Apprenticeship when the first Oppidum is built.",
+                    "Major bonus (+2 Production) for each adjacent Quarry or Strategic Resource.",
+                    "+1 Great Engineer point per turn.",
+                    "Lowers the Appeal of nearby tiles.",
+                    "Effect of some Buildings (Factory, Power Plant) extends to other cities whose City Centers are within 6 tiles of the Zone, but effects of multiple factories or power plants do not stack.",
+                    "Specialists provide +2 Production each"
+                ]
+            },
+            "leaders": [
+                {
+                    "name": "Ambiorix",
+                    "abilityName": "King of the Eburones",
+                    "ability": "Receive Culture equal to 20% of the Production cost after training a non-civilian unit. Melee, ranged and anti-cavalry units receive +2 Combat Strength for each adjacent military unit.",
+                    "portrait": "images/Ambiorix.png",
+                    "img": "images/Civ_LEADER_AMBIORIX.png",
+                    "bColor": "#306c49",
+                    "fColor": "#62b9a8",
+                    "expansion": "dlc",
+                    "dlcPack": "bag"  
+                }
+            ],
+            "expansion": "dlc",
+            "dlcPack": "bag"
+        },
+        {
+            "id": 47,
+            "name": "Babylonian",
+            "abilityName": "Enuma Anu Enlil",
+            "ability": " Eurekas instantly unlock their respective technologies. -50% Science per turn.",
+            "unit": {
+                "name": "Sabum Kibittum",
+                "desc": "The Sabum Kibittum is a unique melee unit of the Babylonian civilization in Civilization VI. It is available without any technological research.",
+                "img": "images/Sabum_Kibittum.png",
+                "attributes": [
+                    "+5 Combat Strength vs. anti-cavalry units.",
+                    "+17 Combat Strength vs. heavy and light cavalry units.",
+                    "High Movement.",
+                    "High Sight"
+                ]
+            },
+            "infrastructure": {
+                "name": "Palgum",
+                "desc": "The Palgum is the unique building of the Babylonian civilization in Civilization VI. It is built in the City Center, replaces the Water Mill and is unlocked with Irrigation.",
+                "img": "images/Palgum.png",
+                "attributes": [
+                    "+2 Production",
+                    "+1 Housing",
+                    "+1 Food to all tiles adjacent to a source of Fresh Water.",
+                    "City must be adjacent to a River."
+                ]
+            },
+            "leaders": [
+                {
+                    "name": "Hammurabi",
+                    "abilityName": "Ninu Ilu Sirum",
+                    "ability": "Upon building each type of specialty district, except the Government Plaza, for the first time, instantly receive the building with the lowest Production cost that can be built in that district. Upon building any other district for the first time, receive a free Envoy.",
+                    "portrait": "images/Hammurabi.png",
+                    "img": "images/Civ_LEADER_HAMMURABI.png",
+                    "bColor": "#5787b6",
+                    "fColor": "#062864",
+                    "expansion": "dlc",
+                    "dlcPack": "bab"  
+                }
+            ],
+            "expansion": "dlc",
+            "dlcPack": "bab"
         }
     ]
 }
